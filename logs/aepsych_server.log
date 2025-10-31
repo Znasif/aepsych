@@ -1,0 +1,532 @@
+[0;37m2025-10-30 17:56:05,033 [INFO   ] Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.[0m
+[0;37m2025-10-30 17:56:05,034 [INFO   ] NumExpr defaulting to 8 threads.[0m
+[0;37m2025-10-30 17:56:44,062 [INFO   ] Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.[0m
+[0;37m2025-10-30 17:56:44,063 [INFO   ] NumExpr defaulting to 8 threads.[0m
+[33;20m2025-10-30 17:56:44,890 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 17:57:03,283 [INFO   ] Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.[0m
+[0;37m2025-10-30 17:57:03,283 [INFO   ] NumExpr defaulting to 8 threads.[0m
+[33;20m2025-10-30 17:57:04,019 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 17:57:04,019 [INFO   ] No DB found at ./databases/default.db, creating a new DB![0m
+[0;37m2025-10-30 17:57:04,239 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 17:57:04,240 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 17:57:19,377 [INFO   ] Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.[0m
+[0;37m2025-10-30 17:57:19,377 [INFO   ] NumExpr defaulting to 8 threads.[0m
+[33;20m2025-10-30 17:57:20,183 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 17:57:20,184 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 17:57:20,300 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 17:57:20,301 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 17:59:38,137 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 17:59:38,138 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 17:59:38,271 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 17:59:38,271 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 17:59:39,865 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 17:59:39,916 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,918 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,918 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,919 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,920 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,920 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,921 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,921 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,922 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,922 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,923 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,923 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,924 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,924 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,925 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,926 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,926 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,927 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,927 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 17:59:39,928 [INFO   ] Received msg [ask][0m
+[33;20m2025-10-30 18:00:05,532 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 18:00:05,535 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 18:00:05,657 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 18:00:05,658 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 18:00:05,981 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 18:00:06,027 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,028 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,029 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,029 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,030 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,030 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,031 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,032 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,032 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,033 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,033 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,034 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,034 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,035 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,035 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,035 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,036 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,036 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,036 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:00:06,037 [INFO   ] Received msg [ask][0m
+[33;20m2025-10-30 18:00:24,072 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 18:00:24,074 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 18:00:24,179 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 18:00:24,180 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 18:00:24,489 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 18:00:24,535 [INFO   ] Received msg [ask][0m
+[33;20m2025-10-30 18:00:38,994 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 18:00:38,995 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 18:00:39,085 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 18:00:39,085 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 18:00:39,398 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 18:00:39,435 [INFO   ] Received msg [ask][0m
+[33;20m2025-10-30 18:00:53,038 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 18:00:53,039 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 18:00:53,127 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 18:00:53,127 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 18:00:53,434 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 18:00:53,478 [INFO   ] Received msg [ask][0m
+[33;20m2025-10-30 18:01:10,781 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 18:01:10,783 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 18:01:10,888 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 18:01:10,889 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 18:01:11,211 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 18:01:11,254 [INFO   ] Received msg [ask][0m
+[33;20m2025-10-30 18:01:23,042 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 18:01:23,043 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 18:01:23,141 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 18:01:23,142 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 18:01:23,439 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 18:01:23,476 [INFO   ] Received msg [ask][0m
+[33;20m2025-10-30 18:01:33,133 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 18:01:33,135 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 18:01:33,255 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 18:01:33,256 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 18:01:33,570 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 18:01:33,609 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:33,628 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:33,645 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:33,664 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:33,684 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:33,704 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:33,727 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:33,752 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:33,772 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:33,794 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:33,814 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:33,838 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:33,860 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:33,884 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:33,907 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:33,926 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:33,946 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:33,967 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:33,986 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:34,006 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:34,029 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:34,055 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:34,076 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:34,097 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:34,114 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:34,134 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:34,156 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:34,177 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:34,195 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:34,216 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:34,235 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:34,253 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:34,271 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:34,290 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:34,306 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:34,323 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:34,341 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:34,361 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:01:34,379 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:01:34,398 [INFO   ] Received msg [tell][0m
+[33;20m2025-10-30 18:01:47,979 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 18:01:47,980 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 18:01:48,032 [INFO   ] DBMasterTable : update called[0m
+[0;37m2025-10-30 18:01:48,045 [INFO   ] DbReplayTable : update called[0m
+[0;37m2025-10-30 18:01:48,051 [INFO   ] DbStratTable : update called[0m
+[0;37m2025-10-30 18:01:48,051 [INFO   ] DbConfigTable : update called[0m
+[0;37m2025-10-30 18:01:48,052 [INFO   ] DbRawTable : update called[0m
+[33;20m2025-10-30 18:02:00,067 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 18:02:00,068 [INFO   ] No DB found at ./databases/default.db, creating a new DB![0m
+[0;37m2025-10-30 18:02:00,234 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 18:02:00,235 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 18:02:00,523 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 18:02:00,562 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:00,580 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:00,690 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:00,692 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:00,967 [INFO   ] Fitting done, took 0.2753102779388428[0m
+[0;37m2025-10-30 18:02:00,992 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:01,078 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:01,079 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:01,262 [INFO   ] Fitting done, took 0.18308329582214355[0m
+[0;37m2025-10-30 18:02:01,288 [INFO   ] Received msg [tell][0m
+[33;20m2025-10-30 18:02:17,695 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 18:02:17,696 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 18:02:17,823 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 18:02:17,824 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 18:02:18,164 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 18:02:18,212 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:18,242 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:18,375 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:18,375 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:18,635 [INFO   ] Fitting done, took 0.25911569595336914[0m
+[0;37m2025-10-30 18:02:18,657 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:18,755 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:18,756 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:18,854 [INFO   ] Fitting done, took 0.09840512275695801[0m
+[0;37m2025-10-30 18:02:18,880 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:19,008 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:19,009 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:19,097 [INFO   ] Fitting done, took 0.08796334266662598[0m
+[0;37m2025-10-30 18:02:19,119 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:19,219 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:19,219 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:19,310 [INFO   ] Fitting done, took 0.09006619453430176[0m
+[0;37m2025-10-30 18:02:19,331 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:19,436 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:19,436 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:19,542 [INFO   ] Fitting done, took 0.10516953468322754[0m
+[0;37m2025-10-30 18:02:19,567 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:19,711 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:19,712 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:19,879 [INFO   ] Fitting done, took 0.16758298873901367[0m
+[0;37m2025-10-30 18:02:19,903 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:20,013 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:20,013 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:20,189 [INFO   ] Fitting done, took 0.17521214485168457[0m
+[0;37m2025-10-30 18:02:20,209 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:20,305 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:20,306 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:20,418 [INFO   ] Fitting done, took 0.11193156242370605[0m
+[0;37m2025-10-30 18:02:20,440 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:20,540 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:20,541 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:20,658 [INFO   ] Fitting done, took 0.11680817604064941[0m
+[0;37m2025-10-30 18:02:20,679 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:20,779 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:20,780 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:20,892 [INFO   ] Fitting done, took 0.11159801483154297[0m
+[0;37m2025-10-30 18:02:20,913 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:21,013 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:21,014 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:21,130 [INFO   ] Fitting done, took 0.11680769920349121[0m
+[0;37m2025-10-30 18:02:21,152 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:21,255 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:21,255 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:21,374 [INFO   ] Fitting done, took 0.11849546432495117[0m
+[0;37m2025-10-30 18:02:21,395 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:21,490 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:21,491 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:21,680 [INFO   ] Fitting done, took 0.18915462493896484[0m
+[0;37m2025-10-30 18:02:21,702 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:21,798 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:21,798 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:21,944 [INFO   ] Fitting done, took 0.14602279663085938[0m
+[0;37m2025-10-30 18:02:21,966 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:22,072 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:22,073 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:22,193 [INFO   ] Fitting done, took 0.12044739723205566[0m
+[0;37m2025-10-30 18:02:22,215 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:22,314 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:22,314 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:22,435 [INFO   ] Fitting done, took 0.12080216407775879[0m
+[0;37m2025-10-30 18:02:22,457 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:22,551 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:22,552 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:22,684 [INFO   ] Fitting done, took 0.13242340087890625[0m
+[0;37m2025-10-30 18:02:22,706 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:22,802 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:22,802 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:22,936 [INFO   ] Fitting done, took 0.13322758674621582[0m
+[0;37m2025-10-30 18:02:22,958 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 18:02:23,058 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 18:02:23,059 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 18:02:23,191 [INFO   ] Fitting done, took 0.13268232345581055[0m
+[0;37m2025-10-30 18:02:23,213 [INFO   ] Received msg [tell][0m
+[33;20m2025-10-30 19:27:47,544 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 19:27:47,546 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 19:27:47,651 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 19:27:47,652 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 19:27:48,224 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 19:27:48,273 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:48,298 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:48,416 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:48,417 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:48,702 [INFO   ] Fitting done, took 0.28517746925354004[0m
+[0;37m2025-10-30 19:27:48,729 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:48,824 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:48,824 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:48,978 [INFO   ] Fitting done, took 0.15360713005065918[0m
+[0;37m2025-10-30 19:27:49,005 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:49,109 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:49,109 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:49,294 [INFO   ] Fitting done, took 0.1845555305480957[0m
+[0;37m2025-10-30 19:27:49,324 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:49,421 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:49,421 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:49,512 [INFO   ] Fitting done, took 0.0906212329864502[0m
+[0;37m2025-10-30 19:27:49,537 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:49,630 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:49,630 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:49,784 [INFO   ] Fitting done, took 0.15402483940124512[0m
+[0;37m2025-10-30 19:27:49,809 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:49,906 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:49,907 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:50,030 [INFO   ] Fitting done, took 0.12360119819641113[0m
+[0;37m2025-10-30 19:27:50,055 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:50,153 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:50,153 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:50,283 [INFO   ] Fitting done, took 0.12993311882019043[0m
+[0;37m2025-10-30 19:27:50,308 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:50,401 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:50,401 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:50,533 [INFO   ] Fitting done, took 0.13109683990478516[0m
+[0;37m2025-10-30 19:27:50,555 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:50,651 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:50,651 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:50,796 [INFO   ] Fitting done, took 0.14465117454528809[0m
+[0;37m2025-10-30 19:27:50,822 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:50,917 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:50,918 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:51,094 [INFO   ] Fitting done, took 0.17587494850158691[0m
+[0;37m2025-10-30 19:27:51,118 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:51,212 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:51,212 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:51,445 [INFO   ] Fitting done, took 0.2323596477508545[0m
+[0;37m2025-10-30 19:27:51,468 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:51,562 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:51,563 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:51,754 [INFO   ] Fitting done, took 0.1912846565246582[0m
+[0;37m2025-10-30 19:27:51,778 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:51,868 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:51,869 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:52,186 [INFO   ] Fitting done, took 0.3169577121734619[0m
+[0;37m2025-10-30 19:27:52,213 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:52,308 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:52,309 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:52,522 [INFO   ] Fitting done, took 0.2131209373474121[0m
+[0;37m2025-10-30 19:27:52,548 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:52,641 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:52,641 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:52,924 [INFO   ] Fitting done, took 0.2825894355773926[0m
+[0;37m2025-10-30 19:27:52,948 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:53,039 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:53,039 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:53,411 [INFO   ] Fitting done, took 0.3719470500946045[0m
+[0;37m2025-10-30 19:27:53,436 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:53,529 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:53,529 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:53,803 [INFO   ] Fitting done, took 0.2736356258392334[0m
+[0;37m2025-10-30 19:27:53,827 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:53,919 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:53,919 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:54,127 [INFO   ] Fitting done, took 0.20833396911621094[0m
+[0;37m2025-10-30 19:27:54,151 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:27:54,248 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:27:54,248 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:27:54,506 [INFO   ] Fitting done, took 0.25748538970947266[0m
+[0;37m2025-10-30 19:27:54,532 [INFO   ] Received msg [tell][0m
+[33;20m2025-10-30 19:29:28,741 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 19:29:28,743 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 19:29:28,908 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 19:29:28,909 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 19:29:29,673 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 19:29:29,711 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:29:27,053 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:29:27,163 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:29:27,164 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:29:27,419 [INFO   ] Fitting done, took 0.25478458404541016[0m
+[0;37m2025-10-30 19:29:27,444 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:29:27,581 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:29:27,582 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:29:27,689 [INFO   ] Fitting done, took 0.10743975639343262[0m
+[33;20m2025-10-30 19:29:53,961 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 19:29:53,963 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 19:29:54,083 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 19:29:54,084 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 19:29:54,519 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 19:29:54,560 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:29:54,584 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:29:54,691 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:29:54,692 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:29:54,963 [INFO   ] Fitting done, took 0.27155089378356934[0m
+[0;37m2025-10-30 19:29:54,987 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:29:55,089 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:29:55,090 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:29:55,286 [INFO   ] Fitting done, took 0.1961824893951416[0m
+[33;20m2025-10-30 19:30:25,399 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 19:30:25,401 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 19:30:25,497 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 19:30:25,497 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 19:30:25,869 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 19:30:25,910 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:25,931 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:26,039 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:26,039 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:26,292 [INFO   ] Fitting done, took 0.2531301975250244[0m
+[0;37m2025-10-30 19:30:26,319 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:26,410 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:26,411 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:26,587 [INFO   ] Fitting done, took 0.1768200397491455[0m
+[0;37m2025-10-30 19:30:26,612 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:26,715 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:26,715 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:26,889 [INFO   ] Fitting done, took 0.1739516258239746[0m
+[0;37m2025-10-30 19:30:26,914 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:27,015 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:27,016 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:27,202 [INFO   ] Fitting done, took 0.1858654022216797[0m
+[0;37m2025-10-30 19:30:27,226 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:27,318 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:27,318 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:27,476 [INFO   ] Fitting done, took 0.15785622596740723[0m
+[0;37m2025-10-30 19:30:27,500 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:27,601 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:27,602 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:27,822 [INFO   ] Fitting done, took 0.22009611129760742[0m
+[0;37m2025-10-30 19:30:27,845 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:27,937 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:27,938 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:28,152 [INFO   ] Fitting done, took 0.21387410163879395[0m
+[0;37m2025-10-30 19:30:28,174 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:28,270 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:28,271 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:28,514 [INFO   ] Fitting done, took 0.24284029006958008[0m
+[0;37m2025-10-30 19:30:28,537 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:28,641 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:28,641 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:28,826 [INFO   ] Fitting done, took 0.18463444709777832[0m
+[0;37m2025-10-30 19:30:28,852 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:28,945 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:28,945 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:29,142 [INFO   ] Fitting done, took 0.19652462005615234[0m
+[0;37m2025-10-30 19:30:29,171 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:29,266 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:29,266 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:29,536 [INFO   ] Fitting done, took 0.2695472240447998[0m
+[0;37m2025-10-30 19:30:29,560 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:29,654 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:29,655 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:30,001 [INFO   ] Fitting done, took 0.346785306930542[0m
+[0;37m2025-10-30 19:30:30,024 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:30,131 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:30,131 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:30,579 [INFO   ] Fitting done, took 0.44777512550354004[0m
+[0;37m2025-10-30 19:30:30,603 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:30,705 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:30,706 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:31,008 [INFO   ] Fitting done, took 0.3023991584777832[0m
+[0;37m2025-10-30 19:30:31,033 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:31,128 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:31,128 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:31,405 [INFO   ] Fitting done, took 0.27654147148132324[0m
+[0;37m2025-10-30 19:30:31,431 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:31,525 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:31,525 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:31,810 [INFO   ] Fitting done, took 0.28473448753356934[0m
+[0;37m2025-10-30 19:30:31,834 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:31,925 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:31,926 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:32,183 [INFO   ] Fitting done, took 0.2575876712799072[0m
+[0;37m2025-10-30 19:30:32,208 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:32,304 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:32,305 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:32,543 [INFO   ] Fitting done, took 0.2382957935333252[0m
+[0;37m2025-10-30 19:30:32,568 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:32,667 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:32,667 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:32,911 [INFO   ] Fitting done, took 0.24366474151611328[0m
+[0;37m2025-10-30 19:30:32,931 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:33,023 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:33,024 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:33,344 [INFO   ] Fitting done, took 0.3202662467956543[0m
+[0;37m2025-10-30 19:30:33,364 [INFO   ] Received msg [tell][0m
+[33;20m2025-10-30 19:30:55,174 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-10-30 19:30:55,176 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-10-30 19:30:55,282 [INFO   ] Received msg [setup][0m
+[33;20m2025-10-30 19:30:55,283 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-10-30 19:30:55,658 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-10-30 19:30:55,706 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:55,732 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:55,843 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:55,844 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:56,128 [INFO   ] Fitting done, took 0.28386783599853516[0m
+[0;37m2025-10-30 19:30:56,156 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:30:56,261 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:30:56,262 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:30:56,350 [INFO   ] Fitting done, took 0.0876319408416748[0m
+[0;37m2025-10-30 19:31:03,175 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:03,284 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:03,285 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:03,428 [INFO   ] Fitting done, took 0.1429750919342041[0m
+[0;37m2025-10-30 19:31:03,452 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:03,548 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:03,549 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:03,631 [INFO   ] Fitting done, took 0.08233904838562012[0m
+[0;37m2025-10-30 19:31:03,652 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:03,762 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:03,763 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:03,860 [INFO   ] Fitting done, took 0.09758377075195312[0m
+[0;37m2025-10-30 19:31:10,709 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:10,810 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:10,810 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:10,911 [INFO   ] Fitting done, took 0.10088133811950684[0m
+[0;37m2025-10-30 19:31:10,934 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:11,038 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:11,038 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:11,135 [INFO   ] Fitting done, took 0.09674406051635742[0m
+[0;37m2025-10-30 19:31:11,154 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:11,249 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:11,249 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:11,369 [INFO   ] Fitting done, took 0.11936497688293457[0m
+[0;37m2025-10-30 19:31:18,256 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:18,353 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:18,354 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:18,468 [INFO   ] Fitting done, took 0.11381387710571289[0m
+[0;37m2025-10-30 19:31:18,489 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:18,585 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:18,585 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:18,707 [INFO   ] Fitting done, took 0.12111759185791016[0m
+[0;37m2025-10-30 19:31:18,728 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:18,826 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:18,826 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:18,949 [INFO   ] Fitting done, took 0.12251091003417969[0m
+[0;37m2025-10-30 19:31:23,489 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:23,584 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:23,584 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:24,403 [INFO   ] Fitting done, took 0.8191196918487549[0m
+[0;37m2025-10-30 19:31:24,424 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:24,518 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:24,519 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:24,694 [INFO   ] Fitting done, took 0.17461752891540527[0m
+[0;37m2025-10-30 19:31:24,717 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:24,816 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:24,817 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:25,120 [INFO   ] Fitting done, took 0.30345630645751953[0m
+[0;37m2025-10-30 19:31:31,951 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:32,046 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:32,046 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:32,273 [INFO   ] Fitting done, took 0.2272493839263916[0m
+[0;37m2025-10-30 19:31:32,296 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:32,394 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:32,395 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:32,615 [INFO   ] Fitting done, took 0.22066283226013184[0m
+[0;37m2025-10-30 19:31:32,637 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:32,737 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:32,737 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:32,980 [INFO   ] Fitting done, took 0.24298477172851562[0m
+[0;37m2025-10-30 19:31:39,801 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:39,899 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:39,899 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:40,155 [INFO   ] Fitting done, took 0.2554514408111572[0m
+[0;37m2025-10-30 19:31:40,177 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:40,278 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:40,278 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:40,497 [INFO   ] Fitting done, took 0.21880340576171875[0m
+[0;37m2025-10-30 19:31:40,517 [INFO   ] Received msg [tell][0m
+[0;37m2025-10-30 19:31:40,612 [INFO   ] Received msg [ask][0m
+[0;37m2025-10-30 19:31:40,613 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-10-30 19:31:40,885 [INFO   ] Fitting done, took 0.27185869216918945[0m
+[0;37m2025-10-30 19:31:47,703 [INFO   ] Received msg [tell][0m

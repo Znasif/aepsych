@@ -1,0 +1,12 @@
+{
+    "participant_id": "P01",
+    "notes": "First participant for testing the system",
+    "completed_sessions": [],
+    "total_sessions": 12,
+    "trials_per_session": 1000,
+    "validation_trials_per_session": 500,
+    "adaptive_trials_per_session": 500,
+    "fallback_trials_allowed": true,
+    "calibration_date": null,
+    "experimenter": "Test"
+  }

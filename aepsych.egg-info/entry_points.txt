@@ -1,0 +1,3 @@
+[console_scripts]
+aepsych_database = aepsych.server.utils:main
+aepsych_server = aepsych.server.server:main

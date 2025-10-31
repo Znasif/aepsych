@@ -4,20 +4,20 @@ The architecture is designed to support two distinct but interleaved types of te
 Adaptive Trial Sampling: Efficiently gathers data for model fitting by selecting the most informative stimuli in real-time.
 Validation Testing: Independently verifies the model's predictions using the traditional Method of Constant Stimuli (MOCS).
 1. Core Methodological Components
-1.1. Wishart Process Psychophysical Model (WPPM)
+2.1. Wishart Process Psychophysical Model (WPPM)
 The WPPM is the central, semi-parametric model of the system. It is not used for real-time trial selection but is fit post-hoc to the adaptively sampled data.
 Function: To model the internal noise that limits color discrimination across the entire stimulus space.
 Core Assumption: The internal noise, characterized by a covariance matrix, varies smoothly across the stimulus space.
-Output: A continuously varying field of covariance matrices that, in turn, defines the entire four-dimensional psychometric field. This allows for the prediction of discrimination performance for any pair of stimuli.
+Output: A continuously varying field of covariance matrices that, in turn, defines the entire four-dimensional psychometric field. This allows for the prediction of discrimination performance for any pair of stimuli. **✅ IMPLEMENTED** in `src/adaptive_engine/wppm_fitter.py`
 1.2. Adaptive Sampling Engine (AEPsych)
 AEPsych is the computational engine responsible for the primary mode of data collection. It is a non-parametric approach that ensures the data collection is not biased by the assumptions of the final WPPM.
 Function: To select the most informative stimulus pair for each trial to efficiently map discrimination thresholds.
 Underlying Model: A probit-Bernoulli Gaussian Process (GP) model that assumes smooth variation in performance across the stimulus space.
 Acquisition Function: Employs the Expected Absolute Volume Change (EAVC) to determine the next trial that will maximally reduce uncertainty about the 66.7% correct threshold level.
-1.3. Validation Method (MOCS)
+2.3. Validation Method (MOCS)
 The Method of Constant Stimuli (MOCS) is a classic psychophysical method used to create an independent dataset for validating the final WPPM fit.
 Function: To measure psychometric functions at 25 pre-selected reference points and chromatic directions.
-Implementation: Validation trials are pre-generated and consist of 12 comparison stimulus levels for each of the 25 conditions.
+Implementation: Validation trials are pre-generated and consist of 12 comparison stimulus levels for each of the 25 conditions. **✅ IMPLEMENTED** in `scripts/generate_validation_trials.py`
 2. System Implementation: A Dual-Computer Architecture
 To ensure a smooth, real-time experimental flow for the participant while accommodating the computationally intensive nature of adaptive trial selection, the system is implemented using a decoupled, dual-computer architecture.
 2.1. Rationale

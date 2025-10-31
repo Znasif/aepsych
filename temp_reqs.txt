@@ -1,0 +1,11 @@
+blackjax==1.2.5
+jax==0.8.0
+jaxlib==0.8.0
+jaxopt==0.8.5
+jaxtyping==0.3.2
+matplotlib==3.10.0
+matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1733416936468/work
+numpy @ file:///croot/numpy_and_numpy_base_1747238018250/work/dist/numpy-2.2.5-cp311-cp311-linux_x86_64.whl#sha256=05623b43d4027381cda37af2243096d2dbb16d8305e75fbaaa7570a633fea569
+numpyro==0.19.0
+pandas==2.3.1
+scipy==1.16.0

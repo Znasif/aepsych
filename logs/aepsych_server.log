@@ -530,3 +530,302 @@
 [0;37m2025-10-30 19:31:40,613 [INFO   ] Starting fitting (no warm start)...[0m
 [0;37m2025-10-30 19:31:40,885 [INFO   ] Fitting done, took 0.27185869216918945[0m
 [0;37m2025-10-30 19:31:47,703 [INFO   ] Received msg [tell][0m
+[33;20m2025-11-03 11:59:11,892 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-11-03 11:59:11,894 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-11-03 11:59:12,041 [INFO   ] Received msg [setup][0m
+[33;20m2025-11-03 11:59:12,042 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-11-03 11:59:12,670 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-11-03 11:59:12,742 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:12,904 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:13,040 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:13,041 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:13,363 [INFO   ] Fitting done, took 0.32190394401550293[0m
+[0;37m2025-11-03 11:59:13,396 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:13,535 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:13,536 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:13,747 [INFO   ] Fitting done, took 0.21081995964050293[0m
+[0;37m2025-11-03 11:59:20,283 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:20,436 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:20,436 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:20,606 [INFO   ] Fitting done, took 0.16984963417053223[0m
+[0;37m2025-11-03 11:59:20,633 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:20,764 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:20,764 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:20,928 [INFO   ] Fitting done, took 0.16376543045043945[0m
+[0;37m2025-11-03 11:59:20,958 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:21,074 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:21,075 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:21,230 [INFO   ] Fitting done, took 0.15511822700500488[0m
+[0;37m2025-11-03 11:59:27,772 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:27,939 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:27,940 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:28,163 [INFO   ] Fitting done, took 0.22308111190795898[0m
+[0;37m2025-11-03 11:59:28,192 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:28,313 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:28,313 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:28,520 [INFO   ] Fitting done, took 0.20673036575317383[0m
+[0;37m2025-11-03 11:59:28,553 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:28,686 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:28,686 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:28,889 [INFO   ] Fitting done, took 0.2025146484375[0m
+[0;37m2025-11-03 11:59:35,417 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:35,577 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:35,577 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:35,767 [INFO   ] Fitting done, took 0.18962764739990234[0m
+[0;37m2025-11-03 11:59:35,796 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:35,913 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:35,914 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:36,090 [INFO   ] Fitting done, took 0.17662453651428223[0m
+[0;37m2025-11-03 11:59:36,118 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:36,240 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:36,241 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:36,482 [INFO   ] Fitting done, took 0.24132871627807617[0m
+[0;37m2025-11-03 11:59:43,016 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:43,164 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:43,166 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:43,386 [INFO   ] Fitting done, took 0.2197890281677246[0m
+[0;37m2025-11-03 11:59:43,414 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:43,530 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:43,531 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:43,758 [INFO   ] Fitting done, took 0.22748303413391113[0m
+[0;37m2025-11-03 11:59:43,786 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:43,905 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:43,905 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:44,149 [INFO   ] Fitting done, took 0.24338293075561523[0m
+[0;37m2025-11-03 11:59:50,683 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:50,858 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:50,858 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:51,122 [INFO   ] Fitting done, took 0.2638528347015381[0m
+[0;37m2025-11-03 11:59:51,152 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:51,270 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:51,271 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:51,471 [INFO   ] Fitting done, took 0.1997699737548828[0m
+[0;37m2025-11-03 11:59:51,499 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:51,613 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:51,614 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:51,881 [INFO   ] Fitting done, took 0.26684021949768066[0m
+[0;37m2025-11-03 11:59:58,412 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:58,567 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:58,568 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:58,770 [INFO   ] Fitting done, took 0.20198321342468262[0m
+[0;37m2025-11-03 11:59:58,796 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:58,932 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:58,933 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:59,173 [INFO   ] Fitting done, took 0.2407238483428955[0m
+[0;37m2025-11-03 11:59:59,202 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 11:59:59,323 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 11:59:59,324 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 11:59:59,602 [INFO   ] Fitting done, took 0.2780888080596924[0m
+[0;37m2025-11-03 12:00:06,129 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:03:04,922 [INFO   ] Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.[0m
+[0;37m2025-11-03 12:03:04,923 [INFO   ] NumExpr defaulting to 8 threads.[0m
+[33;20m2025-11-03 12:06:19,081 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-11-03 12:06:19,084 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-11-03 12:06:19,475 [INFO   ] Received msg [setup][0m
+[33;20m2025-11-03 12:06:19,477 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-11-03 12:06:20,182 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-11-03 12:06:20,271 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:20,315 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:20,530 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:20,531 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:21,205 [INFO   ] Fitting done, took 0.6736483573913574[0m
+[0;37m2025-11-03 12:06:21,248 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:21,441 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:21,443 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:21,855 [INFO   ] Fitting done, took 0.4123654365539551[0m
+[0;37m2025-11-03 12:06:21,900 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:22,109 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:22,111 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:22,604 [INFO   ] Fitting done, took 0.4925971031188965[0m
+[0;37m2025-11-03 12:06:22,651 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:22,845 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:22,847 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:23,126 [INFO   ] Fitting done, took 0.278841495513916[0m
+[0;37m2025-11-03 12:06:23,173 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:23,384 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:23,384 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:23,809 [INFO   ] Fitting done, took 0.4245760440826416[0m
+[0;37m2025-11-03 12:06:23,858 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:24,045 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:24,046 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:24,433 [INFO   ] Fitting done, took 0.38680052757263184[0m
+[0;37m2025-11-03 12:06:24,473 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:24,654 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:24,655 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:24,939 [INFO   ] Fitting done, took 0.2837958335876465[0m
+[0;37m2025-11-03 12:06:24,973 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:25,160 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:25,162 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:25,625 [INFO   ] Fitting done, took 0.46296238899230957[0m
+[0;37m2025-11-03 12:06:25,677 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:25,869 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:25,871 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:26,264 [INFO   ] Fitting done, took 0.39258384704589844[0m
+[0;37m2025-11-03 12:06:26,319 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:26,560 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:26,561 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:27,009 [INFO   ] Fitting done, took 0.44739747047424316[0m
+[0;37m2025-11-03 12:06:27,056 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:27,243 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:27,244 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:27,981 [INFO   ] Fitting done, took 0.7364583015441895[0m
+[0;37m2025-11-03 12:06:28,020 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:28,185 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:28,186 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:28,890 [INFO   ] Fitting done, took 0.704042911529541[0m
+[0;37m2025-11-03 12:06:28,929 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:29,109 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:29,112 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:30,052 [INFO   ] Fitting done, took 0.9404017925262451[0m
+[0;37m2025-11-03 12:06:30,093 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:30,277 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:30,278 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:31,249 [INFO   ] Fitting done, took 0.9712283611297607[0m
+[0;37m2025-11-03 12:06:31,290 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:31,484 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:31,485 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:32,327 [INFO   ] Fitting done, took 0.8415420055389404[0m
+[0;37m2025-11-03 12:06:32,372 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:32,564 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:32,566 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:33,556 [INFO   ] Fitting done, took 0.9890542030334473[0m
+[0;37m2025-11-03 12:06:33,603 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:33,833 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:33,835 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:34,984 [INFO   ] Fitting done, took 1.1487219333648682[0m
+[0;37m2025-11-03 12:06:35,032 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:35,229 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:35,230 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:36,176 [INFO   ] Fitting done, took 0.9453146457672119[0m
+[0;37m2025-11-03 12:06:36,217 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:36,411 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:36,412 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:38,291 [INFO   ] Fitting done, took 1.8781132698059082[0m
+[0;37m2025-11-03 12:06:38,336 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:38,527 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:06:38,529 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:06:39,931 [INFO   ] Fitting done, took 1.4016516208648682[0m
+[0;37m2025-11-03 12:06:39,971 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:06:40,278 [INFO   ] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0m
+[33;20m2025-11-03 12:06:40,279 [WARNING] An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.[0m
+[33;20m2025-11-03 12:08:11,372 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-11-03 12:08:11,374 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-11-03 12:08:11,573 [INFO   ] Received msg [setup][0m
+[33;20m2025-11-03 12:08:11,574 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-11-03 12:08:11,924 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-11-03 12:08:11,978 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:12,058 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:12,231 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:12,232 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:12,520 [INFO   ] Fitting done, took 0.28753161430358887[0m
+[0;37m2025-11-03 12:08:12,554 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:12,677 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:12,678 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:12,802 [INFO   ] Fitting done, took 0.1241445541381836[0m
+[0;37m2025-11-03 12:08:19,342 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:19,474 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:19,475 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:19,607 [INFO   ] Fitting done, took 0.13143563270568848[0m
+[0;37m2025-11-03 12:08:19,638 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:19,776 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:19,776 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:19,889 [INFO   ] Fitting done, took 0.11252689361572266[0m
+[0;37m2025-11-03 12:08:19,920 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:20,054 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:20,054 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:20,286 [INFO   ] Fitting done, took 0.231734037399292[0m
+[0;37m2025-11-03 12:08:26,832 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:26,997 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:26,997 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:27,238 [INFO   ] Fitting done, took 0.24122071266174316[0m
+[0;37m2025-11-03 12:08:27,270 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:27,394 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:27,394 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:27,634 [INFO   ] Fitting done, took 0.24005508422851562[0m
+[0;37m2025-11-03 12:08:27,666 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:27,821 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:27,822 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:27,993 [INFO   ] Fitting done, took 0.17109084129333496[0m
+[0;37m2025-11-03 12:08:34,526 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:34,651 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:34,652 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:34,891 [INFO   ] Fitting done, took 0.2396702766418457[0m
+[0;37m2025-11-03 12:08:34,931 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:35,114 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:35,115 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:35,331 [INFO   ] Fitting done, took 0.21637916564941406[0m
+[0;37m2025-11-03 12:08:35,359 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:35,494 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:35,494 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:35,791 [INFO   ] Fitting done, took 0.29631948471069336[0m
+[0;37m2025-11-03 12:08:42,326 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:42,513 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:42,514 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:42,679 [INFO   ] Fitting done, took 0.16497325897216797[0m
+[0;37m2025-11-03 12:08:42,713 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:42,832 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:42,833 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:43,024 [INFO   ] Fitting done, took 0.19073152542114258[0m
+[0;37m2025-11-03 12:08:43,057 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:43,201 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:43,202 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:43,490 [INFO   ] Fitting done, took 0.28855204582214355[0m
+[0;37m2025-11-03 12:08:50,027 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:50,194 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:50,195 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:50,463 [INFO   ] Fitting done, took 0.2683699131011963[0m
+[0;37m2025-11-03 12:08:50,493 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:50,624 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:50,625 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:50,936 [INFO   ] Fitting done, took 0.31127023696899414[0m
+[0;37m2025-11-03 12:08:50,967 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:51,093 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:51,093 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:08:51,362 [INFO   ] Fitting done, took 0.26920294761657715[0m
+[0;37m2025-11-03 12:08:57,902 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:08:58,117 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:08:58,117 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:09:00,027 [INFO   ] Fitting done, took 1.9094464778900146[0m
+[0;37m2025-11-03 12:09:00,068 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:09:00,258 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:09:00,258 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:09:00,581 [INFO   ] Fitting done, took 0.32249879837036133[0m
+[0;37m2025-11-03 12:09:00,608 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:09:00,742 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-03 12:09:00,742 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-03 12:09:01,009 [INFO   ] Fitting done, took 0.2665119171142578[0m
+[0;37m2025-11-03 12:09:07,554 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-03 12:09:07,794 [INFO   ] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0m
+[33;20m2025-11-03 12:09:07,796 [WARNING] An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.[0m
+[33;20m2025-11-04 15:48:47,465 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-11-04 15:48:47,466 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-11-04 15:48:47,570 [INFO   ] Received msg [setup][0m
+[33;20m2025-11-04 15:48:47,571 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-11-04 15:48:48,120 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-11-04 15:48:48,174 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-04 15:48:48,200 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-04 15:48:48,310 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-04 15:48:48,311 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-04 15:48:48,613 [INFO   ] Fitting done, took 0.3011505603790283[0m
+[0;37m2025-11-04 15:48:48,636 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-04 15:48:48,739 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-04 15:48:48,739 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-04 15:48:48,900 [INFO   ] Fitting done, took 0.16035985946655273[0m
+[0;37m2025-11-04 15:48:55,550 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-04 15:48:55,638 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-04 15:48:55,638 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-04 15:48:55,797 [INFO   ] Fitting done, took 0.15891575813293457[0m
+[0;37m2025-11-04 15:48:55,818 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-04 15:48:55,914 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-04 15:48:55,914 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-04 15:48:56,016 [INFO   ] Fitting done, took 0.10169291496276855[0m
+[0;37m2025-11-04 15:48:56,043 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-04 15:48:56,139 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-04 15:48:56,140 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-04 15:48:56,339 [INFO   ] Fitting done, took 0.19934797286987305[0m
+[0;37m2025-11-04 15:49:02,121 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-04 15:49:02,214 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-04 15:49:02,215 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-04 15:49:02,360 [INFO   ] Fitting done, took 0.14522027969360352[0m
+[0;37m2025-11-04 15:49:02,385 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-04 15:49:03,465 [INFO   ] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0m

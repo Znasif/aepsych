@@ -1,0 +1,17 @@
+[33;20m2025-12-02 18:07:09,185 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-12-02 18:07:09,186 [INFO   ] No DB found at ./databases/default.db, creating a new DB![0m
+[0;37m2025-12-02 18:07:09,399 [INFO   ] Received msg [setup][0m
+[33;20m2025-12-02 18:07:09,399 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-12-02 18:07:10,036 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-12-02 18:12:10,881 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-02 18:12:11,013 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-02 18:12:11,674 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 18:12:11,705 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 18:12:11,880 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 18:12:11,905 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 18:12:12,057 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 18:12:12,080 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 18:12:12,234 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 18:12:12,257 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 18:12:12,411 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 18:12:12,435 [INFO   ] Received msg [tell][0m

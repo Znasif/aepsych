@@ -1,640 +1,640 @@
 #!/usr/bin/env python3
 """
-Wishart Process Psychophysical Model (WPPM) implementation.
+Wishart Process Psychophysical Model (WPPM) - Improved Implementation
 
 This module implements the semi-parametric Bayesian model for fitting
-color discrimination data from the AEPsych adaptive trials.
+color discrimination data, based on Hong et al. (2025) bioRxiv.
+
+Key improvements over naive implementation:
+1. Fully vectorized using JAX vmap/scan
+2. Chebyshev polynomials computed efficiently with recurrence
+3. Observer model with vectorized Monte Carlo
+4. Clean functional design with proper typing
+5. Compatible with modern JAX patterns
 """
+
+from __future__ import annotations
 
 import jax
 import jax.numpy as jnp
-import jax.random as random
-import numpy as np
-import numpyro
-import numpyro.distributions as dist
-from numpyro import handlers
-from numpyro.infer import MCMC, NUTS
-import pandas as pd
-from pathlib import Path
-from typing import Dict, List, Tuple, Optional, Any
-import json
-import sys
+import jax.random as jr
+from jax import vmap, jit
+from jax.scipy.linalg import cholesky
+from typing import NamedTuple, Dict, Any
+from functools import partial
+import optax
 
-# Add src to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-from adaptive_engine.utils.transformations import ColorTransformations
+# =============================================================================
+# Type Definitions
+# =============================================================================
 
-class WPPMObserver:
-    """Observer model for 3AFC color discrimination task."""
+class TrialData(NamedTuple):
+    """Trial data structure for WPPM fitting."""
+    reference_coords: jnp.ndarray  # [n_trials, 2]
+    comparison_coords: jnp.ndarray  # [n_trials, 2]
+    responses: jnp.ndarray  # [n_trials] binary (1=correct, 0=incorrect)
 
-    def __init__(self, n_samples: int = 1000):
-        """
-        Initialize the observer model.
 
-        Args:
-            n_samples: Number of Monte Carlo samples for decision simulation
-        """
-        self.n_samples = n_samples
-        self.transform = ColorTransformations()
+class WPPMConfig(NamedTuple):
+    """Configuration for WPPM model."""
+    n_basis: int = 5  # Number of Chebyshev basis functions per dimension
+    gamma: float = 3e-4  # Prior amplitude parameter (Eq. 16)
+    epsilon: float = 0.5  # Prior decay rate (Eq. 16)
+    n_mc_samples: int = 2000  # Monte Carlo samples for observer model
+    coord_range: tuple = (-1.0, 1.0)  # Coordinate space bounds
+    bandwidth: float = 1.0  # Bandwidth h for differentiable MC (Appendix 11)
 
-    def simulate_trial(self, reference_coords: jnp.ndarray,
-                      comparison_coords: jnp.ndarray,
-                      cov_matrix: jnp.ndarray,
-                      key: random.PRNGKey) -> float:
-        """
-        Simulate a single 3AFC trial using Monte Carlo sampling.
 
-        Args:
-            reference_coords: Reference stimulus coordinates [x, y]
-            comparison_coords: Comparison stimulus coordinates [x, y]
-            cov_matrix: 2x2 covariance matrix for internal noise
-            key: JAX random key
+class WPPMParams(NamedTuple):
+    """Model parameters (just the weight matrix W)."""
+    weights: jnp.ndarray  # Shape: [n_basis, n_basis, 2, 3]
 
-        Returns:
-            Probability of correct response (0-1)
-        """
-        # In 3AFC, we present two identical references and one comparison
-        # The observer needs to identify which stimulus is different
 
-        # Generate noisy observations of the three stimuli
-        # Stimuli: [ref1, ref2, comp] where ref1 == ref2 != comp
+# =============================================================================
+# Chebyshev Polynomial Basis (Equations 9-12)
+# =============================================================================
 
-        stimuli_coords = jnp.stack([
-            reference_coords,    # Reference 1
-            reference_coords,    # Reference 2 (identical)
-            comparison_coords    # Comparison (different)
-        ])
-
-        # Add internal noise to each stimulus observation
-        # Each stimulus observation ~ MVN(stimulus_coords[i], cov_matrix)
-        keys = random.split(key, 3)
-        noisy_observations = jnp.stack([
-            dist.MultivariateNormal(stimuli_coords[0], cov_matrix).sample(keys[0]),
-            dist.MultivariateNormal(stimuli_coords[1], cov_matrix).sample(keys[1]),
-            dist.MultivariateNormal(stimuli_coords[2], cov_matrix).sample(keys[2])
-        ])
-
-        # Observer decision rule: identify the stimulus most distant from others
-        # using Mahalanobis distance with the inverse covariance matrix
-        inv_cov = jnp.linalg.inv(cov_matrix)
-
-        # Compute pairwise Mahalanobis distances (JAX-compatible)
-        # Pairs: (0,1), (0,2), (1,2)
-        diffs = jnp.array([
-            noisy_observations[0] - noisy_observations[1],  # pair 0-1
-            noisy_observations[0] - noisy_observations[2],  # pair 0-2
-            noisy_observations[1] - noisy_observations[2],  # pair 1-2
-        ])
-
-        mahalanobis_dists = jnp.sqrt(jnp.sum(diffs * jnp.dot(inv_cov, diffs.T).T, axis=1))
-
-        # Find the pair with maximum distance (these are most likely the references)
-        max_dist_idx = jnp.argmax(mahalanobis_dists)
-
-        # Map back to stimulus indices
-        # pair 0: indices (0,1), pair 1: indices (0,2), pair 2: indices (1,2)
-        pair_indices = jnp.array([[0, 1], [0, 2], [1, 2]])
-        ref_pair = pair_indices[max_dist_idx]
-
-        # Find the stimulus not in the reference pair (should be the comparison at index 2)
-        # Since we know the pairs are [0,1], [0,2], [1,2], we can determine this directly
-        comp_idx = jnp.where(max_dist_idx == 0, 2, jnp.where(max_dist_idx == 1, 1, 0))
-
-        # Decision is correct if comp_idx == 2 (the comparison is in position 2)
-        correct = (comp_idx == 2)
-        return correct
-
-    def predict_percent_correct(self, reference_coords: jnp.ndarray,
-                               comparison_coords: jnp.ndarray,
-                               cov_matrix: jnp.ndarray) -> float:
-        """
-        Predict percent correct for a stimulus pair using Monte Carlo simulation.
-
-        Args:
-            reference_coords: Reference stimulus coordinates [x, y]
-            comparison_coords: Comparison stimulus coordinates [x, y]
-            cov_matrix: 2x2 covariance matrix for internal noise
-
-        Returns:
-            Predicted percent correct (0-1)
-        """
-        key = random.PRNGKey(42)  # Fixed seed for reproducibility
-
-        # Run Monte Carlo simulation
-        correct_count = 0
-        for i in range(self.n_samples):
-            trial_key = random.fold_in(key, i)
-            correct = self.simulate_trial(reference_coords, comparison_coords,
-                                        cov_matrix, trial_key)
-            correct_count += correct
-
-        return correct_count / self.n_samples
-
-class ChebyshevCovarianceField:
-    """Chebyshev polynomial-based covariance matrix field for WPPM."""
-
-    def __init__(self, n_basis_per_dim: int = 5):
-        """
-        Initialize the Chebyshev covariance field.
-
-        Args:
-            n_basis_per_dim: Number of basis functions per dimension (default 5, giving 25 total)
-        """
-        self.n_basis_per_dim = n_basis_per_dim  # i, j ∈ {0, 1, ..., 4}
-        self.total_basis = n_basis_per_dim * n_basis_per_dim  # 25 total 2D basis functions
-
-        # Prior parameters (from paper)
-        self.gamma = 3e-4  # Overall amplitude of variance
-        self.epsilon = 0.5  # Rate of exponential decay with polynomial order
-
-    def chebyshev_polynomial(self, x: float, order: int) -> float:
-        """
-        Compute Chebyshev polynomial of given order at point x.
-
-        Args:
-            x: Input value (should be in [-1, 1] for optimal conditioning)
-            order: Polynomial order (0, 1, 2, ...)
-
-        Returns:
-            T_order(x)
-        """
-        if order == 0:
-            return 1.0
-        elif order == 1:
-            return x
-        else:
-            # Recursive definition: T_{n+1}(x) = 2x*T_n(x) - T_{n-1}(x)
-            t_prev2 = 1.0  # T_0
-            t_prev1 = x     # T_1
-
-            for n in range(2, order + 1):
-                t_current = 2 * x * t_prev1 - t_prev2
-                t_prev2 = t_prev1
-                t_prev1 = t_current
-
-            return t_prev1
-
-    def compute_2d_basis_functions(self, coords: jnp.ndarray) -> jnp.ndarray:
-        """
-        Compute 2D Chebyshev basis functions at given coordinates.
-
-        Args:
-            coords: Coordinate [x, y] in model space (should be scaled to [-1, 1])
-
-        Returns:
-            Array of basis function values [n_basis_per_dim, n_basis_per_dim]
-        """
-        x_dim1, x_dim2 = coords[0], coords[1]
-
-        basis_values = jnp.zeros((self.n_basis_per_dim, self.n_basis_per_dim))
-
-        for i in range(self.n_basis_per_dim):
-            t_i = self.chebyshev_polynomial(x_dim1, i)
-            for j in range(self.n_basis_per_dim):
-                t_j = self.chebyshev_polynomial(x_dim2, j)
-                basis_values = basis_values.at[i, j].set(t_i * t_j)
-
-        return basis_values
-
-    def compute_overcomplete_representation(self, coords: jnp.ndarray,
-                                          weight_matrix: jnp.ndarray) -> jnp.ndarray:
-        """
-        Compute overcomplete representation U_{k,l}(x) from weighted basis functions.
-
-        Args:
-            coords: Coordinate [x, y] in model space
-            weight_matrix: Weight matrix W ∈ ℝ[5×5×2×3]
-
-        Returns:
-            U_{k,l} ∈ ℝ[2×3] for the covariance matrix components
-        """
-        # Get 2D basis function values φ_{i,j}(x)
-        basis_2d = self.compute_2d_basis_functions(coords)
-
-        # U_{k,l}(x) = Σ_{i=0}^4 Σ_{j=0}^4 W_{i,j,k,l} * φ_{i,j}(x)
-        # where k ∈ {0,1} (output component), l ∈ {0,1,2} (matrix element type)
-        u_kl = jnp.zeros((2, 3))
-
-        for k in range(2):  # k ∈ {0,1} for output components
-            for l in range(3):  # l ∈ {0,1,2} for matrix elements
-                weighted_sum = 0.0
-                for i in range(self.n_basis_per_dim):
-                    for j in range(self.n_basis_per_dim):
-                        weighted_sum += weight_matrix[i, j, k, l] * basis_2d[i, j]
-                u_kl = u_kl.at[k, l].set(weighted_sum)
-
-        return u_kl
-
-    def compute_covariance_matrix(self, coords: jnp.ndarray,
-                                weight_matrix: jnp.ndarray) -> jnp.ndarray:
-        """
-        Compute covariance matrix Σ(x) at given coordinates.
-
-        The covariance matrix is constructed as:
-        Σ(x) = U_{k,l}(x) · U_{k,l}(x)^T
-
-        This ensures the matrix is symmetric and positive semi-definite.
-
-        Args:
-            coords: Coordinate [x, y] in model space (should be in [-1, 1] range)
-            weight_matrix: Weight matrix W ∈ ℝ[5×5×2×3]
-
-        Returns:
-            2×2 covariance matrix
-        """
-        # Get overcomplete representation U_{k,l}
-        u_kl = self.compute_overcomplete_representation(coords, weight_matrix)
-
-        # Extract components for covariance matrix construction
-        # U has shape [2, 3], where:
-        # U[0, :] corresponds to first row: [σ²_dim1, σ_dim1_dim2, extra_param]
-        # U[1, :] corresponds to second row: [σ_dim1_dim2, σ²_dim2, extra_param]
-
-        # For positive semi-definite matrix, we use the first two columns
-        # Σ = U[:, :2] @ U[:, :2].T
-        u_reduced = u_kl[:, :2]  # Shape: [2, 2]
-
-        # Compute Σ(x) = U · U^T
-        cov_matrix = u_reduced @ u_reduced.T
-
-        # Ensure positive definiteness with small regularization
-        cov_matrix = cov_matrix + 1e-6 * jnp.eye(2)
-
-        return cov_matrix
-
-    def get_weight_prior_variance(self, i: int, j: int) -> float:
-        """
-        Get prior variance for weight W_{i,j,k,l} based on polynomial order.
-
-        η_{i+j} = γ · ε^{i+j}
-
-        Args:
-            i: First dimension basis function index
-            j: Second dimension basis function index
-
-        Returns:
-            Prior variance η_{i+j}
-        """
-        polynomial_order = i + j
-        return self.gamma * (self.epsilon ** polynomial_order)
-
-class WPPMModel:
-    """Wishart Process Psychophysical Model implementation."""
-
-    def __init__(self, n_basis_per_dim: int = 5, observer_samples: int = 1):
-        """
-        Initialize the WPPM model.
-
-        Args:
-            n_basis_per_dim: Number of basis functions per dimension (default 5, giving 25 total)
-            observer_samples: Number of Monte Carlo samples for observer model
-        """
-        self.covariance_field = ChebyshevCovarianceField(n_basis_per_dim=n_basis_per_dim)
-        self.observer = WPPMObserver(n_samples=observer_samples)
-
-        # Model parameters
-        self.n_basis_per_dim = n_basis_per_dim
-        self.weight_matrix_shape = (n_basis_per_dim, n_basis_per_dim, 2, 3)  # 5×5×2×3
-        self.total_params = n_basis_per_dim * n_basis_per_dim * 2 * 3  # 150 parameters total
-
-    def numpyro_model(self, trial_data: Dict[str, jnp.ndarray]):
-        """
-        NumPyro model definition for WPPM.
-
-        Args:
-            trial_data: Dictionary with 'reference_coords', 'comparison_coords', 'responses'
-        """
-        # Extract trial data
-        reference_coords = trial_data['reference_coords']  # [n_trials, 2]
-        comparison_coords = trial_data['comparison_coords']  # [n_trials, 2]
-        responses = trial_data['responses']  # [n_trials] (0 or 1)
-
-        n_trials = reference_coords.shape[0]
-
-        # Sample weight matrix W ∈ ℝ[5×5×2×3] from prior
-        # Prior: W_{i,j,k,l} ∼ Normal(0, η_{i+j}) where η_{i+j} = γ · ε^{i+j}
-        weight_matrix = jnp.zeros(self.weight_matrix_shape)
-
-        for i in range(self.n_basis_per_dim):
-            for j in range(self.n_basis_per_dim):
-                # Get prior variance for this polynomial order
-                prior_var = self.covariance_field.get_weight_prior_variance(i, j)
-                prior_std = jnp.sqrt(prior_var)
-
-                for k in range(2):  # output components
-                    for l in range(3):  # matrix element types
-                        param_name = f"W_{i}_{j}_{k}_{l}"
-                        weight_value = numpyro.sample(
-                            param_name,
-                            dist.Normal(0, prior_std)
-                        )
-                        weight_matrix = weight_matrix.at[i, j, k, l].set(weight_value)
-
-        # For each trial, compute the covariance matrix and predict performance
-        for i in range(n_trials):
-            ref_coords = reference_coords[i]
-            comp_coords = comparison_coords[i]
-
-            # Get covariance matrix for this location (average of ref and comp locations)
-            avg_coords = (ref_coords + comp_coords) / 2
-            cov_matrix = self.covariance_field.compute_covariance_matrix(
-                avg_coords, weight_matrix
-            )
-
-            # Predict percent correct using observer model
-            p_correct = self.observer.predict_percent_correct(
-                ref_coords, comp_coords, cov_matrix
-            )
-
-            # Likelihood: Bernoulli response
-            numpyro.sample(
-                f"response_{i}",
-                dist.Bernoulli(probs=p_correct),
-                obs=responses[i]
-            )
-
-    def fit_model(self, trial_data: pd.DataFrame,
-                  n_iterations: int = 1000, learning_rate: float = 1e-3) -> Dict[str, Any]:
-        """
-        Fit the WPPM to trial data using MAP estimation with SGD.
-
-        Args:
-            trial_data: DataFrame with trial data
-            n_iterations: Number of SGD iterations
-            learning_rate: Learning rate for SGD
-
-        Returns:
-            Dictionary with fitted MAP parameters and diagnostics
-        """
-        return self.fit_model_map(trial_data, n_iterations, learning_rate)
-
-    def predict_psychometric_field(self, fitted_result: Dict[str, Any],
-                                 grid_coords: jnp.ndarray) -> jnp.ndarray:
-        """
-        Predict discrimination performance across the stimulus space.
-
-        Args:
-            fitted_result: MAP fitted model result (contains 'weight_matrix')
-            grid_coords: Grid of coordinates to evaluate [n_points, 2]
-
-        Returns:
-            Predicted percent correct for each grid point [n_points]
-        """
-        # Get weight matrix from MAP result
-        weight_matrix = fitted_result['weight_matrix']
-        n_points = grid_coords.shape[0]
-
-        predictions = []
-
-        for coord_idx in range(n_points):
-            coords = grid_coords[coord_idx]
-
-            # For prediction, we need reference vs comparison
-            # For now, use a small perturbation along x-axis
-            ref_coords = coords
-            comp_coords = coords + jnp.array([0.1, 0.0])
-
-            cov_matrix = self.covariance_field.compute_covariance_matrix(
-                coords, weight_matrix
-            )
-
-            p_correct = self.observer.predict_percent_correct(
-                ref_coords, comp_coords, cov_matrix
-            )
-
-            predictions.append(p_correct)
-
-        return jnp.array(predictions)
-
-    def log_posterior(self, weight_matrix: jnp.ndarray, trial_data: Dict[str, jnp.ndarray]) -> float:
-        """
-        Compute the log posterior probability for MAP estimation.
-
-        Args:
-            weight_matrix: Weight matrix W ∈ ℝ[5×5×2×3]
-            trial_data: Dictionary with trial data
-
-        Returns:
-            Log posterior probability (to be maximized)
-        """
-        # Extract trial data
-        reference_coords = trial_data['reference_coords']
-        comparison_coords = trial_data['comparison_coords']
-        responses = trial_data['responses']
-
-        n_trials = reference_coords.shape[0]
-
-        # Compute log likelihood
-        log_likelihood = 0.0
-
-        for i in range(n_trials):
-            ref_coords = reference_coords[i]
-            comp_coords = comparison_coords[i]
-            response = responses[i]
-
-            # Get covariance matrix for this trial location
-            avg_coords = (ref_coords + comp_coords) / 2
-            cov_matrix = self.covariance_field.compute_covariance_matrix(avg_coords, weight_matrix)
-
-            # Predict percent correct using Monte Carlo simulation
-            p_correct = self.observer.predict_percent_correct(ref_coords, comp_coords, cov_matrix)
-
-            # Add to log likelihood (Bernoulli: response*log(p) + (1-response)*log(1-p))
-            # Add small epsilon to avoid log(0) and clip probabilities
-            eps = 1e-6
-            p_correct = jnp.clip(p_correct, eps, 1 - eps)
-            log_likelihood += response * jnp.log(p_correct) + (1 - response) * jnp.log(1 - p_correct)
-
-        # Compute log prior
-        log_prior = 0.0
-
-        for i in range(self.n_basis_per_dim):
-            for j in range(self.n_basis_per_dim):
-                # Get prior variance for this polynomial order
-                prior_var = self.covariance_field.get_weight_prior_variance(i, j)
-                prior_std = jnp.sqrt(prior_var)
-
-                for k in range(2):
-                    for l in range(3):
-                        weight_value = weight_matrix[i, j, k, l]
-                        # Normal log prior: -0.5 * (weight/prior_std)^2 - 0.5*log(2*pi*prior_std^2)
-                        log_prior += -0.5 * (weight_value / prior_std) ** 2 - 0.5 * jnp.log(2 * jnp.pi * prior_var)
-
-        # Add L2 regularization for numerical stability
-        l2_reg = 1e-4 * jnp.sum(weight_matrix ** 2)
-
-        return log_likelihood + log_prior - l2_reg
-
-    def fit_model_map(self, trial_data: pd.DataFrame,
-                     n_iterations: int = 1000, learning_rate: float = 1e-4) -> Dict[str, Any]:
-        """
-        Fit the WPPM to trial data using MAP estimation with SGD.
-
-        Args:
-            trial_data: DataFrame with trial data
-            n_iterations: Number of SGD iterations
-            learning_rate: Learning rate for SGD
-
-        Returns:
-            Dictionary with fitted MAP parameters and diagnostics
-        """
-        print("Preparing data for WPPM MAP fitting...")
-
-        # Extract relevant data from DataFrame
-        ref_coords = []
-        comp_coords = []
-        responses = []
-
-        for _, trial in trial_data.iterrows():
-            # Convert RGB to model space
-            ref_rgb = [trial['ref_rgb_r'], trial['ref_rgb_g'], trial['ref_rgb_b']]
-            comp_rgb = [trial['comp_rgb_r'], trial['comp_rgb_g'], trial['comp_rgb_b']]
-
-            ref_model = self.observer.transform.rgb_to_model_space(ref_rgb)
-            comp_model = self.observer.transform.rgb_to_model_space(comp_rgb)
-
-            ref_coords.append(ref_model)
-            comp_coords.append(comp_model)
-            responses.append(trial['response'])
-
-        # Convert to JAX arrays
-        trial_dict = {
-            'reference_coords': jnp.array(ref_coords),
-            'comparison_coords': jnp.array(comp_coords),
-            'responses': jnp.array(responses, dtype=jnp.int32)
-        }
-
-        print(f"Fitting WPPM MAP to {len(responses)} trials...")
-
-        # Initialize weight matrix randomly
-        rng_key = random.PRNGKey(42)
-        weight_matrix = random.normal(rng_key, shape=self.weight_matrix_shape) * 0.1
-
-        # Define the loss function (negative log posterior for minimization)
-        def loss_fn(weight_matrix):
-            return -self.log_posterior(weight_matrix, trial_dict)
-
-        # Set up gradient descent
-        from jax import grad
-
-        grad_fn = grad(loss_fn)
-
-        # Optimization loop
-        for iteration in range(n_iterations):
-            if iteration % 2 == 0:
-                current_loss = loss_fn(weight_matrix)
-                current_log_post = -current_loss
-                print(f"Iteration {iteration}: Log Posterior = {current_log_post:.4f}")
-
-            # Compute gradient
-            grads = grad_fn(weight_matrix)
-
-            # Check for NaN gradients
-            if jnp.any(jnp.isnan(grads)):
-                print(f"Warning: NaN gradients detected at iteration {iteration}")
-                break
-
-            # Clip gradients to prevent explosion
-            grads = jnp.clip(grads, -10.0, 10.0)
-
-            # Update weights
-            weight_matrix = weight_matrix - learning_rate * grads
-
-            # Check for NaN weights
-            if jnp.any(jnp.isnan(weight_matrix)):
-                print(f"Warning: NaN weights detected at iteration {iteration}")
-                break
-
-        print("MAP optimization completed.")
-
-        # Compute final diagnostics
-        final_log_posterior = self.log_posterior(weight_matrix, trial_dict)
-
-        return {
-            'weight_matrix': weight_matrix,
-            'log_posterior': final_log_posterior,
-            'n_iterations': n_iterations,
-            'learning_rate': learning_rate,
-            'model_config': {
-                'n_basis_per_dim': self.n_basis_per_dim,
-                'observer_samples': self.observer.n_samples
-            }
-        }
-
-def load_trial_data(data_path: str) -> pd.DataFrame:
+def chebyshev_basis_1d(x: float, n_basis: int) -> jnp.ndarray:
     """
-    Load trial data for WPPM fitting.
-
+    Compute 1D Chebyshev polynomials T_0(x) to T_{n-1}(x) using recurrence.
+    
+    Equations 9-11 from paper:
+        T_0(x) = 1
+        T_1(x) = x
+        T_{i+1}(x) = 2x·T_i(x) - T_{i-1}(x)
+    
     Args:
-        data_path: Path to trial data CSV
-
+        x: Input value (should be in [-1, 1] for stability)
+        n_basis: Number of basis functions
+        
     Returns:
-        DataFrame with trial data
+        Array of shape [n_basis] with T_0(x), T_1(x), ..., T_{n-1}(x)
     """
-    df = pd.read_csv(data_path)
+    def recurrence(carry, _):
+        t_prev2, t_prev1 = carry
+        t_next = 2 * x * t_prev1 - t_prev2
+        return (t_prev1, t_next), t_next
+    
+    # Initial values: T_0 = 1, T_1 = x
+    init = (jnp.array(1.0), jnp.array(x))
+    
+    # Use scan for higher-order terms
+    _, higher_order = jax.lax.scan(recurrence, init, None, length=max(0, n_basis - 2))
+    
+    # Concatenate [T_0, T_1, T_2, ..., T_{n-1}]
+    base = jnp.array([1.0, x])
+    return jnp.concatenate([base, higher_order])[:n_basis]
 
-    # Add response column (for now, assume all are correct for testing)
-    # In real usage, this would come from the actual participant responses
-    if 'response' not in df.columns:
-        df['response'] = np.random.choice([0, 1], size=len(df), p=[0.2, 0.8])
 
-    return df
-
-def fit_wppm_to_data(trial_data_path: str, output_path: str = None, n_basis_per_dim: int = 5,
-                    n_iterations: int = 1000, learning_rate: float = 1e-4) -> Dict[str, Any]:
+def chebyshev_basis_2d(coords: jnp.ndarray, n_basis: int) -> jnp.ndarray:
     """
-    Fit WPPM to trial data and save results.
-
+    Compute 2D tensor product Chebyshev basis (Equation 12).
+    
+    φ_{i,j}(x) = T_i(x_{dim1}) · T_j(x_{dim2})
+    
     Args:
-        trial_data_path: Path to trial data CSV
-        output_path: Path to save fitted model
-        n_basis_per_dim: Number of basis functions per dimension (default 5)
-        n_iterations: Number of SGD iterations (default 1000)
-        learning_rate: Learning rate for SGD (default 1e-4)
-
+        coords: Coordinates [x_{dim1}, x_{dim2}] in [-1, 1]²
+        n_basis: Number of basis functions per dimension
+        
     Returns:
-        Dictionary with fitted model results
+        Array of shape [n_basis, n_basis] with φ_{i,j}(coords)
     """
-    print("Loading trial data...")
-    trial_data = load_trial_data(trial_data_path)
+    t1 = chebyshev_basis_1d(coords[0], n_basis)  # [n_basis]
+    t2 = chebyshev_basis_1d(coords[1], n_basis)  # [n_basis]
+    return jnp.outer(t1, t2)  # [n_basis, n_basis]
 
-    print("Initializing WPPM...")
-    wppm = WPPMModel(n_basis_per_dim=n_basis_per_dim, observer_samples=500)
 
-    print("Fitting WPPM model...")
-    fit_results = wppm.fit_model(trial_data, n_iterations=n_iterations, learning_rate=learning_rate)
+# =============================================================================
+# Covariance Field (Equations 13-14)
+# =============================================================================
 
-    # Save results
-    if output_path is None:
-        output_path = Path(trial_data_path).parent / "wppm_fit_results.json"
+def compute_covariance(coords: jnp.ndarray, weights: jnp.ndarray, n_basis: int) -> jnp.ndarray:
+    """
+    Compute covariance matrix Σ(x) at given coordinates.
+    
+    Equation 13: U_{k,l}(x) = Σᵢ Σⱼ W_{i,j,k,l} · φ_{i,j}(x)
+    Equation 14: Σ(x) = U_{k,l}(x) · U_{k,l}(x)ᵀ
+    
+    Args:
+        coords: Spatial coordinates [x_{dim1}, x_{dim2}] in [-1, 1]²
+        weights: Weight tensor W ∈ ℝ^{n_basis × n_basis × 2 × 3}
+        n_basis: Number of basis functions per dimension
+        
+    Returns:
+        2×2 positive semi-definite covariance matrix
+    """
+    # Compute 2D Chebyshev basis values: [n_basis, n_basis]
+    phi = chebyshev_basis_2d(coords, n_basis)
+    
+    # Compute overcomplete representation U ∈ ℝ^{2×3} (Equation 13)
+    # U_{k,l} = Σᵢⱼ W_{i,j,k,l} · φ_{i,j}
+    U = jnp.einsum('ij,ijkl->kl', phi, weights)
+    
+    # Σ = U @ U.T ensures positive semi-definiteness (Equation 14)
+    cov = U @ U.T
+    
+    # Add small regularization for numerical stability
+    cov = cov + 1e-8 * jnp.eye(2)
+    
+    return cov
 
-    # Convert JAX arrays to lists for JSON serialization
-    serializable_results = {
-        'weight_matrix': fit_results['weight_matrix'].tolist(),
-        'log_posterior': float(fit_results['log_posterior']),
-        'n_iterations': fit_results['n_iterations'],
-        'learning_rate': fit_results['learning_rate'],
-        'model_config': fit_results['model_config']
-    }
 
-    with open(output_path, 'w') as f:
-        json.dump(serializable_results, f, indent=2)
+def compute_covariance_batch(coords_batch: jnp.ndarray, weights: jnp.ndarray, n_basis: int) -> jnp.ndarray:
+    """Vectorized covariance computation for batch of coordinates."""
+    return vmap(lambda c: compute_covariance(c, weights, n_basis))(coords_batch)
 
-    print(f"WPPM fitting completed. Results saved to {output_path}")
 
-    return fit_results
+# =============================================================================
+# Prior Distribution (Equations 15-16)
+# =============================================================================
+
+def compute_prior_variance(n_basis: int, gamma: float, epsilon: float) -> jnp.ndarray:
+    """
+    Compute prior variance η_{i+j} for each weight (Equation 16).
+    
+    η_{i+j} = γ · ε^{i+j}
+    
+    Args:
+        n_basis: Number of basis functions per dimension
+        gamma: Overall amplitude (γ = 3×10⁻⁴ in paper)
+        epsilon: Decay rate (ε = 0.5 in paper)
+        
+    Returns:
+        Variance array of shape [n_basis, n_basis]
+    """
+    i_idx = jnp.arange(n_basis)[:, None]
+    j_idx = jnp.arange(n_basis)[None, :]
+    order = i_idx + j_idx
+    variance = gamma * (epsilon ** order)
+    return variance
+
+
+def log_prior(weights: jnp.ndarray, config: WPPMConfig) -> float:
+    """
+    Compute log prior probability of weights (Equation 15).
+    
+    W_{i,j,k,l} ~ N(0, η_{i+j})
+    
+    Args:
+        weights: Weight tensor [n_basis, n_basis, 2, 3]
+        config: Model configuration
+        
+    Returns:
+        Log prior probability (scalar)
+    """
+    variance = compute_prior_variance(config.n_basis, config.gamma, config.epsilon)
+    
+    # Broadcast variance to all output dimensions [n_basis, n_basis, 1, 1]
+    variance_4d = variance[:, :, None, None]
+    
+    # Gaussian log prior: -0.5 * w²/σ² - 0.5 * log(2πσ²)
+    log_norm = -0.5 * jnp.log(2 * jnp.pi * variance_4d)
+    log_exp = -0.5 * weights ** 2 / variance_4d
+    
+    return jnp.sum(log_norm + log_exp)
+
+
+# =============================================================================
+# Observer Model - 3AFC Task (Equations 1-8)
+# =============================================================================
+
+def simulate_3afc_trial(
+    key: jr.PRNGKey,
+    ref_coords: jnp.ndarray,
+    comp_coords: jnp.ndarray,
+    weights: jnp.ndarray,
+    n_basis: int,
+    n_samples: int,
+    bandwidth: float
+) -> float:
+    """
+    Simulate 3AFC trial using differentiable Monte Carlo (Appendix 11).
+    
+    Observer model (Equations 1-8):
+    - Equations 1-3: Internal representations z ~ N(stimulus, Σ(stimulus))
+    - Equation 4: Decision rule based on Mahalanobis distances
+    - Equations 5-7: Mahalanobis distance definitions
+    - Equation 8: Weighted covariance S = (2/3)Σ(x₀) + (1/3)Σ(x₀+Δ)
+    
+    Uses smooth sigmoid approximation (Appendix 11, Eq. S22) for differentiability.
+    
+    Args:
+        key: JAX random key
+        ref_coords: Reference stimulus coordinates [2]
+        comp_coords: Comparison stimulus coordinates [2]
+        weights: Weight tensor W
+        n_basis: Number of basis functions
+        n_samples: Number of Monte Carlo samples
+        bandwidth: Smoothing bandwidth h for differentiable estimator
+        
+    Returns:
+        Estimated probability of correct response (differentiable)
+    """
+    # Get covariance matrices at stimulus locations
+    cov_ref = compute_covariance(ref_coords, weights, n_basis)
+    cov_comp = compute_covariance(comp_coords, weights, n_basis)
+    
+    # Weighted average covariance for Mahalanobis distance (Equation 8)
+    # S = (2/3)·Σ(x₀) + (1/3)·Σ(x₀ + Δ)
+    S = (2.0 / 3.0) * cov_ref + (1.0 / 3.0) * cov_comp
+    S_inv = jnp.linalg.inv(S)
+    
+    # Cholesky decompositions for sampling
+    L_ref = cholesky(cov_ref, lower=True)
+    L_comp = cholesky(cov_comp, lower=True)
+    
+    # Generate standard normal samples
+    eps = jr.normal(key, (n_samples, 3, 2))  # [n_samples, 3 stimuli, 2 dims]
+    
+    # Internal representations (Equations 1-3)
+    # z₀ ~ N(x₀, Σ(x₀)), z'₀ ~ N(x₀, Σ(x₀)), z₁ ~ N(x₀+Δ, Σ(x₀+Δ))
+    z0 = ref_coords + eps[:, 0, :] @ L_ref.T
+    z0_prime = ref_coords + eps[:, 1, :] @ L_ref.T
+    z1 = comp_coords + eps[:, 2, :] @ L_comp.T
+    
+    # Squared Mahalanobis distances (Equations 5-7)
+    # d²_M(a, b) = (a-b)ᵀ S⁻¹ (a-b)
+    def mahalanobis_sq(a, b):
+        diff = a - b
+        return jnp.sum(diff * (diff @ S_inv.T), axis=-1)
+    
+    d_01 = mahalanobis_sq(z0, z0_prime)  # d²_M(z₀, z'₀)
+    d_0c = mahalanobis_sq(z0, z1)        # d²_M(z₀, z₁)
+    d_1c = mahalanobis_sq(z0_prime, z1)  # d²_M(z'₀, z₁)
+    
+    # Decision variable (Equation 4)
+    # Correct if: d²_M(z₀, z'₀) - min(d²_M(z₀, z₁), d²_M(z'₀, z₁)) < 0
+    v = d_01 - jnp.minimum(d_0c, d_1c)
+    
+    # Differentiable Monte Carlo estimator (Appendix 11, Eq. S22)
+    # I_{v_i}(0) = σ(-v_i / h) smoothly approximates 1[v_i < 0]
+    smooth_correct = jax.nn.sigmoid(-v / bandwidth)
+    
+    return jnp.mean(smooth_correct)
+
+
+# =============================================================================
+# Likelihood and Loss Functions (Equations 17-18)
+# =============================================================================
+
+def compute_log_likelihood(
+    weights: jnp.ndarray,
+    trial_data: TrialData,
+    key: jr.PRNGKey,
+    config: WPPMConfig
+) -> float:
+    """
+    Compute log likelihood of trial data (Equation 17).
+    
+    p_r(y₁,...,y_R | W) = Σᵣ [yᵣ·log(pᵣ) + (1-yᵣ)·log(1-pᵣ)]
+    
+    Args:
+        weights: Weight tensor W
+        trial_data: Trial data (coords and responses)
+        key: JAX random key
+        config: Model configuration
+        
+    Returns:
+        Log likelihood (scalar)
+    """
+    n_trials = trial_data.responses.shape[0]
+    keys = jr.split(key, n_trials)
+    
+    # Vectorized probability computation (Equation 18)
+    def compute_p_correct(key, ref, comp):
+        return simulate_3afc_trial(
+            key, ref, comp, weights, 
+            config.n_basis, config.n_mc_samples, config.bandwidth
+        )
+    
+    p_correct = vmap(compute_p_correct)(
+        keys,
+        trial_data.reference_coords,
+        trial_data.comparison_coords
+    )
+    
+    # Clip for numerical stability
+    eps = 1e-6
+    p_correct = jnp.clip(p_correct, eps, 1 - eps)
+    
+    # Bernoulli log likelihood
+    responses = trial_data.responses.astype(jnp.float32)
+    log_lik = responses * jnp.log(p_correct) + (1 - responses) * jnp.log(1 - p_correct)
+    
+    return jnp.sum(log_lik)
+
+
+def loss_fn(
+    weights: jnp.ndarray,
+    trial_data: TrialData,
+    key: jr.PRNGKey,
+    config: WPPMConfig
+) -> float:
+    """
+    Negative log posterior (loss for MAP estimation).
+    
+    Combines likelihood (Eq. 17) and prior (Eq. 15-16).
+    
+    Args:
+        weights: Weight tensor W
+        trial_data: Trial data
+        key: JAX random key
+        config: Model configuration
+        
+    Returns:
+        Negative log posterior (to minimize)
+    """
+    log_lik = compute_log_likelihood(weights, trial_data, key, config)
+    log_p = log_prior(weights, config)
+    
+    return -(log_lik + log_p)
+
+
+# =============================================================================
+# Model Initialization
+# =============================================================================
+
+def init_params(key: jr.PRNGKey, config: WPPMConfig, init_scale: float = 0.1) -> WPPMParams:
+    """
+    Initialize model parameters.
+    
+    Args:
+        key: JAX random key
+        config: Model configuration
+        init_scale: Scale for weight initialization
+        
+    Returns:
+        Initialized WPPMParams
+    """
+    shape = (config.n_basis, config.n_basis, 2, 3)
+    weights = jr.normal(key, shape) * init_scale
+    return WPPMParams(weights=weights)
+
+
+# =============================================================================
+# Training Loop
+# =============================================================================
+
+def fit_wppm(
+    trial_data: TrialData,
+    config: WPPMConfig = WPPMConfig(),
+    n_iterations: int = 1000,
+    learning_rate: float = 1e-3,
+    key: jr.PRNGKey = jr.PRNGKey(42),
+    verbose: bool = True,
+    print_every: int = 100
+) -> tuple[WPPMParams, list]:
+    """
+    Fit WPPM model to trial data using MAP estimation.
+    
+    Args:
+        trial_data: Trial data with coordinates and responses
+        config: Model configuration
+        n_iterations: Number of optimization iterations
+        learning_rate: Learning rate for Adam
+        key: JAX random key
+        verbose: Whether to print progress
+        print_every: Print frequency
+        
+    Returns:
+        Tuple of (fitted parameters, loss history)
+    """
+    if verbose:
+        print(f"Fitting WPPM to {trial_data.responses.shape[0]} trials...")
+        print(f"Config: n_basis={config.n_basis}, n_mc={config.n_mc_samples}, bandwidth={config.bandwidth}")
+    
+    # Initialize
+    key, init_key = jr.split(key)
+    params = init_params(init_key, config)
+    
+    # Setup optimizer
+    optimizer = optax.adam(learning_rate)
+    opt_state = optimizer.init(params.weights)
+    
+    # Loss and gradient function
+    @jax.value_and_grad
+    def loss_and_grad(weights, key):
+        return loss_fn(weights, trial_data, key, config)
+    
+    loss_history = []
+    
+    for i in range(n_iterations):
+        key, subkey = jr.split(key)
+        
+        loss, grads = loss_and_grad(params.weights, subkey)
+        updates, opt_state = optimizer.update(grads, opt_state, params.weights)
+        new_weights = optax.apply_updates(params.weights, updates)
+        params = WPPMParams(weights=new_weights)
+        
+        loss_history.append(float(loss))
+        
+        if verbose and (i + 1) % print_every == 0:
+            print(f"  Step {i+1}/{n_iterations}, Loss: {loss:.4f}")
+    
+    if verbose:
+        print(f"Optimization complete. Final loss: {loss_history[-1]:.4f}")
+    
+    return params, loss_history
+
+
+# =============================================================================
+# Evaluation Functions
+# =============================================================================
+
+def predict_percent_correct(
+    params: WPPMParams,
+    ref_coords: jnp.ndarray,
+    comp_coords: jnp.ndarray,
+    config: WPPMConfig,
+    key: jr.PRNGKey = jr.PRNGKey(0)
+) -> float:
+    """
+    Predict percent correct for a stimulus pair.
+    
+    Args:
+        params: Fitted model parameters
+        ref_coords: Reference stimulus coordinates
+        comp_coords: Comparison stimulus coordinates
+        config: Model configuration
+        key: JAX random key
+        
+    Returns:
+        Predicted percent correct
+    """
+    return simulate_3afc_trial(
+        key, ref_coords, comp_coords, params.weights,
+        config.n_basis, config.n_mc_samples, config.bandwidth
+    )
+
+
+def get_covariance_at(params: WPPMParams, coords: jnp.ndarray, config: WPPMConfig) -> jnp.ndarray:
+    """
+    Get covariance matrix at a specific location.
+    
+    Args:
+        params: Model parameters
+        coords: Spatial coordinates [2]
+        config: Model configuration
+        
+    Returns:
+        2×2 covariance matrix
+    """
+    return compute_covariance(coords, params.weights, config.n_basis)
+
+
+def predict_threshold(
+    params: WPPMParams,
+    center_coords: jnp.ndarray,
+    direction: jnp.ndarray,
+    config: WPPMConfig,
+    target_accuracy: float = 0.75,
+    key: jr.PRNGKey = jr.PRNGKey(0),
+    n_search_points: int = 50,
+    max_delta: float = 0.5
+) -> float:
+    """
+    Find discrimination threshold along a direction.
+    
+    Args:
+        params: Fitted model parameters
+        center_coords: Center point in stimulus space
+        direction: Direction vector for threshold search
+        config: Model configuration
+        target_accuracy: Target percent correct (default 75%)
+        key: JAX random key
+        n_search_points: Points to evaluate
+        max_delta: Maximum distance to search
+        
+    Returns:
+        Threshold distance for target accuracy
+    """
+    # Normalize direction
+    direction = direction / jnp.linalg.norm(direction)
+    
+    # Search along direction
+    deltas = jnp.linspace(0.01, max_delta, n_search_points)
+    keys = jr.split(key, n_search_points)
+    
+    def eval_delta(key, delta):
+        comp = center_coords + delta * direction
+        return simulate_3afc_trial(
+            key, center_coords, comp, params.weights,
+            config.n_basis, config.n_mc_samples, config.bandwidth
+        )
+    
+    accuracies = vmap(eval_delta)(keys, deltas)
+    
+    # Find threshold via interpolation
+    above_target = accuracies >= target_accuracy
+    idx = jnp.argmax(above_target)
+    
+    if idx == 0:
+        return deltas[0]
+    
+    # Linear interpolation
+    acc_low = accuracies[idx - 1]
+    acc_high = accuracies[idx]
+    delta_low = deltas[idx - 1]
+    delta_high = deltas[idx]
+    
+    t = (target_accuracy - acc_low) / (acc_high - acc_low + 1e-8)
+    threshold = delta_low + t * (delta_high - delta_low)
+    
+    return threshold
+
+
+# =============================================================================
+# Synthetic Data Generation
+# =============================================================================
+
+def create_synthetic_data(
+    n_trials: int = 500,
+    key: jr.PRNGKey = jr.PRNGKey(123)
+) -> TrialData:
+    """
+    Create synthetic trial data for testing.
+    
+    Args:
+        n_trials: Number of trials
+        key: JAX random key
+        
+    Returns:
+        TrialData with synthetic trials
+    """
+    key1, key2, key3, key4 = jr.split(key, 4)
+    
+    # Random reference points in [-0.8, 0.8]²
+    ref_coords = jr.uniform(key1, (n_trials, 2), minval=-0.8, maxval=0.8)
+    
+    # Random comparison offsets
+    angles = jr.uniform(key2, (n_trials,)) * 2 * jnp.pi
+    deltas = jr.uniform(key3, (n_trials,)) * 0.2 + 0.05
+    offsets = jnp.stack([jnp.cos(angles), jnp.sin(angles)], axis=1) * deltas[:, None]
+    comp_coords = ref_coords + offsets
+    
+    # Synthetic responses (higher accuracy for larger deltas)
+    base_accuracy = 0.5 + deltas * 2
+    base_accuracy = jnp.clip(base_accuracy, 0.5, 0.95)
+    responses = (jr.uniform(key4, (n_trials,)) < base_accuracy).astype(jnp.int32)
+    
+    return TrialData(
+        reference_coords=ref_coords,
+        comparison_coords=comp_coords,
+        responses=responses
+    )
+
+
+# =============================================================================
+# Main Demo
+# =============================================================================
 
 if __name__ == "__main__":
-    import argparse
-
-    parser = argparse.ArgumentParser(description="Fit WPPM to trial data")
-    parser.add_argument("--data", required=True, help="Path to trial data CSV")
-    parser.add_argument("--output", help="Path to save fitted model")
-    parser.add_argument("--n_basis_per_dim", type=int, default=5, help="Number of basis functions per dimension")
-    parser.add_argument("--iterations", type=int, default=1000, help="Number of SGD iterations")
-    parser.add_argument("--learning_rate", type=float, default=1e-4, help="Learning rate for SGD")
-
-    args = parser.parse_args()
-
-    fit_wppm_to_data(args.data, args.output, args.n_basis_per_dim, args.iterations, args.learning_rate)
+    print("=" * 60)
+    print("WPPM Pure JAX Implementation - Demo")
+    print("=" * 60)
+    
+    # Create synthetic data
+    print("\nCreating synthetic trial data...")
+    trial_data = create_synthetic_data(n_trials=100)
+    print(f"  Generated {trial_data.responses.shape[0]} trials")
+    print(f"  Accuracy: {trial_data.responses.mean():.1%}")
+    
+    # Configure model
+    config = WPPMConfig(
+        n_basis=4,
+        n_mc_samples=300,
+        bandwidth=1.0,
+        gamma=3e-4,
+        epsilon=0.5
+    )
+    
+    # Fit model
+    print("\nFitting WPPM...")
+    params, losses = fit_wppm(
+        trial_data,
+        config=config,
+        n_iterations=50,
+        learning_rate=1e-2,
+        verbose=True,
+        print_every=10
+    )
+    
+    # Evaluate
+    print("\nEvaluating fitted model...")
+    test_point = jnp.array([0.0, 0.0])
+    cov = get_covariance_at(params, test_point, config)
+    print(f"  Covariance at origin:\n{cov}")
+    
+    # Threshold
+    threshold = predict_threshold(
+        params,
+        center_coords=test_point,
+        direction=jnp.array([1.0, 0.0]),
+        config=config,
+        target_accuracy=0.75
+    )
+    print(f"  75% threshold along x-axis: {threshold:.4f}")
+    
+    print("\n" + "=" * 60)
+    print("Demo complete!")

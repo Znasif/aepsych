@@ -829,3 +829,239 @@
 [0;37m2025-11-04 15:49:02,360 [INFO   ] Fitting done, took 0.14522027969360352[0m
 [0;37m2025-11-04 15:49:02,385 [INFO   ] Received msg [tell][0m
 [0;37m2025-11-04 15:49:03,465 [INFO   ] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0m
+[33;20m2025-11-07 16:21:27,190 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[0;37m2025-11-07 16:21:27,191 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-11-07 16:21:27,296 [INFO   ] Received msg [setup][0m
+[33;20m2025-11-07 16:21:27,297 [WARNING] Parameter-specific bounds are incomplete, falling back to ub/lb in [common][0m
+[33;20m2025-11-07 16:21:27,801 [WARNING] Strategy 'init_strat' has refit_every < min_asks even though its generator does not require a model. Consider making refit_every = min_asks to speed up point generation.[0m
+[0;37m2025-11-07 16:21:27,860 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-07 16:21:27,896 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-07 16:21:28,006 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-07 16:21:28,007 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-07 16:21:28,296 [INFO   ] Fitting done, took 0.288698673248291[0m
+[0;37m2025-11-07 16:21:28,321 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-07 16:21:28,409 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-07 16:21:28,410 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-07 16:21:28,582 [INFO   ] Fitting done, took 0.17230939865112305[0m
+[0;37m2025-11-07 16:21:35,125 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-07 16:21:35,219 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-07 16:21:35,219 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-07 16:21:35,301 [INFO   ] Fitting done, took 0.08133983612060547[0m
+[0;37m2025-11-07 16:21:35,326 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-07 16:21:35,418 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-07 16:21:35,418 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-07 16:21:35,509 [INFO   ] Fitting done, took 0.09049201011657715[0m
+[0;37m2025-11-07 16:21:35,531 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-07 16:21:35,621 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-07 16:21:35,621 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-07 16:21:35,714 [INFO   ] Fitting done, took 0.09251642227172852[0m
+[0;37m2025-11-07 16:21:42,278 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-07 16:21:42,371 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-07 16:21:42,372 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-07 16:21:42,551 [INFO   ] Fitting done, took 0.1792161464691162[0m
+[0;37m2025-11-07 16:21:42,572 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-07 16:21:42,661 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-07 16:21:42,662 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-07 16:21:42,827 [INFO   ] Fitting done, took 0.16526460647583008[0m
+[0;37m2025-11-07 16:21:42,850 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-07 16:21:42,944 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-07 16:21:42,944 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-07 16:21:43,058 [INFO   ] Fitting done, took 0.1132044792175293[0m
+[0;37m2025-11-07 16:21:49,640 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-07 16:21:49,733 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-07 16:21:49,734 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-07 16:21:50,076 [INFO   ] Fitting done, took 0.34226298332214355[0m
+[0;37m2025-11-07 16:21:50,099 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-07 16:21:50,202 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-07 16:21:50,202 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-07 16:21:50,414 [INFO   ] Fitting done, took 0.21137380599975586[0m
+[0;37m2025-11-07 16:21:50,436 [INFO   ] Received msg [tell][0m
+[0;37m2025-11-07 16:21:50,531 [INFO   ] Received msg [ask][0m
+[0;37m2025-11-07 16:21:50,532 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-11-07 16:21:50,752 [INFO   ] Fitting done, took 0.2206733226776123[0m
+[0;37m2025-12-02 19:12:28,915 [INFO   ] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0m
+[0;37m2025-12-02 19:12:29,964 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-02 19:12:30,093 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-02 19:12:30,674 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:30,693 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:30,831 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:30,857 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:30,998 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:31,019 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:31,172 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:31,193 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:31,330 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:31,352 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:31,492 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:31,514 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:31,686 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:31,708 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:31,847 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:31,867 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,013 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,033 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,172 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,193 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,349 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,372 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,508 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,531 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,664 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,684 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,817 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,837 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,963 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,983 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:33,108 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:33,126 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:33,253 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:33,273 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,687 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,706 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:31,856 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:31,873 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,006 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,027 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,180 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,203 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,340 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,360 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,520 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,539 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,670 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,694 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,846 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:32,866 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:32,994 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:33,013 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:33,154 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:33,174 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:33,310 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:33,330 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:33,461 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:33,481 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:33,607 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:33,626 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:33,758 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:33,782 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:33,926 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:33,944 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:34,075 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:34,094 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:34,220 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:34,239 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:34,364 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:34,384 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:34,534 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:34,553 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:34,684 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:34,704 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:34,833 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:34,854 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:34,995 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:35,015 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:35,157 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:35,177 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:35,330 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:35,350 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:35,484 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:35,503 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:35,629 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:35,648 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:35,771 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:35,789 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:35,918 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:35,937 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:36,068 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:36,086 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:36,221 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:36,246 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:36,376 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:36,394 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:36,517 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:36,536 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:12:36,665 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:12:36,685 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:08,078 [INFO   ] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0m
+[0;37m2025-12-02 19:15:08,779 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-02 19:15:08,894 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-02 19:15:09,258 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:09,284 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:09,421 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:09,441 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:09,627 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:09,661 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:09,815 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:09,836 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:09,978 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:10,000 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:10,142 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:10,164 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:10,315 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:10,336 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:10,474 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:10,493 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:10,629 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:10,651 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:10,783 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:10,805 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:10,937 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:10,957 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:11,088 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:11,109 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:11,242 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:11,262 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:11,408 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:11,428 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:11,569 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:11,593 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:15:11,741 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:15:11,763 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:18:06,730 [INFO   ] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0m
+[0;37m2025-12-02 19:18:07,446 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-02 19:18:07,575 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-02 19:18:08,670 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:18:12,250 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:18:12,412 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:18:17,713 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:18:17,848 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:18:23,093 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:18:23,229 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:18:28,545 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:18:28,680 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:18:33,931 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:18:34,075 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:48:54,069 [INFO   ] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0m
+[0;37m2025-12-02 19:48:55,197 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-02 19:48:55,325 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-02 19:48:56,433 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:48:59,073 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:48:59,225 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:02,172 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:02,310 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:05,255 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:05,391 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:07,790 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:07,922 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:10,408 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:10,545 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:12,987 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:13,135 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:15,443 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:15,578 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:18,049 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:18,191 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:18,812 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:18,947 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:21,372 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:21,512 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:23,868 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:24,009 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:26,355 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:26,498 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:28,789 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:28,930 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:31,365 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:31,502 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-02 19:49:33,939 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-02 19:49:34,079 [INFO   ] Received msg [ask][0m

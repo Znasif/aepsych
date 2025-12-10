@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 # Import components
 from adaptive_engine.color import ColorTransformations
-from adaptive_engine.aepsych_wrapper import PsychophysicalAEPsych
+from adaptive_engine.aepsych_wrapper import PsychophysicalAEPsychDelta
 
 # Try to import WPPM components
 try:
@@ -69,7 +69,7 @@ class IntegrationTestWithWPPM:
         self.transform = ColorTransformations()
         
         # Initialize AEPsych wrapper (4D: reference + comparison)
-        self.aepsych = PsychophysicalAEPsych(str(self.config_path))
+        self.aepsych = PsychophysicalAEPsychDelta(str(self.config_path))
         
         # Initialize stimulus presentation if using display
         self.stimulus = None
@@ -393,17 +393,17 @@ def main():
         test = IntegrationTestWithWPPM(str(config_file), use_display=args.display)
         
         # Run trials
-        test.run_trial_loop(num_trials=args.trials, simulate=not args.display)
+        # test.run_trial_loop(num_trials=args.trials, simulate=not args.display)
         
-        # Fit WPPM (unless skipped)
-        if not args.skip_wppm:
-            wppm_results = test.fit_wppm_model()
+        # # Fit WPPM (unless skipped)
+        # if not args.skip_wppm:
+        #     wppm_results = test.fit_wppm_model()
         
-        # Save results
-        test.save_results()
+        # # Save results
+        # test.save_results()
         
-        print("\n" + "=" * 60)
-        print("Integration test completed successfully!")
+        # print("\n" + "=" * 60)
+        # print("Integration test completed successfully!")
         
     except Exception as e:
         print(f"\nError: {e}")

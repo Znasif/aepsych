@@ -387,7 +387,7 @@ namespace AEPsych
             // Initialize strat if we haven't yet
             if (strat.stratId == -1)
             {
-                yield return StartCoroutine(strat.InitStrat(client, configPath: configPath, true));
+                yield return StartCoroutine(strat.InitStrat(client, configPath: configPath, !configGenerator.isAutomatic));
             }
 
             // Don't increment trial for initial double ask
@@ -504,6 +504,8 @@ namespace AEPsych
                     }
                     else
                     {
+                        Debug.Log("ConnectAnd config false");
+
                         yield return StartCoroutine(strategy.InitStrat(client, configPath: configPath, false));
                     }
                 }

@@ -28,7 +28,7 @@ try:
     import jax.numpy as jnp
     from adaptive_engine.wppm_fitter import (
         fit_wppm, WPPMConfig, TrialData, 
-        get_covariance_at, predict_threshold
+        get_covariance_at, predict_threshold, save_wppm
     )
     WPPM_AVAILABLE = True
 except ImportError as e:
@@ -393,17 +393,24 @@ def main():
         test = IntegrationTestWithWPPM(str(config_file), use_display=args.display)
         
         # Run trials
-        # test.run_trial_loop(num_trials=args.trials, simulate=not args.display)
+        test.run_trial_loop(num_trials=args.trials, simulate=not args.display)
         
         # # Fit WPPM (unless skipped)
-        # if not args.skip_wppm:
-        #     wppm_results = test.fit_wppm_model()
+        if not args.skip_wppm:
+            wppm_results = test.fit_wppm_model()
+            save_wppm(
+                "wppm_fitted.npz",
+                wppm_results['params'],
+                wppm_results['config'],
+                losses=wppm_results['losses'],
+                metadata={'n_trials': len(test.trial_results), 'demo': True}
+            )
         
         # # Save results
-        # test.save_results()
+        test.save_results()
         
-        # print("\n" + "=" * 60)
-        # print("Integration test completed successfully!")
+        print("\n" + "=" * 60)
+        print("Integration test completed successfully!")
         
     except Exception as e:
         print(f"\nError: {e}")

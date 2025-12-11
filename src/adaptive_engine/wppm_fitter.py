@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
 """
-Wishart Process Psychophysical Model (WPPM) - Improved Implementation
+Wishart Process Psychophysical Model (WPPM) - Pure JAX Implementation
 
 This module implements the semi-parametric Bayesian model for fitting
 color discrimination data, based on Hong et al. (2025) bioRxiv.
 
-Key improvements over naive implementation:
-1. Fully vectorized using JAX vmap/scan
-2. Chebyshev polynomials computed efficiently with recurrence
-3. Observer model with vectorized Monte Carlo
-4. Clean functional design with proper typing
-5. Compatible with modern JAX patterns
+No equinox dependency - uses pure JAX + optax for maximum compatibility.
 """
 
 from __future__ import annotations
@@ -49,6 +44,145 @@ class WPPMConfig(NamedTuple):
 class WPPMParams(NamedTuple):
     """Model parameters (just the weight matrix W)."""
     weights: jnp.ndarray  # Shape: [n_basis, n_basis, 2, 3]
+
+
+# =============================================================================
+# Save/Load Functionality
+# =============================================================================
+
+def save_wppm(
+    filepath: str,
+    params: WPPMParams,
+    config: WPPMConfig,
+    losses: jnp.ndarray = None,
+    metadata: Dict[str, Any] = None
+) -> None:
+    """
+    Save fitted WPPM parameters to disk.
+    
+    Args:
+        filepath: Path to save file (.npz or .json)
+        params: Fitted WPPMParams
+        config: WPPMConfig used for fitting
+        losses: Optional loss history from training
+        metadata: Optional additional metadata (e.g., trial count, date)
+    """
+    import numpy as np
+    
+    if filepath.endswith('.npz'):
+        # NumPy compressed format (recommended for large weights)
+        save_dict = {
+            'weights': np.array(params.weights),
+            'n_basis': config.n_basis,
+            'gamma': config.gamma,
+            'epsilon': config.epsilon,
+            'n_mc_samples': config.n_mc_samples,
+            'coord_range_min': config.coord_range[0],
+            'coord_range_max': config.coord_range[1],
+            'bandwidth': config.bandwidth,
+        }
+        if losses is not None:
+            save_dict['losses'] = np.array(losses)
+        if metadata is not None:
+            for k, v in metadata.items():
+                save_dict[f'meta_{k}'] = v
+        np.savez_compressed(filepath, **save_dict)
+        
+    elif filepath.endswith('.json'):
+        # JSON format (human-readable, portable)
+        import json
+        save_dict = {
+            'params': {
+                'weights': np.array(params.weights).tolist(),
+                'shape': list(params.weights.shape),
+            },
+            'config': {
+                'n_basis': config.n_basis,
+                'gamma': config.gamma,
+                'epsilon': config.epsilon,
+                'n_mc_samples': config.n_mc_samples,
+                'coord_range': list(config.coord_range),
+                'bandwidth': config.bandwidth,
+            },
+        }
+        if losses is not None:
+            save_dict['losses'] = np.array(losses).tolist()
+        if metadata is not None:
+            save_dict['metadata'] = metadata
+        with open(filepath, 'w') as f:
+            json.dump(save_dict, f, indent=2)
+    else:
+        raise ValueError(f"Unsupported file format: {filepath}. Use .npz or .json")
+    
+    print(f"Saved WPPM model to {filepath}")
+    print(f"  - Weights shape: {params.weights.shape} ({params.weights.size} parameters)")
+
+
+def load_wppm(filepath: str) -> tuple:
+    """
+    Load fitted WPPM parameters from disk.
+    
+    Args:
+        filepath: Path to saved file (.npz or .json)
+        
+    Returns:
+        Tuple of (WPPMParams, WPPMConfig, losses, metadata)
+        losses and metadata may be None if not saved
+    """
+    import numpy as np
+    
+    if filepath.endswith('.npz'):
+        data = np.load(filepath, allow_pickle=True)
+        
+        weights = jnp.array(data['weights'])
+        params = WPPMParams(weights=weights)
+        
+        config = WPPMConfig(
+            n_basis=int(data['n_basis']),
+            gamma=float(data['gamma']),
+            epsilon=float(data['epsilon']),
+            n_mc_samples=int(data['n_mc_samples']),
+            coord_range=(float(data['coord_range_min']), float(data['coord_range_max'])),
+            bandwidth=float(data['bandwidth']),
+        )
+        
+        losses = jnp.array(data['losses']) if 'losses' in data else None
+        
+        # Extract metadata
+        metadata = {}
+        for key in data.files:
+            if key.startswith('meta_'):
+                metadata[key[5:]] = data[key].item() if data[key].ndim == 0 else data[key]
+        metadata = metadata if metadata else None
+        
+    elif filepath.endswith('.json'):
+        import json
+        with open(filepath, 'r') as f:
+            data = json.load(f)
+        
+        weights = jnp.array(data['params']['weights'])
+        params = WPPMParams(weights=weights)
+        
+        cfg = data['config']
+        config = WPPMConfig(
+            n_basis=cfg['n_basis'],
+            gamma=cfg['gamma'],
+            epsilon=cfg['epsilon'],
+            n_mc_samples=cfg['n_mc_samples'],
+            coord_range=tuple(cfg['coord_range']),
+            bandwidth=cfg['bandwidth'],
+        )
+        
+        losses = jnp.array(data['losses']) if 'losses' in data else None
+        metadata = data.get('metadata', None)
+        
+    else:
+        raise ValueError(f"Unsupported file format: {filepath}. Use .npz or .json")
+    
+    print(f"Loaded WPPM model from {filepath}")
+    print(f"  - Weights shape: {params.weights.shape} ({params.weights.size} parameters)")
+    
+    return params, config, losses, metadata
 
 
 # =============================================================================
@@ -618,6 +752,15 @@ if __name__ == "__main__":
         learning_rate=1e-2,
         verbose=True,
         print_every=10
+    )
+    
+    # Save fitted model
+    save_wppm(
+        "wppm_fitted.npz",
+        params,
+        config,
+        losses=losses,
+        metadata={'n_trials': len(trial_data.responses), 'demo': True}
     )
     
     # Evaluate

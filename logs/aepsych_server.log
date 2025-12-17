@@ -4617,3 +4617,532 @@ KeyboardInterrupt
 [0;37m2025-12-10 22:02:01,918 [INFO   ] Received msg [tell][0m
 [0;37m2025-12-10 22:02:02,042 [INFO   ] Received msg [ask][0m
 [0;37m2025-12-10 22:02:04,622 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:15:21,628 [INFO   ] Saving logs to path: logs[0m
+[0;37m2025-12-11 10:15:21,628 [INFO   ] Starting the AEPsychServer[0m
+[0;37m2025-12-11 10:15:21,629 [INFO   ] AEPsych Version: 0.8.0+dev[0m
+[0;37m2025-12-11 10:15:21,630 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-11 10:15:21,757 [INFO   ] Server up, waiting for connections![0m
+[0;37m2025-12-11 10:15:21,757 [INFO   ] Ctrl-C to quit![0m
+[0;37m2025-12-11 10:15:21,758 [INFO   ] Waiting for connection...[0m
+[0;37m2025-12-11 10:27:34,899 [INFO   ] Connected by ('::ffff:127.0.0.1', 42288, 0, 0), waiting for messages...[0m
+[0;30m2025-12-11 10:27:34,970 [DEBUG  ] receive : result = b'{"version":"0.01","message":{"config_str":"[common]\\r\\nparnames = [x0_dim1, x0_dim2, delta_dim1, delta_dim2]\\r\\nstimuli_per_trial = 1\\r\\noutcome_types = [binary]\\r\\ntarget = 0.667\\r\\nstrategy_names = [init_strat, opt_strat]\\r\\n\\r\\n[x0_dim1]\\r\\npar_type = continuous\\r\\nlower_bound = -0.7\\r\\nupper_bound = 0.7\\r\\n\\r\\n[x0_dim2]\\r\\npar_type = continuous\\r\\nlower_bound = -0.7\\r\\nupper_bound = 0.7\\r\\n\\r\\n[delta_dim1]\\r\\npar_type = continuous\\r\\nlower_bound = -0.3\\r\\nupper_bound = 0.3\\r\\n\\r\\n[delta_dim2]\\r\\npar_type = continuous\\r\\nlower_bound = -0.3\\r\\nupper_bound = 0.3\\r\\n\\r\\n[init_strat]\\r\\nmin_asks = 900\\r\\ngenerator = SobolGenerator\\r\\n\\r\\n[opt_strat]\\r\\nmin_asks = 5100\\r\\nrefit_every = 20\\r\\ngenerator = OptimizeAcqfGenerator\\r\\nmodel = GPClassificationModel\\r\\n\\r\\n[GPClassificationModel]\\r\\ninducing_size = 100\\r\\nmean_covar_factory = default_mean_covar_factory\\r\\n\\r\\n[OptimizeAcqfGenerator]\\r\\nrestarts = 10\\r\\nsamps = 1000\\r\\nacqf = MCLevelSetEstimation\\r\\n\\r\\n[MCLevelSetEstimation]\\r\\nbeta = 3.84\\r\\nobjective = ProbitObjective\\r\\ntarget = 0.667"},"type":"setup","extra_info":null}'[0m
+[0;37m2025-12-11 10:27:34,976 [INFO   ] Got: {'version': '0.01', 'message': {'config_str': '[common]\r\nparnames = [x0_dim1, x0_dim2, delta_dim1, delta_dim2]\r\nstimuli_per_trial = 1\r\noutcome_types = [binary]\r\ntarget = 0.667\r\nstrategy_names = [init_strat, opt_strat]\r\n\r\n[x0_dim1]\r\npar_type = continuous\r\nlower_bound = -0.7\r\nupper_bound = 0.7\r\n\r\n[x0_dim2]\r\npar_type = continuous\r\nlower_bound = -0.7\r\nupper_bound = 0.7\r\n\r\n[delta_dim1]\r\npar_type = continuous\r\nlower_bound = -0.3\r\nupper_bound = 0.3\r\n\r\n[delta_dim2]\r\npar_type = continuous\r\nlower_bound = -0.3\r\nupper_bound = 0.3\r\n\r\n[init_strat]\r\nmin_asks = 900\r\ngenerator = SobolGenerator\r\n\r\n[opt_strat]\r\nmin_asks = 5100\r\nrefit_every = 20\r\ngenerator = OptimizeAcqfGenerator\r\nmodel = GPClassificationModel\r\n\r\n[GPClassificationModel]\r\ninducing_size = 100\r\nmean_covar_factory = default_mean_covar_factory\r\n\r\n[OptimizeAcqfGenerator]\r\nrestarts = 10\r\nsamps = 1000\r\nacqf = MCLevelSetEstimation\r\n\r\n[MCLevelSetEstimation]\r\nbeta = 3.84\r\nobjective = ProbitObjective\r\ntarget = 0.667'}, 'type': 'setup', 'extra_info': None}[0m
+[0;37m2025-12-11 10:27:34,987 [INFO   ] Received msg [setup][0m
+[0;30m2025-12-11 10:27:34,987 [DEBUG  ] got setup message![0m
+[0;30m2025-12-11 10:27:35,005 [DEBUG  ] record_setup = [<DBMasterTable(unique_id=None), experiment_name=None, experiment_description=None, experiment_id=8665945c-8ae2-4c7c-ac53-65998502d59b)>][0m
+[0;30m2025-12-11 10:27:35,006 [DEBUG  ] record_setup = [<DbReplayTable(unique_id=None), timestamp=2025-12-11 10:27:35.005835, message_type=setup, master_table_id=None)>][0m
+[0;37m2025-12-11 10:27:35,921 [INFO   ] Sending: {"strat_id": 0}[0m
+[0;30m2025-12-11 10:27:36,126 [DEBUG  ] receive : result = b'{"version":"0.01","message":{"config_str":"[common]\\r\\nparnames = [x0_dim1, x0_dim2, delta_dim1, delta_dim2]\\r\\nstimuli_per_trial = 1\\r\\noutcome_types = [binary]\\r\\ntarget = 0.667\\r\\nstrategy_names = [init_strat, opt_strat]\\r\\n\\r\\n[x0_dim1]\\r\\npar_type = continuous\\r\\nlower_bound = -0.7\\r\\nupper_bound = 0.7\\r\\n\\r\\n[x0_dim2]\\r\\npar_type = continuous\\r\\nlower_bound = -0.7\\r\\nupper_bound = 0.7\\r\\n\\r\\n[delta_dim1]\\r\\npar_type = continuous\\r\\nlower_bound = -0.3\\r\\nupper_bound = 0.3\\r\\n\\r\\n[delta_dim2]\\r\\npar_type = continuous\\r\\nlower_bound = -0.3\\r\\nupper_bound = 0.3\\r\\n\\r\\n[init_strat]\\r\\nmin_asks = 900\\r\\ngenerator = SobolGenerator\\r\\n\\r\\n[opt_strat]\\r\\nmin_asks = 5100\\r\\nrefit_every = 20\\r\\ngenerator = OptimizeAcqfGenerator\\r\\nmodel = GPClassificationModel\\r\\n\\r\\n[GPClassificationModel]\\r\\ninducing_size = 100\\r\\nmean_covar_factory = default_mean_covar_factory\\r\\n\\r\\n[OptimizeAcqfGenerator]\\r\\nrestarts = 10\\r\\nsamps = 1000\\r\\nacqf = MCLevelSetEstimation\\r\\n\\r\\n[MCLevelSetEstimation]\\r\\nbeta = 3.84\\r\\nobjective = ProbitObjective\\r\\ntarget = 0.667"},"type":"setup","extra_info":null}'[0m
+[0;37m2025-12-11 10:27:36,137 [INFO   ] Got: {'version': '0.01', 'message': {'config_str': '[common]\r\nparnames = [x0_dim1, x0_dim2, delta_dim1, delta_dim2]\r\nstimuli_per_trial = 1\r\noutcome_types = [binary]\r\ntarget = 0.667\r\nstrategy_names = [init_strat, opt_strat]\r\n\r\n[x0_dim1]\r\npar_type = continuous\r\nlower_bound = -0.7\r\nupper_bound = 0.7\r\n\r\n[x0_dim2]\r\npar_type = continuous\r\nlower_bound = -0.7\r\nupper_bound = 0.7\r\n\r\n[delta_dim1]\r\npar_type = continuous\r\nlower_bound = -0.3\r\nupper_bound = 0.3\r\n\r\n[delta_dim2]\r\npar_type = continuous\r\nlower_bound = -0.3\r\nupper_bound = 0.3\r\n\r\n[init_strat]\r\nmin_asks = 900\r\ngenerator = SobolGenerator\r\n\r\n[opt_strat]\r\nmin_asks = 5100\r\nrefit_every = 20\r\ngenerator = OptimizeAcqfGenerator\r\nmodel = GPClassificationModel\r\n\r\n[GPClassificationModel]\r\ninducing_size = 100\r\nmean_covar_factory = default_mean_covar_factory\r\n\r\n[OptimizeAcqfGenerator]\r\nrestarts = 10\r\nsamps = 1000\r\nacqf = MCLevelSetEstimation\r\n\r\n[MCLevelSetEstimation]\r\nbeta = 3.84\r\nobjective = ProbitObjective\r\ntarget = 0.667'}, 'type': 'setup', 'extra_info': None}[0m
+[0;37m2025-12-11 10:27:36,143 [INFO   ] Received msg [setup][0m
+[0;30m2025-12-11 10:27:36,143 [DEBUG  ] got setup message![0m
+[0;30m2025-12-11 10:27:36,155 [DEBUG  ] record_setup = [<DBMasterTable(unique_id=None), experiment_name=None, experiment_description=None, experiment_id=8665945c-8ae2-4c7c-ac53-65998502d59b)>][0m
+[0;30m2025-12-11 10:27:36,156 [DEBUG  ] record_setup = [<DbReplayTable(unique_id=None), timestamp=2025-12-11 10:27:36.156354, message_type=setup, master_table_id=None)>][0m
+[0;37m2025-12-11 10:27:36,274 [INFO   ] Sending: {"strat_id": 1}[0m
+[0;30m2025-12-11 10:27:36,483 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 10:27:36,495 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 10:27:36,506 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 10:27:36,506 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 10:27:36,538 [INFO   ] Sending: {"config": {"x0_dim1": [-0.3160369826480746], "x0_dim2": [-0.04900064691901207], "delta_dim1": [-0.1748193148523569], "delta_dim2": [0.10138502027839424]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 10:27:39,951 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[-0.31603698264807462],"x0_dim2":[-0.04900064691901207],"delta_dim1":[-0.17481931485235691],"delta_dim2":[0.10138502027839424]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":5.70432854,"participantID":""}}'[0m
+[0;37m2025-12-11 10:27:39,957 [INFO   ] Got: {'message': {'config': {'x0_dim1': [-0.3160369826480746], 'x0_dim2': [-0.04900064691901207], 'delta_dim1': [-0.1748193148523569], 'delta_dim2': [0.10138502027839424]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 5.70432854, 'participantID': ''}}[0m
+[0;37m2025-12-11 10:27:39,969 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 10:27:39,969 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 10:27:40,009 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 10:27:40,163 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 10:27:40,378 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 10:27:40,389 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 10:27:40,400 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 10:27:40,402 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 10:27:40,434 [INFO   ] Sending: {"config": {"x0_dim1": [0.6988255674019455], "x0_dim2": [0.34678042791783814], "delta_dim1": [0.06539160534739497], "delta_dim2": [-0.0008219003677368275]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 10:27:42,414 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[0.69882556740194546],"x0_dim2":[0.34678042791783814],"delta_dim1":[0.065391605347394965],"delta_dim2":[-0.00082190036773682751]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":1.00032043,"participantID":""}}'[0m
+[0;37m2025-12-11 10:27:42,425 [INFO   ] Got: {'message': {'config': {'x0_dim1': [0.6988255674019455], 'x0_dim2': [0.34678042791783814], 'delta_dim1': [0.06539160534739497], 'delta_dim2': [-0.0008219003677368275]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 1.00032043, 'participantID': ''}}[0m
+[0;37m2025-12-11 10:27:42,431 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 10:27:42,431 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 10:27:42,461 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 10:27:42,626 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 10:27:42,831 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 10:27:42,842 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 10:27:42,853 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 10:27:42,854 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 10:27:42,886 [INFO   ] Sending: {"config": {"x0_dim1": [0.02662622351199384], "x0_dim2": [-0.3867142681032419], "delta_dim1": [-0.06525574028491973], "delta_dim2": [0.26028323750942944]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 10:27:51,076 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[0.026626223511993841],"x0_dim2":[-0.38671426810324189],"delta_dim1":[-0.065255740284919733],"delta_dim2":[0.26028323750942944]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":7.348113,"participantID":""}}'[0m
+[0;37m2025-12-11 10:27:51,087 [INFO   ] Got: {'message': {'config': {'x0_dim1': [0.02662622351199384], 'x0_dim2': [-0.3867142681032419], 'delta_dim1': [-0.06525574028491973], 'delta_dim2': [0.26028323750942944]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 7.348113, 'participantID': ''}}[0m
+[0;37m2025-12-11 10:27:51,098 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 10:27:51,103 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 10:27:51,131 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 10:27:51,310 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 10:27:51,535 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 10:27:51,546 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 10:27:51,558 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 10:27:51,560 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 10:27:51,615 [INFO   ] Sending: {"config": {"x0_dim1": [-0.3656645944342017], "x0_dim2": [0.618869174271822], "delta_dim1": [0.17497348375618454], "delta_dim2": [-0.15957561358809472]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 10:27:53,206 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[-0.36566459443420168],"x0_dim2":[0.618869174271822],"delta_dim1":[0.17497348375618454],"delta_dim2":[-0.15957561358809472]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":0.625217438,"participantID":""}}'[0m
+[0;37m2025-12-11 10:27:53,218 [INFO   ] Got: {'message': {'config': {'x0_dim1': [-0.3656645944342017], 'x0_dim2': [0.618869174271822], 'delta_dim1': [0.17497348375618454], 'delta_dim2': [-0.15957561358809472]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 0.625217438, 'participantID': ''}}[0m
+[0;37m2025-12-11 10:27:53,229 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 10:27:53,230 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 10:27:53,264 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 10:27:53,481 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 10:27:53,630 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 10:27:53,642 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 10:27:53,648 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 10:27:53,649 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 10:27:53,700 [INFO   ] Sending: {"config": {"x0_dim1": [-0.6088499730452894], "x0_dim2": [-0.5959289418533444], "delta_dim1": [0.11557535324245694], "delta_dim2": [-0.2518724396824837]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 10:27:55,072 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[-0.60884997304528943],"x0_dim2":[-0.59592894185334444],"delta_dim1":[0.11557535324245694],"delta_dim2":[-0.25187243968248368]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":0.499755859,"participantID":""}}'[0m
+[0;37m2025-12-11 10:27:55,084 [INFO   ] Got: {'message': {'config': {'x0_dim1': [-0.6088499730452894], 'x0_dim2': [-0.5959289418533444], 'delta_dim1': [0.11557535324245694], 'delta_dim2': [-0.2518724396824837]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 0.499755859, 'participantID': ''}}[0m
+[0;37m2025-12-11 10:27:55,095 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 10:27:55,096 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 10:27:55,132 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 10:27:55,362 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 10:27:55,548 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 10:27:55,554 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 10:27:55,560 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 10:27:55,561 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 10:27:55,603 [INFO   ] Sending: {"config": {"x0_dim1": [0.22605611551553006], "x0_dim2": [0.4998094396665691], "delta_dim1": [-0.22558159623295068], "delta_dim2": [0.15101711209863422]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 10:27:56,920 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[0.22605611551553006],"x0_dim2":[0.4998094396665691],"delta_dim1":[-0.22558159623295068],"delta_dim2":[0.15101711209863422]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":0.4166565,"participantID":""}}'[0m
+[0;37m2025-12-11 10:27:56,926 [INFO   ] Got: {'message': {'config': {'x0_dim1': [0.22605611551553006], 'x0_dim2': [0.4998094396665691], 'delta_dim1': [-0.22558159623295068], 'delta_dim2': [0.15101711209863422]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 0.4166565, 'participantID': ''}}[0m
+[0;37m2025-12-11 10:27:56,938 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 10:27:56,939 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 10:27:57,004 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 10:27:57,208 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 10:27:57,367 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 10:27:57,378 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 10:27:57,389 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 10:27:57,390 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 10:27:57,426 [INFO   ] Sending: {"config": {"x0_dim1": [0.44983529541641465], "x0_dim2": [-0.18993550669401882], "delta_dim1": [0.22513439487665893], "delta_dim2": [-0.11069654300808907]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 10:27:58,899 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[0.44983529541641465],"x0_dim2":[-0.18993550669401882],"delta_dim1":[0.22513439487665893],"delta_dim2":[-0.11069654300808907]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":0.583480835,"participantID":""}}'[0m
+[0;37m2025-12-11 10:27:58,905 [INFO   ] Got: {'message': {'config': {'x0_dim1': [0.44983529541641465], 'x0_dim2': [-0.18993550669401882], 'delta_dim1': [0.22513439487665893], 'delta_dim2': [-0.11069654300808907]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 0.583480835, 'participantID': ''}}[0m
+[0;37m2025-12-11 10:27:58,917 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 10:27:58,918 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 10:27:58,950 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 10:27:59,148 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 10:27:59,337 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 10:27:59,348 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 10:27:59,360 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 10:27:59,360 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 10:27:59,404 [INFO   ] Sending: {"config": {"x0_dim1": [-0.11079155784100292], "x0_dim2": [0.11569062899798155], "delta_dim1": [-0.11600426863878965], "delta_dim2": [0.009697328321635723]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 10:28:01,959 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[-0.11079155784100292],"x0_dim2":[0.11569062899798155],"delta_dim1":[-0.11600426863878965],"delta_dim2":[0.0096973283216357231]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":1.57025909,"participantID":""}}'[0m
+[0;37m2025-12-11 10:28:01,970 [INFO   ] Got: {'message': {'config': {'x0_dim1': [-0.11079155784100292], 'x0_dim2': [0.11569062899798155], 'delta_dim1': [-0.11600426863878965], 'delta_dim2': [0.009697328321635723]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 1.57025909, 'participantID': ''}}[0m
+[0;37m2025-12-11 10:28:01,982 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 10:28:01,982 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 10:28:02,010 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 10:28:02,172 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 10:28:02,413 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 10:28:02,424 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 10:28:02,435 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 10:28:02,435 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 10:28:02,464 [INFO   ] Sending: {"config": {"x0_dim1": [-0.063766873255372], "x0_dim2": [-0.4466669151559472], "delta_dim1": [0.29159567747265097], "delta_dim2": [0.19390405733138322]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 10:28:07,759 [DEBUG  ] receive : result = b'{"message":"","type":"exit","extra_info":null}'[0m
+[0;37m2025-12-11 10:28:07,771 [INFO   ] Got: {'message': '', 'type': 'exit', 'extra_info': None}[0m
+[0;37m2025-12-11 10:28:07,781 [INFO   ] Received msg [exit][0m
+[0;37m2025-12-11 10:28:07,782 [INFO   ] got termination message![0m
+[0;37m2025-12-11 10:28:07,783 [INFO   ] Dumping strats to DB due to Normal termination.[0m
+[0;37m2025-12-11 10:28:07,886 [INFO   ] Sending: {"termination_type": "Terminate", "success": true}[0m
+[31;20m2025-12-11 10:28:07,888 [ERROR  ] Got Ctrl+C, exiting![0m
+Traceback (most recent call last):
+  File "/mnt/d/Projects/aepsych/./aepsych/server/server.py", line 514, in start_server
+    startServerAndRun(
+  File "/mnt/d/Projects/aepsych/./aepsych/server/server.py", line 407, in startServerAndRun
+    server.serve()
+  File "/mnt/d/Projects/aepsych/./aepsych/server/server.py", line 166, in serve
+    sys.exit(0)
+SystemExit: 0
+[0;37m2025-12-11 10:29:09,567 [INFO   ] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0m
+[0;37m2025-12-11 10:29:10,743 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-11 10:29:10,886 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-11 10:29:11,839 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:15,045 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:15,204 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:18,096 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:18,250 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:20,655 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:20,802 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:23,311 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:23,451 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:25,882 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:26,033 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:28,450 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:28,579 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:30,878 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:31,028 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:33,645 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:33,789 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:36,208 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:36,342 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:38,766 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:38,903 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:41,866 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:42,010 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:44,405 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:44,540 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:47,593 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:47,726 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:50,511 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:50,655 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:53,149 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:53,295 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:55,718 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:55,915 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:29:58,624 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:29:58,808 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:01,165 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:01,376 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:03,910 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:04,148 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:06,763 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:07,035 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:09,458 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:09,713 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:13,725 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:13,916 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:16,913 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:17,067 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:19,651 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:19,800 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:22,220 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:22,357 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:24,832 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:24,974 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:28,503 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:28,665 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:31,338 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:31,487 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:33,856 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:34,023 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:36,553 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:36,689 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:39,562 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:39,697 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:43,181 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:43,330 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:46,367 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:46,512 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:48,949 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:49,088 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:51,621 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:51,799 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:54,105 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:54,254 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:56,562 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:56,709 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:30:59,850 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:30:59,982 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:31:02,324 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:31:02,517 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:31:05,290 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:31:05,501 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:31:07,919 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:31:08,147 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:31:10,458 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:31:10,668 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:31:13,041 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:31:13,252 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:31:15,803 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:31:16,023 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:31:18,407 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:31:18,625 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:31:21,326 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:31:21,496 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:31:23,918 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:31:24,096 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:31:26,441 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:31:26,607 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:31:29,099 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 10:31:29,245 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 10:31:32,428 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-11 12:24:43,264 [INFO   ] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0m
+[0;37m2025-12-11 12:24:44,126 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-11 12:24:44,242 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-11 12:24:45,083 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-11 12:25:10,287 [INFO   ] Saving logs to path: logs[0m
+[0;37m2025-12-11 12:25:10,288 [INFO   ] Starting the AEPsychServer[0m
+[0;37m2025-12-11 12:25:10,288 [INFO   ] AEPsych Version: 0.8.0+dev[0m
+[0;37m2025-12-11 12:25:10,290 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-11 12:25:10,395 [INFO   ] Server up, waiting for connections![0m
+[0;37m2025-12-11 12:25:10,396 [INFO   ] Ctrl-C to quit![0m
+[0;37m2025-12-11 12:25:10,396 [INFO   ] Waiting for connection...[0m
+[0;37m2025-12-11 12:25:25,348 [INFO   ] Connected by ('::ffff:127.0.0.1', 60746, 0, 0), waiting for messages...[0m
+[0;30m2025-12-11 12:25:25,423 [DEBUG  ] receive : result = b'{"version":"0.01","message":{"config_str":"[common]\\r\\nparnames = [x0_dim1, x0_dim2, delta_dim1, delta_dim2]\\r\\nstimuli_per_trial = 1\\r\\noutcome_types = [binary]\\r\\ntarget = 0.667\\r\\nstrategy_names = [init_strat, opt_strat]\\r\\n\\r\\n[x0_dim1]\\r\\npar_type = continuous\\r\\nlower_bound = -0.7\\r\\nupper_bound = 0.7\\r\\n\\r\\n[x0_dim2]\\r\\npar_type = continuous\\r\\nlower_bound = -0.7\\r\\nupper_bound = 0.7\\r\\n\\r\\n[delta_dim1]\\r\\npar_type = continuous\\r\\nlower_bound = -0.3\\r\\nupper_bound = 0.3\\r\\n\\r\\n[delta_dim2]\\r\\npar_type = continuous\\r\\nlower_bound = -0.3\\r\\nupper_bound = 0.3\\r\\n\\r\\n[init_strat]\\r\\nmin_asks = 900\\r\\ngenerator = SobolGenerator\\r\\n\\r\\n[opt_strat]\\r\\nmin_asks = 5100\\r\\nrefit_every = 20\\r\\ngenerator = OptimizeAcqfGenerator\\r\\nmodel = GPClassificationModel\\r\\n\\r\\n[GPClassificationModel]\\r\\ninducing_size = 100\\r\\nmean_covar_factory = default_mean_covar_factory\\r\\n\\r\\n[OptimizeAcqfGenerator]\\r\\nrestarts = 10\\r\\nsamps = 1000\\r\\nacqf = MCLevelSetEstimation\\r\\n\\r\\n[MCLevelSetEstimation]\\r\\nbeta = 3.84\\r\\nobjective = ProbitObjective\\r\\ntarget = 0.667"},"type":"setup","extra_info":null}'[0m
+[0;37m2025-12-11 12:25:25,436 [INFO   ] Got: {'version': '0.01', 'message': {'config_str': '[common]\r\nparnames = [x0_dim1, x0_dim2, delta_dim1, delta_dim2]\r\nstimuli_per_trial = 1\r\noutcome_types = [binary]\r\ntarget = 0.667\r\nstrategy_names = [init_strat, opt_strat]\r\n\r\n[x0_dim1]\r\npar_type = continuous\r\nlower_bound = -0.7\r\nupper_bound = 0.7\r\n\r\n[x0_dim2]\r\npar_type = continuous\r\nlower_bound = -0.7\r\nupper_bound = 0.7\r\n\r\n[delta_dim1]\r\npar_type = continuous\r\nlower_bound = -0.3\r\nupper_bound = 0.3\r\n\r\n[delta_dim2]\r\npar_type = continuous\r\nlower_bound = -0.3\r\nupper_bound = 0.3\r\n\r\n[init_strat]\r\nmin_asks = 900\r\ngenerator = SobolGenerator\r\n\r\n[opt_strat]\r\nmin_asks = 5100\r\nrefit_every = 20\r\ngenerator = OptimizeAcqfGenerator\r\nmodel = GPClassificationModel\r\n\r\n[GPClassificationModel]\r\ninducing_size = 100\r\nmean_covar_factory = default_mean_covar_factory\r\n\r\n[OptimizeAcqfGenerator]\r\nrestarts = 10\r\nsamps = 1000\r\nacqf = MCLevelSetEstimation\r\n\r\n[MCLevelSetEstimation]\r\nbeta = 3.84\r\nobjective = ProbitObjective\r\ntarget = 0.667'}, 'type': 'setup', 'extra_info': None}[0m
+[0;37m2025-12-11 12:25:25,447 [INFO   ] Received msg [setup][0m
+[0;30m2025-12-11 12:25:25,448 [DEBUG  ] got setup message![0m
+[0;30m2025-12-11 12:25:25,463 [DEBUG  ] record_setup = [<DBMasterTable(unique_id=None), experiment_name=None, experiment_description=None, experiment_id=50b55854-efa5-4eb1-be6b-0616cccc220c)>][0m
+[0;30m2025-12-11 12:25:25,465 [DEBUG  ] record_setup = [<DbReplayTable(unique_id=None), timestamp=2025-12-11 12:25:25.464864, message_type=setup, master_table_id=None)>][0m
+[0;37m2025-12-11 12:25:25,890 [INFO   ] Sending: {"strat_id": 0}[0m
+[0;30m2025-12-11 12:25:26,074 [DEBUG  ] receive : result = b'{"version":"0.01","message":{"config_str":"[common]\\r\\nparnames = [x0_dim1, x0_dim2, delta_dim1, delta_dim2]\\r\\nstimuli_per_trial = 1\\r\\noutcome_types = [binary]\\r\\ntarget = 0.667\\r\\nstrategy_names = [init_strat, opt_strat]\\r\\n\\r\\n[x0_dim1]\\r\\npar_type = continuous\\r\\nlower_bound = -0.7\\r\\nupper_bound = 0.7\\r\\n\\r\\n[x0_dim2]\\r\\npar_type = continuous\\r\\nlower_bound = -0.7\\r\\nupper_bound = 0.7\\r\\n\\r\\n[delta_dim1]\\r\\npar_type = continuous\\r\\nlower_bound = -0.3\\r\\nupper_bound = 0.3\\r\\n\\r\\n[delta_dim2]\\r\\npar_type = continuous\\r\\nlower_bound = -0.3\\r\\nupper_bound = 0.3\\r\\n\\r\\n[init_strat]\\r\\nmin_asks = 900\\r\\ngenerator = SobolGenerator\\r\\n\\r\\n[opt_strat]\\r\\nmin_asks = 5100\\r\\nrefit_every = 20\\r\\ngenerator = OptimizeAcqfGenerator\\r\\nmodel = GPClassificationModel\\r\\n\\r\\n[GPClassificationModel]\\r\\ninducing_size = 100\\r\\nmean_covar_factory = default_mean_covar_factory\\r\\n\\r\\n[OptimizeAcqfGenerator]\\r\\nrestarts = 10\\r\\nsamps = 1000\\r\\nacqf = MCLevelSetEstimation\\r\\n\\r\\n[MCLevelSetEstimation]\\r\\nbeta = 3.84\\r\\nobjective = ProbitObjective\\r\\ntarget = 0.667"},"type":"setup","extra_info":null}'[0m
+[0;37m2025-12-11 12:25:26,085 [INFO   ] Got: {'version': '0.01', 'message': {'config_str': '[common]\r\nparnames = [x0_dim1, x0_dim2, delta_dim1, delta_dim2]\r\nstimuli_per_trial = 1\r\noutcome_types = [binary]\r\ntarget = 0.667\r\nstrategy_names = [init_strat, opt_strat]\r\n\r\n[x0_dim1]\r\npar_type = continuous\r\nlower_bound = -0.7\r\nupper_bound = 0.7\r\n\r\n[x0_dim2]\r\npar_type = continuous\r\nlower_bound = -0.7\r\nupper_bound = 0.7\r\n\r\n[delta_dim1]\r\npar_type = continuous\r\nlower_bound = -0.3\r\nupper_bound = 0.3\r\n\r\n[delta_dim2]\r\npar_type = continuous\r\nlower_bound = -0.3\r\nupper_bound = 0.3\r\n\r\n[init_strat]\r\nmin_asks = 900\r\ngenerator = SobolGenerator\r\n\r\n[opt_strat]\r\nmin_asks = 5100\r\nrefit_every = 20\r\ngenerator = OptimizeAcqfGenerator\r\nmodel = GPClassificationModel\r\n\r\n[GPClassificationModel]\r\ninducing_size = 100\r\nmean_covar_factory = default_mean_covar_factory\r\n\r\n[OptimizeAcqfGenerator]\r\nrestarts = 10\r\nsamps = 1000\r\nacqf = MCLevelSetEstimation\r\n\r\n[MCLevelSetEstimation]\r\nbeta = 3.84\r\nobjective = ProbitObjective\r\ntarget = 0.667'}, 'type': 'setup', 'extra_info': None}[0m
+[0;37m2025-12-11 12:25:26,090 [INFO   ] Received msg [setup][0m
+[0;30m2025-12-11 12:25:26,091 [DEBUG  ] got setup message![0m
+[0;30m2025-12-11 12:25:26,101 [DEBUG  ] record_setup = [<DBMasterTable(unique_id=None), experiment_name=None, experiment_description=None, experiment_id=50b55854-efa5-4eb1-be6b-0616cccc220c)>][0m
+[0;30m2025-12-11 12:25:26,101 [DEBUG  ] record_setup = [<DbReplayTable(unique_id=None), timestamp=2025-12-11 12:25:26.101596, message_type=setup, master_table_id=None)>][0m
+[0;37m2025-12-11 12:25:26,180 [INFO   ] Sending: {"strat_id": 1}[0m
+[0;30m2025-12-11 12:25:26,323 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 12:25:26,334 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 12:25:26,345 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 12:25:26,345 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 12:25:26,373 [INFO   ] Sending: {"config": {"x0_dim1": [-0.018804351240396477], "x0_dim2": [-0.5183034781366587], "delta_dim1": [0.2072925735265016], "delta_dim2": [0.12536773569881915]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 12:25:30,868 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[-0.018804351240396477],"x0_dim2":[-0.51830347813665867],"delta_dim1":[0.2072925735265016],"delta_dim2":[0.12536773569881915]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":5.959371,"participantID":""}}'[0m
+[0;37m2025-12-11 12:25:30,879 [INFO   ] Got: {'message': {'config': {'x0_dim1': [-0.018804351240396477], 'x0_dim2': [-0.5183034781366587], 'delta_dim1': [0.2072925735265016], 'delta_dim2': [0.12536773569881915]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 5.959371, 'participantID': ''}}[0m
+[0;37m2025-12-11 12:25:30,890 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 12:25:30,891 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 12:25:30,919 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 12:25:31,037 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 12:25:31,215 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 12:25:31,227 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 12:25:31,233 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 12:25:31,233 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 12:25:31,258 [INFO   ] Sending: {"config": {"x0_dim1": [0.3467394217848778], "x0_dim2": [0.19318832568824285], "delta_dim1": [-0.1691785790026188], "delta_dim2": [-0.24045763816684484]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 12:25:35,311 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[0.34673942178487782],"x0_dim2":[0.19318832568824285],"delta_dim1":[-0.16917857900261879],"delta_dim2":[-0.24045763816684484]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":3.167945,"participantID":""}}'[0m
+[0;37m2025-12-11 12:25:35,318 [INFO   ] Got: {'message': {'config': {'x0_dim1': [0.3467394217848778], 'x0_dim2': [0.19318832568824285], 'delta_dim1': [-0.1691785790026188], 'delta_dim2': [-0.24045763816684484]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 3.167945, 'participantID': ''}}[0m
+[0;37m2025-12-11 12:25:35,330 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 12:25:35,330 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 12:25:35,363 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 12:25:35,546 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 12:25:35,716 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 12:25:35,727 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 12:25:35,739 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 12:25:35,739 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 12:25:35,773 [INFO   ] Sending: {"config": {"x0_dim1": [0.6469981702044605], "x0_dim2": [-0.20590064544230696], "delta_dim1": [0.054922661371529125], "delta_dim2": [0.18034381605684757]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 12:25:37,507 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[0.64699817020446049],"x0_dim2":[-0.20590064544230696],"delta_dim1":[0.054922661371529125],"delta_dim2":[0.18034381605684757]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":0.874970436,"participantID":""}}'[0m
+[0;37m2025-12-11 12:25:37,519 [INFO   ] Got: {'message': {'config': {'x0_dim1': [0.6469981702044605], 'x0_dim2': [-0.20590064544230696], 'delta_dim1': [0.054922661371529125], 'delta_dim2': [0.18034381605684757]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 0.874970436, 'participantID': ''}}[0m
+[0;37m2025-12-11 12:25:37,530 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 12:25:37,531 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 12:25:37,557 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 12:25:37,715 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 12:25:37,968 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 12:25:37,979 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 12:25:37,991 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 12:25:37,991 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 12:25:38,020 [INFO   ] Sending: {"config": {"x0_dim1": [-0.40660915430635214], "x0_dim2": [0.48234861623495817], "delta_dim1": [-0.016847258247435104], "delta_dim2": [-0.07286937888711692]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 12:25:40,698 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[-0.40660915430635214],"x0_dim2":[0.48234861623495817],"delta_dim1":[-0.016847258247435104],"delta_dim2":[-0.07286937888711692]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":1.80611992,"participantID":""}}'[0m
+[0;37m2025-12-11 12:25:40,710 [INFO   ] Got: {'message': {'config': {'x0_dim1': [-0.40660915430635214], 'x0_dim2': [0.48234861623495817], 'delta_dim1': [-0.016847258247435104], 'delta_dim2': [-0.07286937888711692]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 1.80611992, 'participantID': ''}}[0m
+[0;37m2025-12-11 12:25:40,721 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 12:25:40,721 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 12:25:40,750 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 12:25:40,895 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 12:25:41,054 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 12:25:41,065 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 12:25:41,076 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 12:25:41,077 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 12:25:41,110 [INFO   ] Sending: {"config": {"x0_dim1": [-0.5263923022896051], "x0_dim2": [-0.11764196027070284], "delta_dim1": [-0.29454901814460754], "delta_dim2": [-0.10482067577540874]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 12:25:42,675 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[-0.5263923022896051],"x0_dim2":[-0.11764196027070284],"delta_dim1":[-0.29454901814460754],"delta_dim2":[-0.10482067577540874]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":0.5969753,"participantID":""}}'[0m
+[0;37m2025-12-11 12:25:42,686 [INFO   ] Got: {'message': {'config': {'x0_dim1': [-0.5263923022896051], 'x0_dim2': [-0.11764196027070284], 'delta_dim1': [-0.29454901814460754], 'delta_dim2': [-0.10482067577540874]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 0.5969753, 'participantID': ''}}[0m
+[0;37m2025-12-11 12:25:42,698 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 12:25:42,699 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 12:25:42,739 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 12:25:42,891 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 12:25:43,084 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 12:25:43,095 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 12:25:43,101 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 12:25:43,102 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 12:25:43,129 [INFO   ] Sending: {"config": {"x0_dim1": [0.5049662444740532], "x0_dim2": [0.5692428050562739], "delta_dim1": [0.2576999511569738], "delta_dim2": [0.29850009474903344]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 12:25:44,633 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[0.50496624447405325],"x0_dim2":[0.56924280505627389],"delta_dim1":[0.25769995115697381],"delta_dim2":[0.29850009474903344]},"outcome":0.0},"type":"tell","extra_info":{"responseTime":0.5972824,"participantID":""}}'[0m
+[0;37m2025-12-11 12:25:44,639 [INFO   ] Got: {'message': {'config': {'x0_dim1': [0.5049662444740532], 'x0_dim2': [0.5692428050562739], 'delta_dim1': [0.2576999511569738], 'delta_dim2': [0.29850009474903344]}, 'outcome': 0.0}, 'type': 'tell', 'extra_info': {'responseTime': 0.5972824, 'participantID': ''}}[0m
+[0;37m2025-12-11 12:25:44,650 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 12:25:44,650 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 12:25:44,669 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 12:25:44,801 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 12:25:44,949 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 12:25:44,960 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 12:25:44,971 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 12:25:44,971 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 12:25:44,998 [INFO   ] Sending: {"config": {"x0_dim1": [0.11756796669214964], "x0_dim2": [-0.6064112920314073], "delta_dim1": [-0.11882171351462603], "delta_dim2": [-0.19971384666860104]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 12:25:47,881 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[0.11756796669214964],"x0_dim2":[-0.60641129203140731],"delta_dim1":[-0.11882171351462603],"delta_dim2":[-0.19971384666860104]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":2.00036621,"participantID":""}}'[0m
+[0;37m2025-12-11 12:25:47,892 [INFO   ] Got: {'message': {'config': {'x0_dim1': [0.11756796669214964], 'x0_dim2': [-0.6064112920314073], 'delta_dim1': [-0.11882171351462603], 'delta_dim2': [-0.19971384666860104]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 2.00036621, 'participantID': ''}}[0m
+[0;37m2025-12-11 12:25:47,903 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 12:25:47,904 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 12:25:47,933 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 12:25:48,051 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 12:25:48,208 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 12:25:48,220 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 12:25:48,231 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 12:25:48,231 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 12:25:48,255 [INFO   ] Sending: {"config": {"x0_dim1": [-0.22645330522209406], "x0_dim2": [0.10645034871995451], "delta_dim1": [0.0818601781502366], "delta_dim2": [0.015994798578321923]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 12:25:50,203 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[-0.22645330522209406],"x0_dim2":[0.10645034871995451],"delta_dim1":[0.0818601781502366],"delta_dim2":[0.015994798578321923]},"outcome":0.0},"type":"tell","extra_info":{"responseTime":1.05612373,"participantID":""}}'[0m
+[0;37m2025-12-11 12:25:50,214 [INFO   ] Got: {'message': {'config': {'x0_dim1': [-0.22645330522209406], 'x0_dim2': [0.10645034871995451], 'delta_dim1': [0.0818601781502366], 'delta_dim2': [0.015994798578321923]}, 'outcome': 0.0}, 'type': 'tell', 'extra_info': {'responseTime': 1.05612373, 'participantID': ''}}[0m
+[0;37m2025-12-11 12:25:50,220 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 12:25:50,220 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 12:25:50,241 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 12:25:50,353 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 12:25:50,578 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 12:25:50,588 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 12:25:50,599 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 12:25:50,600 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 12:25:50,624 [INFO   ] Sending: {"config": {"x0_dim1": [-0.2663918940350413], "x0_dim2": [-0.29855457395315166], "delta_dim1": [-0.08774403668940067], "delta_dim2": [0.24367384426295752]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 12:25:55,459 [DEBUG  ] receive : result = b'{"message":"","type":"exit","extra_info":null}'[0m
+[0;37m2025-12-11 12:25:55,465 [INFO   ] Got: {'message': '', 'type': 'exit', 'extra_info': None}[0m
+[0;37m2025-12-11 12:25:55,476 [INFO   ] Received msg [exit][0m
+[0;37m2025-12-11 12:25:55,476 [INFO   ] got termination message![0m
+[0;37m2025-12-11 12:25:55,477 [INFO   ] Dumping strats to DB due to Normal termination.[0m
+[0;37m2025-12-11 12:25:55,566 [INFO   ] Sending: {"termination_type": "Terminate", "success": true}[0m
+[31;20m2025-12-11 12:25:55,569 [ERROR  ] Got Ctrl+C, exiting![0m
+Traceback (most recent call last):
+  File "/mnt/d/Projects/aepsych/./aepsych/server/server.py", line 514, in start_server
+    startServerAndRun(
+  File "/mnt/d/Projects/aepsych/./aepsych/server/server.py", line 407, in startServerAndRun
+    server.serve()
+  File "/mnt/d/Projects/aepsych/./aepsych/server/server.py", line 166, in serve
+    sys.exit(0)
+SystemExit: 0
+[0;37m2025-12-11 13:37:03,282 [INFO   ] Saving logs to path: logs[0m
+[0;37m2025-12-11 13:37:03,282 [INFO   ] Starting the AEPsychServer[0m
+[0;37m2025-12-11 13:37:03,283 [INFO   ] AEPsych Version: 0.8.0+dev[0m
+[0;37m2025-12-11 13:37:03,284 [INFO   ] No DB found at ./databases/default.db, creating a new DB![0m
+[0;37m2025-12-11 13:37:03,463 [INFO   ] Server up, waiting for connections![0m
+[0;37m2025-12-11 13:37:03,463 [INFO   ] Ctrl-C to quit![0m
+[0;37m2025-12-11 13:37:03,463 [INFO   ] Waiting for connection...[0m
+[0;37m2025-12-11 13:37:14,521 [INFO   ] Connected by ('::ffff:127.0.0.1', 52076, 0, 0), waiting for messages...[0m
+[0;30m2025-12-11 13:37:14,596 [DEBUG  ] receive : result = b'{"version":"0.01","message":{"config_str":"[common]\\r\\nparnames = [x0_dim1, x0_dim2, delta_dim1, delta_dim2]\\r\\nstimuli_per_trial = 1\\r\\noutcome_types = [binary]\\r\\ntarget = 0.667\\r\\nstrategy_names = [init_strat, opt_strat]\\r\\n\\r\\n[x0_dim1]\\r\\npar_type = continuous\\r\\nlower_bound = -0.7\\r\\nupper_bound = 0.7\\r\\n\\r\\n[x0_dim2]\\r\\npar_type = continuous\\r\\nlower_bound = -0.7\\r\\nupper_bound = 0.7\\r\\n\\r\\n[delta_dim1]\\r\\npar_type = continuous\\r\\nlower_bound = -0.3\\r\\nupper_bound = 0.3\\r\\n\\r\\n[delta_dim2]\\r\\npar_type = continuous\\r\\nlower_bound = -0.3\\r\\nupper_bound = 0.3\\r\\n\\r\\n[init_strat]\\r\\nmin_asks = 900\\r\\ngenerator = SobolGenerator\\r\\n\\r\\n[opt_strat]\\r\\nmin_asks = 5100\\r\\nrefit_every = 20\\r\\ngenerator = OptimizeAcqfGenerator\\r\\nmodel = GPClassificationModel\\r\\n\\r\\n[GPClassificationModel]\\r\\ninducing_size = 100\\r\\nmean_covar_factory = default_mean_covar_factory\\r\\n\\r\\n[OptimizeAcqfGenerator]\\r\\nrestarts = 10\\r\\nsamps = 1000\\r\\nacqf = MCLevelSetEstimation\\r\\n\\r\\n[MCLevelSetEstimation]\\r\\nbeta = 3.84\\r\\nobjective = ProbitObjective\\r\\ntarget = 0.667"},"type":"setup","extra_info":null}'[0m
+[0;37m2025-12-11 13:37:14,601 [INFO   ] Got: {'version': '0.01', 'message': {'config_str': '[common]\r\nparnames = [x0_dim1, x0_dim2, delta_dim1, delta_dim2]\r\nstimuli_per_trial = 1\r\noutcome_types = [binary]\r\ntarget = 0.667\r\nstrategy_names = [init_strat, opt_strat]\r\n\r\n[x0_dim1]\r\npar_type = continuous\r\nlower_bound = -0.7\r\nupper_bound = 0.7\r\n\r\n[x0_dim2]\r\npar_type = continuous\r\nlower_bound = -0.7\r\nupper_bound = 0.7\r\n\r\n[delta_dim1]\r\npar_type = continuous\r\nlower_bound = -0.3\r\nupper_bound = 0.3\r\n\r\n[delta_dim2]\r\npar_type = continuous\r\nlower_bound = -0.3\r\nupper_bound = 0.3\r\n\r\n[init_strat]\r\nmin_asks = 900\r\ngenerator = SobolGenerator\r\n\r\n[opt_strat]\r\nmin_asks = 5100\r\nrefit_every = 20\r\ngenerator = OptimizeAcqfGenerator\r\nmodel = GPClassificationModel\r\n\r\n[GPClassificationModel]\r\ninducing_size = 100\r\nmean_covar_factory = default_mean_covar_factory\r\n\r\n[OptimizeAcqfGenerator]\r\nrestarts = 10\r\nsamps = 1000\r\nacqf = MCLevelSetEstimation\r\n\r\n[MCLevelSetEstimation]\r\nbeta = 3.84\r\nobjective = ProbitObjective\r\ntarget = 0.667'}, 'type': 'setup', 'extra_info': None}[0m
+[0;37m2025-12-11 13:37:14,612 [INFO   ] Received msg [setup][0m
+[0;30m2025-12-11 13:37:14,613 [DEBUG  ] got setup message![0m
+[0;30m2025-12-11 13:37:14,623 [DEBUG  ] record_setup = [<DBMasterTable(unique_id=None), experiment_name=None, experiment_description=None, experiment_id=c8f049c5-1a80-4414-8c33-1970b3f4a54b)>][0m
+[0;30m2025-12-11 13:37:14,624 [DEBUG  ] record_setup = [<DbReplayTable(unique_id=None), timestamp=2025-12-11 13:37:14.623937, message_type=setup, master_table_id=None)>][0m
+[0;37m2025-12-11 13:37:15,262 [INFO   ] Sending: {"strat_id": 0}[0m
+[0;30m2025-12-11 13:37:15,524 [DEBUG  ] receive : result = b'{"version":"0.01","message":{"config_str":"[common]\\r\\nparnames = [x0_dim1, x0_dim2, delta_dim1, delta_dim2]\\r\\nstimuli_per_trial = 1\\r\\noutcome_types = [binary]\\r\\ntarget = 0.667\\r\\nstrategy_names = [init_strat, opt_strat]\\r\\n\\r\\n[x0_dim1]\\r\\npar_type = continuous\\r\\nlower_bound = -0.7\\r\\nupper_bound = 0.7\\r\\n\\r\\n[x0_dim2]\\r\\npar_type = continuous\\r\\nlower_bound = -0.7\\r\\nupper_bound = 0.7\\r\\n\\r\\n[delta_dim1]\\r\\npar_type = continuous\\r\\nlower_bound = -0.3\\r\\nupper_bound = 0.3\\r\\n\\r\\n[delta_dim2]\\r\\npar_type = continuous\\r\\nlower_bound = -0.3\\r\\nupper_bound = 0.3\\r\\n\\r\\n[init_strat]\\r\\nmin_asks = 900\\r\\ngenerator = SobolGenerator\\r\\n\\r\\n[opt_strat]\\r\\nmin_asks = 5100\\r\\nrefit_every = 20\\r\\ngenerator = OptimizeAcqfGenerator\\r\\nmodel = GPClassificationModel\\r\\n\\r\\n[GPClassificationModel]\\r\\ninducing_size = 100\\r\\nmean_covar_factory = default_mean_covar_factory\\r\\n\\r\\n[OptimizeAcqfGenerator]\\r\\nrestarts = 10\\r\\nsamps = 1000\\r\\nacqf = MCLevelSetEstimation\\r\\n\\r\\n[MCLevelSetEstimation]\\r\\nbeta = 3.84\\r\\nobjective = ProbitObjective\\r\\ntarget = 0.667"},"type":"setup","extra_info":null}'[0m
+[0;37m2025-12-11 13:37:15,535 [INFO   ] Got: {'version': '0.01', 'message': {'config_str': '[common]\r\nparnames = [x0_dim1, x0_dim2, delta_dim1, delta_dim2]\r\nstimuli_per_trial = 1\r\noutcome_types = [binary]\r\ntarget = 0.667\r\nstrategy_names = [init_strat, opt_strat]\r\n\r\n[x0_dim1]\r\npar_type = continuous\r\nlower_bound = -0.7\r\nupper_bound = 0.7\r\n\r\n[x0_dim2]\r\npar_type = continuous\r\nlower_bound = -0.7\r\nupper_bound = 0.7\r\n\r\n[delta_dim1]\r\npar_type = continuous\r\nlower_bound = -0.3\r\nupper_bound = 0.3\r\n\r\n[delta_dim2]\r\npar_type = continuous\r\nlower_bound = -0.3\r\nupper_bound = 0.3\r\n\r\n[init_strat]\r\nmin_asks = 900\r\ngenerator = SobolGenerator\r\n\r\n[opt_strat]\r\nmin_asks = 5100\r\nrefit_every = 20\r\ngenerator = OptimizeAcqfGenerator\r\nmodel = GPClassificationModel\r\n\r\n[GPClassificationModel]\r\ninducing_size = 100\r\nmean_covar_factory = default_mean_covar_factory\r\n\r\n[OptimizeAcqfGenerator]\r\nrestarts = 10\r\nsamps = 1000\r\nacqf = MCLevelSetEstimation\r\n\r\n[MCLevelSetEstimation]\r\nbeta = 3.84\r\nobjective = ProbitObjective\r\ntarget = 0.667'}, 'type': 'setup', 'extra_info': None}[0m
+[0;37m2025-12-11 13:37:15,546 [INFO   ] Received msg [setup][0m
+[0;30m2025-12-11 13:37:15,546 [DEBUG  ] got setup message![0m
+[0;30m2025-12-11 13:37:15,556 [DEBUG  ] record_setup = [<DBMasterTable(unique_id=None), experiment_name=None, experiment_description=None, experiment_id=c8f049c5-1a80-4414-8c33-1970b3f4a54b)>][0m
+[0;30m2025-12-11 13:37:15,556 [DEBUG  ] record_setup = [<DbReplayTable(unique_id=None), timestamp=2025-12-11 13:37:15.556538, message_type=setup, master_table_id=None)>][0m
+[0;37m2025-12-11 13:37:15,650 [INFO   ] Sending: {"strat_id": 1}[0m
+[0;30m2025-12-11 13:37:15,791 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 13:37:15,802 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 13:37:15,813 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 13:37:15,813 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 13:37:15,839 [INFO   ] Sending: {"config": {"x0_dim1": [0.2141810184344649], "x0_dim2": [0.37136668823659424], "delta_dim1": [0.16002769991755483], "delta_dim2": [-0.24996171724051236]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 13:37:17,870 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[0.21418101843446491],"x0_dim2":[0.37136668823659424],"delta_dim1":[0.16002769991755483],"delta_dim2":[-0.24996171724051236]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":3.7957,"participantID":""}}'[0m
+[0;37m2025-12-11 13:37:17,881 [INFO   ] Got: {'message': {'config': {'x0_dim1': [0.2141810184344649], 'x0_dim2': [0.37136668823659424], 'delta_dim1': [0.16002769991755483], 'delta_dim2': [-0.24996171724051236]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 3.7957, 'participantID': ''}}[0m
+[0;37m2025-12-11 13:37:17,892 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 13:37:17,892 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 13:37:17,912 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 13:37:18,028 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 13:37:18,165 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 13:37:18,171 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 13:37:18,176 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 13:37:18,177 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 13:37:18,200 [INFO   ] Sending: {"config": {"x0_dim1": [-0.08726265337318184], "x0_dim2": [-0.684021813608706], "delta_dim1": [-0.12182814236730335], "delta_dim2": [0.23612864054739474]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 13:37:21,162 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[-0.087262653373181842],"x0_dim2":[-0.684021813608706],"delta_dim1":[-0.12182814236730335],"delta_dim2":[0.23612864054739474]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":2.0858283,"participantID":""}}'[0m
+[0;37m2025-12-11 13:37:21,173 [INFO   ] Got: {'message': {'config': {'x0_dim1': [-0.08726265337318184], 'x0_dim2': [-0.684021813608706], 'delta_dim1': [-0.12182814236730335], 'delta_dim2': [0.23612864054739474]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 2.0858283, 'participantID': ''}}[0m
+[0;37m2025-12-11 13:37:21,184 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 13:37:21,185 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 13:37:21,206 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 13:37:21,327 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 13:37:21,536 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 13:37:21,547 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 13:37:21,553 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 13:37:21,553 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 13:37:21,577 [INFO   ] Sending: {"config": {"x0_dim1": [-0.5763053337112068], "x0_dim2": [0.12818140219897034], "delta_dim1": [0.01496811266988518], "delta_dim2": [-0.06445036120712758]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 13:37:28,530 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[-0.57630533371120685],"x0_dim2":[0.12818140219897034],"delta_dim1":[0.014968112669885181],"delta_dim2":[-0.064450361207127577]},"outcome":0.0},"type":"tell","extra_info":{"responseTime":6.09810257,"participantID":""}}'[0m
+[0;37m2025-12-11 13:37:28,536 [INFO   ] Got: {'message': {'config': {'x0_dim1': [-0.5763053337112068], 'x0_dim2': [0.12818140219897034], 'delta_dim1': [0.01496811266988518], 'delta_dim2': [-0.06445036120712758]}, 'outcome': 0.0}, 'type': 'tell', 'extra_info': {'responseTime': 6.09810257, 'participantID': ''}}[0m
+[0;37m2025-12-11 13:37:28,542 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 13:37:28,542 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 13:37:28,563 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 13:37:28,684 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 13:37:28,840 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 13:37:28,851 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 13:37:28,862 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 13:37:28,863 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 13:37:28,886 [INFO   ] Sending: {"config": {"x0_dim1": [0.359555640257895], "x0_dim2": [-0.22721811197698116], "delta_dim1": [-0.26688773073256017], "delta_dim2": [0.050155086256563675]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 13:37:30,233 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[0.359555640257895],"x0_dim2":[-0.22721811197698116],"delta_dim1":[-0.26688773073256017],"delta_dim2":[0.050155086256563675]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":0.4862194,"participantID":""}}'[0m
+[0;37m2025-12-11 13:37:30,244 [INFO   ] Got: {'message': {'config': {'x0_dim1': [0.359555640257895], 'x0_dim2': [-0.22721811197698116], 'delta_dim1': [-0.26688773073256017], 'delta_dim2': [0.050155086256563675]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 0.4862194, 'participantID': ''}}[0m
+[0;37m2025-12-11 13:37:30,255 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 13:37:30,255 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 13:37:30,275 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 13:37:30,393 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 13:37:30,560 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 13:37:30,566 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 13:37:30,577 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 13:37:30,578 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 13:37:30,600 [INFO   ] Sending: {"config": {"x0_dim1": [0.6809461919590831], "x0_dim2": [0.21133919693529601], "delta_dim1": [-0.04091121107339857], "delta_dim2": [0.08282468263059856]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 13:37:31,933 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[0.68094619195908312],"x0_dim2":[0.21133919693529601],"delta_dim1":[-0.040911211073398568],"delta_dim2":[0.082824682630598556]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":0.458898544,"participantID":""}}'[0m
+[0;37m2025-12-11 13:37:31,944 [INFO   ] Got: {'message': {'config': {'x0_dim1': [0.6809461919590831], 'x0_dim2': [0.21133919693529601], 'delta_dim1': [-0.04091121107339857], 'delta_dim2': [0.08282468263059856]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 0.458898544, 'participantID': ''}}[0m
+[0;37m2025-12-11 13:37:31,955 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 13:37:31,955 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 13:37:31,976 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 13:37:32,093 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 13:37:32,354 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 13:37:32,365 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 13:37:32,376 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 13:37:32,376 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 13:37:32,400 [INFO   ] Sending: {"config": {"x0_dim1": [-0.46131740640848873], "x0_dim2": [-0.13315489459782837], "delta_dim1": [0.24090454448014492], "delta_dim2": [-0.10619539953768253]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 13:37:34,320 [DEBUG  ] receive : result = b'{"message":{"config":{"x0_dim1":[-0.46131740640848873],"x0_dim2":[-0.13315489459782837],"delta_dim1":[0.24090454448014492],"delta_dim2":[-0.10619539953768253]},"outcome":1.0},"type":"tell","extra_info":{"responseTime":1.05594635,"participantID":""}}'[0m
+[0;37m2025-12-11 13:37:34,331 [INFO   ] Got: {'message': {'config': {'x0_dim1': [-0.46131740640848873], 'x0_dim2': [-0.13315489459782837], 'delta_dim1': [0.24090454448014492], 'delta_dim2': [-0.10619539953768253]}, 'outcome': 1.0}, 'type': 'tell', 'extra_info': {'responseTime': 1.05594635, 'participantID': ''}}[0m
+[0;37m2025-12-11 13:37:34,342 [INFO   ] Received msg [tell][0m
+[0;30m2025-12-11 13:37:34,342 [DEBUG  ] got tell message![0m
+[33;20m2025-12-11 13:37:34,362 [WARNING] extra_info should not be used to record extra trial-level data alongside tells, extra data should be added as extra keys in the message.[0m
+[0;37m2025-12-11 13:37:34,479 [INFO   ] Sending: {"trials_recorded": 1, "model_data_added": 1}[0m
+[0;30m2025-12-11 13:37:34,713 [DEBUG  ] receive : result = b'{"version":"0.01","message":"","type":"ask","extra_info":null}'[0m
+[0;37m2025-12-11 13:37:34,724 [INFO   ] Got: {'version': '0.01', 'message': '', 'type': 'ask', 'extra_info': None}[0m
+[0;37m2025-12-11 13:37:34,735 [INFO   ] Received msg [ask][0m
+[0;30m2025-12-11 13:37:34,736 [DEBUG  ] got ask message![0m
+[0;37m2025-12-11 13:37:34,760 [INFO   ] Sending: {"config": {"x0_dim1": [-0.2778731809929013], "x0_dim2": [0.624750672839582], "delta_dim1": [-0.19527484048157928], "delta_dim2": [0.19350040443241595]}, "is_finished": false, "num_points": 1}[0m
+[0;30m2025-12-11 13:37:38,979 [DEBUG  ] receive : result = b'{"message":"","type":"exit","extra_info":null}'[0m
+[0;37m2025-12-11 13:37:38,990 [INFO   ] Got: {'message': '', 'type': 'exit', 'extra_info': None}[0m
+[0;37m2025-12-11 13:37:39,001 [INFO   ] Received msg [exit][0m
+[0;37m2025-12-11 13:37:39,001 [INFO   ] got termination message![0m
+[0;37m2025-12-11 13:37:39,001 [INFO   ] Dumping strats to DB due to Normal termination.[0m
+[0;37m2025-12-11 13:37:39,086 [INFO   ] Sending: {"termination_type": "Terminate", "success": true}[0m
+[31;20m2025-12-11 13:37:39,087 [ERROR  ] Got Ctrl+C, exiting![0m
+Traceback (most recent call last):
+  File "/mnt/d/Projects/aepsych/./aepsych/server/server.py", line 514, in start_server
+    startServerAndRun(
+  File "/mnt/d/Projects/aepsych/./aepsych/server/server.py", line 407, in startServerAndRun
+    server.serve()
+  File "/mnt/d/Projects/aepsych/./aepsych/server/server.py", line 166, in serve
+    sys.exit(0)
+SystemExit: 0
+[0;37m2025-12-11 14:12:45,506 [INFO   ] Saving logs to path: logs[0m
+[0;37m2025-12-11 14:12:45,506 [INFO   ] Starting the AEPsychServer[0m
+[0;37m2025-12-11 14:12:45,506 [INFO   ] AEPsych Version: 0.8.0+dev[0m
+[0;37m2025-12-11 14:12:45,507 [INFO   ] No DB found at ./databases/default.db, creating a new DB![0m
+[0;37m2025-12-11 14:12:45,739 [INFO   ] Server up, waiting for connections![0m
+[0;37m2025-12-11 14:12:45,740 [INFO   ] Ctrl-C to quit![0m
+[0;37m2025-12-11 14:12:45,740 [INFO   ] Waiting for connection...[0m
+[0;37m2025-12-12 11:04:07,042 [INFO   ] Saving logs to path: logs[0m
+[0;37m2025-12-12 11:04:07,042 [INFO   ] Starting the AEPsychServer[0m
+[0;37m2025-12-12 11:04:07,043 [INFO   ] AEPsych Version: 0.8.0+dev[0m
+[0;37m2025-12-12 11:04:07,044 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-12 11:04:07,201 [INFO   ] Server up, waiting for connections![0m
+[0;37m2025-12-12 11:04:07,201 [INFO   ] Ctrl-C to quit![0m
+[0;37m2025-12-12 11:04:07,201 [INFO   ] Waiting for connection...[0m
+[31;20m2025-12-12 11:06:15,472 [ERROR  ] Got CTRL+C, exiting! Server dump in ./dump_30.pkl[0m
+Traceback (most recent call last):
+  File "/mnt/d/Projects/aepsych/aepsych/server/server.py", line 407, in startServerAndRun
+    server.serve()
+  File "/mnt/d/Projects/aepsych/aepsych/server/server.py", line 158, in serve
+    self.socket.accept_client()
+  File "/mnt/d/Projects/aepsych/aepsych/server/sockets.py", line 79, in accept_client
+    rlist, wlist, xlist = select.select([self.socket], [], [], 0)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[0;37m2025-12-12 11:07:07,580 [INFO   ] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory[0m
+[0;37m2025-12-12 11:07:08,529 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-12 11:07:08,630 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-12 11:07:09,625 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:07:14,678 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:07:14,823 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:07:19,890 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:07:20,049 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:07:25,116 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:07:25,263 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:07:28,266 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:07:28,395 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:07:30,690 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:07:30,820 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:07:35,818 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:07:35,946 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:07:40,979 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:07:41,134 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:07:46,185 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:07:46,318 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:07:51,379 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:07:51,505 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:07:56,568 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:07:56,698 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:08:01,610 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:08:01,742 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:08:06,751 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:08:06,887 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-12 11:08:11,924 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-12 11:08:12,051 [INFO   ] Received msg [ask][0m

@@ -5146,3 +5146,2368 @@ KeyboardInterrupt
 [0;37m2025-12-12 11:08:06,887 [INFO   ] Received msg [ask][0m
 [0;37m2025-12-12 11:08:11,924 [INFO   ] Received msg [tell][0m
 [0;37m2025-12-12 11:08:12,051 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:11,324 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:48:11,456 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:48:12,160 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:48:12,286 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:48:12,351 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:12,392 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:12,504 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:12,535 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:12,625 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:12,655 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:12,755 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:12,791 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:12,884 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:12,915 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:13,000 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:13,000 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:48:13,230 [INFO   ] Fitting done, took 0.22979950904846191[0m
+[0;37m2025-12-16 21:48:13,232 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:13,514 [INFO   ] Gen done, time=0.28214478492736816[0m
+[0;37m2025-12-16 21:48:13,551 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:13,647 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:13,647 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:13,572 [INFO   ] Fitting done, took -0.0747685432434082[0m
+[0;37m2025-12-16 21:48:13,573 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:13,794 [INFO   ] Gen done, time=0.2203197479248047[0m
+[0;37m2025-12-16 21:48:13,831 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:13,925 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:13,926 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:14,021 [INFO   ] Fitting done, took 0.09505939483642578[0m
+[0;37m2025-12-16 21:48:14,022 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:14,234 [INFO   ] Gen done, time=0.212158203125[0m
+[0;37m2025-12-16 21:48:14,265 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:14,355 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:14,356 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:14,457 [INFO   ] Fitting done, took 0.10087466239929199[0m
+[0;37m2025-12-16 21:48:14,458 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:14,689 [INFO   ] Gen done, time=0.23123812675476074[0m
+[0;37m2025-12-16 21:48:14,717 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:14,816 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:14,817 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:14,924 [INFO   ] Fitting done, took 0.10707759857177734[0m
+[0;37m2025-12-16 21:48:14,925 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:15,202 [INFO   ] Gen done, time=0.2761712074279785[0m
+[0;37m2025-12-16 21:48:15,231 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:15,328 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:15,329 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:48:15,457 [INFO   ] Fitting done, took 0.12813401222229004[0m
+[0;37m2025-12-16 21:48:15,458 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:15,716 [INFO   ] Gen done, time=0.2581787109375[0m
+[0;37m2025-12-16 21:48:15,746 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:15,847 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:15,848 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:15,995 [INFO   ] Fitting done, took 0.14719390869140625[0m
+[0;37m2025-12-16 21:48:15,996 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:16,254 [INFO   ] Gen done, time=0.25784897804260254[0m
+[0;37m2025-12-16 21:48:16,287 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:16,372 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:16,372 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:16,511 [INFO   ] Fitting done, took 0.13865160942077637[0m
+[0;37m2025-12-16 21:48:16,512 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:16,807 [INFO   ] Gen done, time=0.29498815536499023[0m
+[0;37m2025-12-16 21:48:16,841 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:16,929 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:16,929 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:17,020 [INFO   ] Fitting done, took 0.09111380577087402[0m
+[0;37m2025-12-16 21:48:17,021 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:17,342 [INFO   ] Gen done, time=0.32051920890808105[0m
+[0;37m2025-12-16 21:48:17,380 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:17,484 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:17,485 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:17,592 [INFO   ] Fitting done, took 0.10710954666137695[0m
+[0;37m2025-12-16 21:48:17,593 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:17,965 [INFO   ] Gen done, time=0.37145352363586426[0m
+[0;37m2025-12-16 21:48:17,997 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:18,092 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:18,092 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:48:18,227 [INFO   ] Fitting done, took 0.1349325180053711[0m
+[0;37m2025-12-16 21:48:18,228 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:18,557 [INFO   ] Gen done, time=0.3284921646118164[0m
+[0;37m2025-12-16 21:48:18,589 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:18,678 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:18,678 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:18,814 [INFO   ] Fitting done, took 0.1355419158935547[0m
+[0;37m2025-12-16 21:48:18,815 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:19,160 [INFO   ] Gen done, time=0.34471583366394043[0m
+[0;37m2025-12-16 21:48:19,192 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:19,282 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:19,283 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:19,405 [INFO   ] Fitting done, took 0.12233710289001465[0m
+[0;37m2025-12-16 21:48:19,406 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:19,662 [INFO   ] Gen done, time=0.25549888610839844[0m
+[0;37m2025-12-16 21:48:19,692 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:19,782 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:19,782 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:19,950 [INFO   ] Fitting done, took 0.1679704189300537[0m
+[0;37m2025-12-16 21:48:19,951 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:20,310 [INFO   ] Gen done, time=0.35864853858947754[0m
+[0;37m2025-12-16 21:48:20,341 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:20,434 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:20,435 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:20,603 [INFO   ] Fitting done, took 0.167618989944458[0m
+[0;37m2025-12-16 21:48:20,604 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:20,949 [INFO   ] Gen done, time=0.3446977138519287[0m
+[0;37m2025-12-16 21:48:20,979 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:21,070 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:21,070 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:48:21,211 [INFO   ] Fitting done, took 0.14101195335388184[0m
+[0;37m2025-12-16 21:48:21,212 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:21,539 [INFO   ] Gen done, time=0.3262500762939453[0m
+[0;37m2025-12-16 21:48:21,571 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:21,666 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:21,667 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:21,802 [INFO   ] Fitting done, took 0.13547921180725098[0m
+[0;37m2025-12-16 21:48:21,803 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:22,119 [INFO   ] Gen done, time=0.31516599655151367[0m
+[0;37m2025-12-16 21:48:22,152 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:22,241 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:22,242 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:22,385 [INFO   ] Fitting done, took 0.1432628631591797[0m
+[0;37m2025-12-16 21:48:22,386 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:22,775 [INFO   ] Gen done, time=0.38877415657043457[0m
+[0;37m2025-12-16 21:48:22,804 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:22,887 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:22,887 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:23,032 [INFO   ] Fitting done, took 0.14456939697265625[0m
+[0;37m2025-12-16 21:48:23,033 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:23,388 [INFO   ] Gen done, time=0.35477662086486816[0m
+[0;37m2025-12-16 21:48:23,421 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:23,516 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:23,516 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:23,664 [INFO   ] Fitting done, took 0.1471090316772461[0m
+[0;37m2025-12-16 21:48:23,665 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:23,990 [INFO   ] Gen done, time=0.3251471519470215[0m
+[0;37m2025-12-16 21:48:24,025 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:24,115 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:24,115 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:48:24,397 [INFO   ] Fitting done, took 0.2819187641143799[0m
+[0;37m2025-12-16 21:48:24,399 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:24,741 [INFO   ] Gen done, time=0.3421134948730469[0m
+[0;37m2025-12-16 21:48:24,777 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:24,869 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:24,869 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:25,168 [INFO   ] Fitting done, took 0.29851555824279785[0m
+[0;37m2025-12-16 21:48:25,170 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:25,567 [INFO   ] Gen done, time=0.39736151695251465[0m
+[0;37m2025-12-16 21:48:25,599 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:25,691 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:25,691 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:25,990 [INFO   ] Fitting done, took 0.2982635498046875[0m
+[0;37m2025-12-16 21:48:25,991 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:26,344 [INFO   ] Gen done, time=0.35250186920166016[0m
+[0;37m2025-12-16 21:48:26,375 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:26,467 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:26,467 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:26,640 [INFO   ] Fitting done, took 0.172959566116333[0m
+[0;37m2025-12-16 21:48:26,641 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:27,080 [INFO   ] Gen done, time=0.4385383129119873[0m
+[0;37m2025-12-16 21:48:27,116 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:27,207 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:27,207 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:27,439 [INFO   ] Fitting done, took 0.23158597946166992[0m
+[0;37m2025-12-16 21:48:27,440 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:27,874 [INFO   ] Gen done, time=0.433349609375[0m
+[0;37m2025-12-16 21:48:27,908 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:27,997 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:27,998 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:48:28,329 [INFO   ] Fitting done, took 0.3313162326812744[0m
+[0;37m2025-12-16 21:48:28,331 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:28,818 [INFO   ] Gen done, time=0.4867522716522217[0m
+[0;37m2025-12-16 21:48:28,849 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:28,964 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:28,965 [INFO   ] Starting fitting (warm start)...[0m
+[33;20m2025-12-16 21:48:32,545 [WARNING] Failed to fit model! Predictions may not be accurate![0m
+[0;37m2025-12-16 21:48:32,545 [INFO   ] Fitting done, took 3.5805563926696777[0m
+[0;37m2025-12-16 21:48:32,546 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:33,021 [INFO   ] Gen done, time=0.4741528034210205[0m
+[0;37m2025-12-16 21:48:33,053 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:33,148 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:33,148 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:33,383 [INFO   ] Fitting done, took 0.2351229190826416[0m
+[0;37m2025-12-16 21:48:33,385 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:33,917 [INFO   ] Gen done, time=0.5286195278167725[0m
+[0;37m2025-12-16 21:48:33,951 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:34,085 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:34,086 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:34,344 [INFO   ] Fitting done, took 0.2576615810394287[0m
+[0;37m2025-12-16 21:48:34,345 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:34,778 [INFO   ] Gen done, time=0.43209409713745117[0m
+[0;37m2025-12-16 21:48:34,810 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:34,901 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:34,901 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:35,071 [INFO   ] Fitting done, took 0.17038750648498535[0m
+[0;37m2025-12-16 21:48:35,073 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:35,446 [INFO   ] Gen done, time=0.37251996994018555[0m
+[0;37m2025-12-16 21:48:35,481 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:35,574 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:35,575 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:48:35,806 [INFO   ] Fitting done, took 0.23076367378234863[0m
+[0;37m2025-12-16 21:48:35,807 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:36,211 [INFO   ] Gen done, time=0.40355849266052246[0m
+[0;37m2025-12-16 21:48:36,243 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:36,333 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:36,333 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:36,551 [INFO   ] Fitting done, took 0.21772289276123047[0m
+[0;37m2025-12-16 21:48:36,552 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:36,943 [INFO   ] Gen done, time=0.3910799026489258[0m
+[0;37m2025-12-16 21:48:36,978 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:37,076 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:37,077 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:37,292 [INFO   ] Fitting done, took 0.2155294418334961[0m
+[0;37m2025-12-16 21:48:37,293 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:37,785 [INFO   ] Gen done, time=0.4910736083984375[0m
+[0;37m2025-12-16 21:48:37,816 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:37,921 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:37,921 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:38,149 [INFO   ] Fitting done, took 0.22777986526489258[0m
+[0;37m2025-12-16 21:48:38,150 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:38,488 [INFO   ] Gen done, time=0.3377518653869629[0m
+[0;37m2025-12-16 21:48:38,520 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:38,618 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:38,618 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:38,818 [INFO   ] Fitting done, took 0.20015287399291992[0m
+[0;37m2025-12-16 21:48:38,820 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:39,178 [INFO   ] Gen done, time=0.35842370986938477[0m
+[0;37m2025-12-16 21:48:39,209 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:39,301 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:39,301 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:48:39,586 [INFO   ] Fitting done, took 0.28456616401672363[0m
+[0;37m2025-12-16 21:48:39,587 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:39,998 [INFO   ] Gen done, time=0.4101419448852539[0m
+[0;37m2025-12-16 21:48:40,031 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:40,124 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:40,125 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:40,334 [INFO   ] Fitting done, took 0.20894908905029297[0m
+[0;37m2025-12-16 21:48:40,335 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:40,752 [INFO   ] Gen done, time=0.4164443016052246[0m
+[0;37m2025-12-16 21:48:40,783 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:40,877 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:40,878 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:41,099 [INFO   ] Fitting done, took 0.22180676460266113[0m
+[0;37m2025-12-16 21:48:41,101 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:41,475 [INFO   ] Gen done, time=0.37365055084228516[0m
+[0;37m2025-12-16 21:48:41,509 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:41,611 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:41,611 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:41,813 [INFO   ] Fitting done, took 0.2021024227142334[0m
+[0;37m2025-12-16 21:48:41,815 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:42,170 [INFO   ] Gen done, time=0.35521483421325684[0m
+[0;37m2025-12-16 21:48:42,201 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:42,295 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:42,296 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:42,487 [INFO   ] Fitting done, took 0.19167709350585938[0m
+[0;37m2025-12-16 21:48:42,489 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:42,923 [INFO   ] Gen done, time=0.43408799171447754[0m
+[0;37m2025-12-16 21:48:42,955 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:43,048 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:43,049 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:48:43,363 [INFO   ] Fitting done, took 0.314054012298584[0m
+[0;37m2025-12-16 21:48:43,364 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:43,687 [INFO   ] Gen done, time=0.3227522373199463[0m
+[0;37m2025-12-16 21:48:43,723 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:43,829 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:43,830 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:44,128 [INFO   ] Fitting done, took 0.2977914810180664[0m
+[0;37m2025-12-16 21:48:44,129 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:44,561 [INFO   ] Gen done, time=0.4309530258178711[0m
+[0;37m2025-12-16 21:48:44,602 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:44,706 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:44,706 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:44,897 [INFO   ] Fitting done, took 0.19097661972045898[0m
+[0;37m2025-12-16 21:48:44,898 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:45,298 [INFO   ] Gen done, time=0.3995375633239746[0m
+[0;37m2025-12-16 21:48:45,333 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:46,923 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:48:46,999 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:48:47,053 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:47,087 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:47,192 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:47,223 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:47,303 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:47,330 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:47,414 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:47,442 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:47,525 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:47,554 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:47,646 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:47,647 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:48:47,809 [INFO   ] Fitting done, took 0.1625363826751709[0m
+[0;37m2025-12-16 21:48:47,811 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:48,091 [INFO   ] Gen done, time=0.2805938720703125[0m
+[0;37m2025-12-16 21:48:48,124 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:48,223 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:48,223 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:48,308 [INFO   ] Fitting done, took 0.08510136604309082[0m
+[0;37m2025-12-16 21:48:48,309 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:48,591 [INFO   ] Gen done, time=0.28133416175842285[0m
+[0;37m2025-12-16 21:48:48,625 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:48,724 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:48,725 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:48,801 [INFO   ] Fitting done, took 0.07592964172363281[0m
+[0;37m2025-12-16 21:48:48,802 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:49,043 [INFO   ] Gen done, time=0.24097251892089844[0m
+[0;37m2025-12-16 21:48:49,074 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:49,162 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:49,162 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:49,246 [INFO   ] Fitting done, took 0.08402109146118164[0m
+[0;37m2025-12-16 21:48:49,248 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:49,519 [INFO   ] Gen done, time=0.2705233097076416[0m
+[0;37m2025-12-16 21:48:49,549 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:49,644 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:49,644 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:49,917 [INFO   ] Fitting done, took 0.27236247062683105[0m
+[0;37m2025-12-16 21:48:49,918 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:50,170 [INFO   ] Gen done, time=0.25166869163513184[0m
+[0;37m2025-12-16 21:48:50,200 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:50,294 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:50,294 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:48:50,523 [INFO   ] Fitting done, took 0.229233980178833[0m
+[0;37m2025-12-16 21:48:50,525 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:50,834 [INFO   ] Gen done, time=0.3085765838623047[0m
+[0;37m2025-12-16 21:48:50,866 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:50,957 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:50,958 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:51,257 [INFO   ] Fitting done, took 0.29979753494262695[0m
+[0;37m2025-12-16 21:48:51,259 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:51,547 [INFO   ] Gen done, time=0.2876424789428711[0m
+[0;37m2025-12-16 21:48:51,577 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:51,673 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:51,673 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:52,750 [INFO   ] Fitting done, took 1.0768702030181885[0m
+[0;37m2025-12-16 21:48:52,752 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:53,015 [INFO   ] Gen done, time=0.26341962814331055[0m
+[0;37m2025-12-16 21:48:53,047 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:53,136 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:53,136 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:53,451 [INFO   ] Fitting done, took 0.31509923934936523[0m
+[0;37m2025-12-16 21:48:53,453 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:53,738 [INFO   ] Gen done, time=0.28481173515319824[0m
+[0;37m2025-12-16 21:48:53,770 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:53,874 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:53,874 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:54,080 [INFO   ] Fitting done, took 0.20606040954589844[0m
+[0;37m2025-12-16 21:48:54,081 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:54,329 [INFO   ] Gen done, time=0.24672675132751465[0m
+[0;37m2025-12-16 21:48:54,363 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:54,454 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:54,455 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:48:54,914 [INFO   ] Fitting done, took 0.45894503593444824[0m
+[0;37m2025-12-16 21:48:54,915 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:55,183 [INFO   ] Gen done, time=0.2682228088378906[0m
+[0;37m2025-12-16 21:48:55,217 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:55,308 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:55,308 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:55,716 [INFO   ] Fitting done, took 0.40824222564697266[0m
+[0;37m2025-12-16 21:48:55,718 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:56,073 [INFO   ] Gen done, time=0.35462069511413574[0m
+[0;37m2025-12-16 21:48:56,107 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:56,197 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:56,198 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:56,641 [INFO   ] Fitting done, took 0.44304442405700684[0m
+[0;37m2025-12-16 21:48:56,642 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:56,946 [INFO   ] Gen done, time=0.3040034770965576[0m
+[0;37m2025-12-16 21:48:56,979 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:57,080 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:57,080 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:57,546 [INFO   ] Fitting done, took 0.46593737602233887[0m
+[0;37m2025-12-16 21:48:57,547 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:57,866 [INFO   ] Gen done, time=0.3186666965484619[0m
+[0;37m2025-12-16 21:48:57,901 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:57,999 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:58,000 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:48:58,515 [INFO   ] Fitting done, took 0.5151839256286621[0m
+[0;37m2025-12-16 21:48:58,516 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:48:59,008 [INFO   ] Gen done, time=0.4910397529602051[0m
+[0;37m2025-12-16 21:48:59,041 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:48:59,139 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:48:59,140 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:49:00,052 [INFO   ] Fitting done, took 0.9117937088012695[0m
+[0;37m2025-12-16 21:49:00,053 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:00,458 [INFO   ] Gen done, time=0.4046201705932617[0m
+[0;37m2025-12-16 21:49:00,492 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:00,590 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:00,590 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:03,153 [INFO   ] Fitting done, took 2.563406467437744[0m
+[0;37m2025-12-16 21:49:03,155 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:03,479 [INFO   ] Gen done, time=0.32449865341186523[0m
+[0;37m2025-12-16 21:49:03,511 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:03,604 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:03,605 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:04,371 [INFO   ] Fitting done, took 0.766777515411377[0m
+[0;37m2025-12-16 21:49:04,373 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:04,755 [INFO   ] Gen done, time=0.38259124755859375[0m
+[0;37m2025-12-16 21:49:04,789 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:04,879 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:04,880 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:05,735 [INFO   ] Fitting done, took 0.8541951179504395[0m
+[0;37m2025-12-16 21:49:05,736 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:06,130 [INFO   ] Gen done, time=0.3937652111053467[0m
+[0;37m2025-12-16 21:49:06,162 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:06,263 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:06,263 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:06,815 [INFO   ] Fitting done, took 0.5517101287841797[0m
+[0;37m2025-12-16 21:49:06,816 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:07,155 [INFO   ] Gen done, time=0.338517427444458[0m
+[0;37m2025-12-16 21:49:07,187 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:07,301 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:07,302 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:49:08,161 [INFO   ] Fitting done, took 0.8592851161956787[0m
+[0;37m2025-12-16 21:49:08,162 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:08,559 [INFO   ] Gen done, time=0.39639925956726074[0m
+[0;37m2025-12-16 21:49:08,592 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:08,683 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:08,684 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:09,124 [INFO   ] Fitting done, took 0.44046926498413086[0m
+[0;37m2025-12-16 21:49:09,125 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:09,490 [INFO   ] Gen done, time=0.36397433280944824[0m
+[0;37m2025-12-16 21:49:09,524 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:09,619 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:09,619 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:10,159 [INFO   ] Fitting done, took 0.5399699211120605[0m
+[0;37m2025-12-16 21:49:10,160 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:10,537 [INFO   ] Gen done, time=0.37633776664733887[0m
+[0;37m2025-12-16 21:49:10,570 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:10,669 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:10,669 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:11,190 [INFO   ] Fitting done, took 0.5209078788757324[0m
+[0;37m2025-12-16 21:49:11,192 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:11,560 [INFO   ] Gen done, time=0.36814427375793457[0m
+[0;37m2025-12-16 21:49:11,592 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:11,684 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:11,685 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:11,982 [INFO   ] Fitting done, took 0.29735517501831055[0m
+[0;37m2025-12-16 21:49:11,983 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:12,442 [INFO   ] Gen done, time=0.4588901996612549[0m
+[0;37m2025-12-16 21:49:12,474 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:12,570 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:12,571 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:49:15,364 [INFO   ] Fitting done, took 2.7931199073791504[0m
+[0;37m2025-12-16 21:49:15,365 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:15,749 [INFO   ] Gen done, time=0.3841664791107178[0m
+[0;37m2025-12-16 21:49:15,780 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:15,896 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:15,896 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:16,414 [INFO   ] Fitting done, took 0.5176107883453369[0m
+[0;37m2025-12-16 21:49:16,415 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:16,796 [INFO   ] Gen done, time=0.38092041015625[0m
+[0;37m2025-12-16 21:49:16,829 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:16,926 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:16,926 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:17,645 [INFO   ] Fitting done, took 0.7186553478240967[0m
+[0;37m2025-12-16 21:49:17,646 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:17,982 [INFO   ] Gen done, time=0.33598780632019043[0m
+[0;37m2025-12-16 21:49:18,013 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:18,105 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:18,106 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:18,709 [INFO   ] Fitting done, took 0.6033294200897217[0m
+[0;37m2025-12-16 21:49:18,710 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:19,131 [INFO   ] Gen done, time=0.42029452323913574[0m
+[0;37m2025-12-16 21:49:19,165 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:19,258 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:19,258 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:19,616 [INFO   ] Fitting done, took 0.3574371337890625[0m
+[0;37m2025-12-16 21:49:19,617 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:19,953 [INFO   ] Gen done, time=0.3364126682281494[0m
+[0;37m2025-12-16 21:49:19,987 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:20,105 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:20,106 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:49:20,902 [INFO   ] Fitting done, took 0.7959330081939697[0m
+[0;37m2025-12-16 21:49:20,903 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:21,291 [INFO   ] Gen done, time=0.38716769218444824[0m
+[0;37m2025-12-16 21:49:21,322 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:21,425 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:21,426 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:21,852 [INFO   ] Fitting done, took 0.4264655113220215[0m
+[0;37m2025-12-16 21:49:21,853 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:22,209 [INFO   ] Gen done, time=0.3556184768676758[0m
+[0;37m2025-12-16 21:49:22,243 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:22,334 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:22,334 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:22,857 [INFO   ] Fitting done, took 0.5222845077514648[0m
+[0;37m2025-12-16 21:49:22,858 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:23,229 [INFO   ] Gen done, time=0.37067580223083496[0m
+[0;37m2025-12-16 21:49:23,263 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:23,358 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:23,359 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:23,870 [INFO   ] Fitting done, took 0.5113627910614014[0m
+[0;37m2025-12-16 21:49:23,871 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:24,240 [INFO   ] Gen done, time=0.3689389228820801[0m
+[0;37m2025-12-16 21:49:24,276 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:24,370 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:24,370 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:24,950 [INFO   ] Fitting done, took 0.5794622898101807[0m
+[0;37m2025-12-16 21:49:24,951 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:25,356 [INFO   ] Gen done, time=0.4051086902618408[0m
+[0;37m2025-12-16 21:49:25,387 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:25,476 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:25,477 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:49:26,253 [INFO   ] Fitting done, took 0.7766721248626709[0m
+[0;37m2025-12-16 21:49:26,254 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:26,581 [INFO   ] Gen done, time=0.32674169540405273[0m
+[0;37m2025-12-16 21:49:26,616 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:26,711 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:26,712 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:27,339 [INFO   ] Fitting done, took 0.6271541118621826[0m
+[0;37m2025-12-16 21:49:27,340 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:27,710 [INFO   ] Gen done, time=0.36943793296813965[0m
+[0;37m2025-12-16 21:49:27,743 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:27,841 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:27,842 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:28,301 [INFO   ] Fitting done, took 0.4591052532196045[0m
+[0;37m2025-12-16 21:49:28,302 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:28,688 [INFO   ] Gen done, time=0.3851041793823242[0m
+[0;37m2025-12-16 21:49:28,720 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:28,818 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:28,819 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:29,449 [INFO   ] Fitting done, took 0.6296191215515137[0m
+[0;37m2025-12-16 21:49:29,450 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:29,784 [INFO   ] Gen done, time=0.3334527015686035[0m
+[0;37m2025-12-16 21:49:29,816 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:29,916 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:29,916 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:30,261 [INFO   ] Fitting done, took 0.34475088119506836[0m
+[0;37m2025-12-16 21:49:30,263 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:30,616 [INFO   ] Gen done, time=0.3532865047454834[0m
+[0;37m2025-12-16 21:49:30,647 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:30,750 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:30,751 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:49:31,620 [INFO   ] Fitting done, took 0.868767499923706[0m
+[0;37m2025-12-16 21:49:31,621 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:31,954 [INFO   ] Gen done, time=0.33258676528930664[0m
+[0;37m2025-12-16 21:49:31,987 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:32,078 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:32,078 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:32,742 [INFO   ] Fitting done, took 0.663825273513794[0m
+[0;37m2025-12-16 21:49:32,743 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:33,128 [INFO   ] Gen done, time=0.3847465515136719[0m
+[0;37m2025-12-16 21:49:33,159 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:33,251 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:33,252 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:33,740 [INFO   ] Fitting done, took 0.48861265182495117[0m
+[0;37m2025-12-16 21:49:33,741 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:34,115 [INFO   ] Gen done, time=0.37281370162963867[0m
+[0;37m2025-12-16 21:49:34,147 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:34,243 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:34,244 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:34,660 [INFO   ] Fitting done, took 0.41602659225463867[0m
+[0;37m2025-12-16 21:49:34,662 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:35,039 [INFO   ] Gen done, time=0.3775780200958252[0m
+[0;37m2025-12-16 21:49:35,070 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:35,157 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:35,158 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:35,636 [INFO   ] Fitting done, took 0.4780454635620117[0m
+[0;37m2025-12-16 21:49:35,637 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:36,003 [INFO   ] Gen done, time=0.36620235443115234[0m
+[0;37m2025-12-16 21:49:36,046 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:37,651 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:49:37,779 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:49:37,834 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:37,871 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:37,998 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:38,029 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:38,130 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:38,162 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:38,254 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:38,284 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:38,372 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:38,401 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:38,496 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:38,496 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:49:38,634 [INFO   ] Fitting done, took 0.1373918056488037[0m
+[0;37m2025-12-16 21:49:38,635 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:39,012 [INFO   ] Gen done, time=0.37655067443847656[0m
+[0;37m2025-12-16 21:49:39,044 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:39,152 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:39,153 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:39,320 [INFO   ] Fitting done, took 0.16692447662353516[0m
+[0;37m2025-12-16 21:49:39,321 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:39,622 [INFO   ] Gen done, time=0.3007359504699707[0m
+[0;37m2025-12-16 21:49:39,657 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:39,754 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:39,755 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:49:39,931 [INFO   ] Fitting done, took 0.17612600326538086[0m
+[0;37m2025-12-16 21:49:39,933 [INFO   ] Starting gen...[0m
+[0;37m2025-12-16 21:49:40,239 [INFO   ] Gen done, time=0.3061180114746094[0m
+[0;37m2025-12-16 21:49:40,273 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:49:40,376 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:49:40,377 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:30,121 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:50:30,223 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:50:30,753 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:50:30,859 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:50:30,921 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:30,956 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:31,073 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:31,108 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:31,215 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:31,251 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:31,357 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:31,388 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:31,482 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:31,513 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:31,613 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:31,613 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:50:31,877 [INFO   ] Fitting done, took 0.2637300491333008[0m
+[0;37m2025-12-16 21:50:31,890 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:31,995 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:31,996 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:32,115 [INFO   ] Fitting done, took 0.11946606636047363[0m
+[0;37m2025-12-16 21:50:32,129 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:32,231 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:32,232 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:32,385 [INFO   ] Fitting done, took 0.15331673622131348[0m
+[0;37m2025-12-16 21:50:32,398 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:32,515 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:32,516 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:32,697 [INFO   ] Fitting done, took 0.18131184577941895[0m
+[0;37m2025-12-16 21:50:32,709 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:32,808 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:32,808 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:32,909 [INFO   ] Fitting done, took 0.10111045837402344[0m
+[0;37m2025-12-16 21:50:32,922 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:34,525 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:50:34,613 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:50:34,671 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:34,712 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:34,820 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:34,854 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:34,950 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:34,980 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:35,074 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:35,105 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:35,197 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:35,228 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:35,327 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:35,359 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:35,458 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:35,488 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:35,577 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:35,609 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:35,706 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:35,738 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:35,836 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:35,867 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:37,458 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:50:37,547 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:50:37,603 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:37,649 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:37,771 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:37,803 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:37,929 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:37,965 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:38,060 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:38,091 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:38,181 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:38,210 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:38,298 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:38,298 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:50:38,411 [INFO   ] Fitting done, took 0.11293268203735352[0m
+[0;37m2025-12-16 21:50:38,423 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:38,522 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:38,522 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:38,683 [INFO   ] Fitting done, took 0.1610736846923828[0m
+[0;37m2025-12-16 21:50:38,696 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:38,793 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:38,794 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:38,927 [INFO   ] Fitting done, took 0.13275408744812012[0m
+[0;37m2025-12-16 21:50:38,940 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:39,039 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:39,039 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:39,147 [INFO   ] Fitting done, took 0.10752344131469727[0m
+[0;37m2025-12-16 21:50:39,159 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:39,259 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:39,260 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:39,378 [INFO   ] Fitting done, took 0.11873459815979004[0m
+[0;37m2025-12-16 21:50:39,391 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:40,998 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:50:41,094 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:50:41,150 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:41,184 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:41,294 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:41,328 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:41,421 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:41,451 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:41,544 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:41,575 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:41,686 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:41,721 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:41,839 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:41,840 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:50:42,001 [INFO   ] Fitting done, took 0.16118812561035156[0m
+[0;37m2025-12-16 21:50:42,014 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:42,123 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:42,123 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:42,290 [INFO   ] Fitting done, took 0.16712617874145508[0m
+[0;37m2025-12-16 21:50:42,303 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:42,399 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:42,400 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:42,472 [INFO   ] Fitting done, took 0.07146978378295898[0m
+[0;37m2025-12-16 21:50:42,484 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:42,588 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:42,589 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:42,666 [INFO   ] Fitting done, took 0.07760262489318848[0m
+[0;37m2025-12-16 21:50:42,679 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:42,783 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:42,783 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:42,896 [INFO   ] Fitting done, took 0.11284685134887695[0m
+[0;37m2025-12-16 21:50:42,908 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:44,360 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:50:44,449 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:50:44,502 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:44,537 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:44,644 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:44,676 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:44,767 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:44,797 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:44,893 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:44,926 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:45,018 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:45,048 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:45,136 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:45,167 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:45,280 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:45,315 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:45,410 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:45,440 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:45,523 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:45,556 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:45,648 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:45,677 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:47,268 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:50:47,351 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:50:47,407 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:47,443 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:47,550 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:47,585 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:47,685 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:47,716 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:47,813 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:47,848 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:47,953 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:47,987 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:48,093 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:48,094 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:50:48,247 [INFO   ] Fitting done, took 0.15314722061157227[0m
+[0;37m2025-12-16 21:50:48,271 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:48,384 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:48,385 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:48,511 [INFO   ] Fitting done, took 0.12592649459838867[0m
+[0;37m2025-12-16 21:50:48,527 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:48,632 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:48,633 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:48,769 [INFO   ] Fitting done, took 0.13618755340576172[0m
+[0;37m2025-12-16 21:50:48,782 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:48,892 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:48,893 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:49,001 [INFO   ] Fitting done, took 0.10853743553161621[0m
+[0;37m2025-12-16 21:50:49,014 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:49,125 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:49,126 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:49,219 [INFO   ] Fitting done, took 0.09336614608764648[0m
+[0;37m2025-12-16 21:50:49,231 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:50,833 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:50:50,927 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:50:51,002 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:51,040 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:51,182 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:51,214 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:51,305 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:51,338 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:51,428 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:51,460 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:51,556 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:51,591 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:51,692 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:51,693 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:50:51,852 [INFO   ] Fitting done, took 0.15917634963989258[0m
+[0;37m2025-12-16 21:50:51,864 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:51,972 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:51,973 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:52,086 [INFO   ] Fitting done, took 0.11377906799316406[0m
+[0;37m2025-12-16 21:50:52,099 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:52,215 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:52,216 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:52,301 [INFO   ] Fitting done, took 0.08467245101928711[0m
+[0;37m2025-12-16 21:50:52,314 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:52,415 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:52,416 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:52,501 [INFO   ] Fitting done, took 0.08550548553466797[0m
+[0;37m2025-12-16 21:50:52,514 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:52,615 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:52,615 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:52,701 [INFO   ] Fitting done, took 0.08561825752258301[0m
+[0;37m2025-12-16 21:50:52,714 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:54,315 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:50:54,406 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:50:54,467 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:54,503 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:54,613 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:54,646 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:54,743 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:54,772 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:54,866 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:54,897 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:54,991 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:55,020 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:55,119 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:55,120 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:50:55,197 [INFO   ] Fitting done, took 0.0773308277130127[0m
+[0;37m2025-12-16 21:50:55,210 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:55,313 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:55,313 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:55,422 [INFO   ] Fitting done, took 0.10824394226074219[0m
+[0;37m2025-12-16 21:50:55,435 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:55,540 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:55,540 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:55,651 [INFO   ] Fitting done, took 0.11084246635437012[0m
+[0;37m2025-12-16 21:50:55,664 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:55,762 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:55,762 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:55,893 [INFO   ] Fitting done, took 0.13100051879882812[0m
+[0;37m2025-12-16 21:50:55,907 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:56,035 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:56,036 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:56,156 [INFO   ] Fitting done, took 0.12028956413269043[0m
+[0;37m2025-12-16 21:50:56,169 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:57,838 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:50:57,939 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:50:58,002 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:58,038 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:58,147 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:58,180 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:58,274 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:58,304 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:58,396 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:58,426 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:58,524 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:58,554 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:58,645 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:58,645 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:50:58,747 [INFO   ] Fitting done, took 0.1017298698425293[0m
+[0;37m2025-12-16 21:50:58,760 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:58,867 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:58,868 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:59,247 [INFO   ] Fitting done, took 0.37887144088745117[0m
+[0;37m2025-12-16 21:50:59,259 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:59,362 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:59,362 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:59,458 [INFO   ] Fitting done, took 0.0954279899597168[0m
+[0;37m2025-12-16 21:50:59,470 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:59,595 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:59,595 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:50:59,676 [INFO   ] Fitting done, took 0.08014917373657227[0m
+[0;37m2025-12-16 21:50:59,688 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:50:59,826 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:50:59,827 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:00,023 [INFO   ] Fitting done, took 0.19667577743530273[0m
+[0;37m2025-12-16 21:51:00,036 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:01,640 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:01,723 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:01,780 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:01,813 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:01,924 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:01,955 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:02,050 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:02,084 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:02,179 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:02,211 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:02,307 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:02,342 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:02,437 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:02,438 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:02,590 [INFO   ] Fitting done, took 0.15179109573364258[0m
+[0;37m2025-12-16 21:51:02,602 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:02,708 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:02,709 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:02,781 [INFO   ] Fitting done, took 0.07243800163269043[0m
+[0;37m2025-12-16 21:51:02,794 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:02,895 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:02,895 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:03,059 [INFO   ] Fitting done, took 0.16324305534362793[0m
+[0;37m2025-12-16 21:51:03,071 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:03,169 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:03,170 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:03,337 [INFO   ] Fitting done, took 0.1668717861175537[0m
+[0;37m2025-12-16 21:51:03,350 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:03,456 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:03,457 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:03,560 [INFO   ] Fitting done, took 0.10268068313598633[0m
+[0;37m2025-12-16 21:51:03,572 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:05,177 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:05,277 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:05,337 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:05,377 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:05,568 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:05,599 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:05,697 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:05,731 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:05,833 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:05,867 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:05,965 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:05,996 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:06,096 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:06,097 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:06,181 [INFO   ] Fitting done, took 0.08429479598999023[0m
+[0;37m2025-12-16 21:51:06,193 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:06,308 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:06,309 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:06,587 [INFO   ] Fitting done, took 0.27797842025756836[0m
+[0;37m2025-12-16 21:51:06,599 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:06,707 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:06,707 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:06,855 [INFO   ] Fitting done, took 0.14769220352172852[0m
+[0;37m2025-12-16 21:51:06,868 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:06,976 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:06,977 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:07,076 [INFO   ] Fitting done, took 0.09960198402404785[0m
+[0;37m2025-12-16 21:51:07,091 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:07,195 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:07,195 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:07,295 [INFO   ] Fitting done, took 0.09942221641540527[0m
+[0;37m2025-12-16 21:51:07,307 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:08,911 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:09,000 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:09,096 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:09,136 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:09,238 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:09,270 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:09,368 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:09,399 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:09,490 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:09,520 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:09,618 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:09,650 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:09,748 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:09,748 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:09,856 [INFO   ] Fitting done, took 0.10766196250915527[0m
+[0;37m2025-12-16 21:51:09,868 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:09,977 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:09,977 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:10,094 [INFO   ] Fitting done, took 0.11676383018493652[0m
+[0;37m2025-12-16 21:51:10,107 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:10,209 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:10,209 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:10,295 [INFO   ] Fitting done, took 0.08580708503723145[0m
+[0;37m2025-12-16 21:51:10,308 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:10,431 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:10,432 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:10,597 [INFO   ] Fitting done, took 0.1645033359527588[0m
+[0;37m2025-12-16 21:51:10,609 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:10,710 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:10,711 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:10,812 [INFO   ] Fitting done, took 0.10148262977600098[0m
+[0;37m2025-12-16 21:51:10,824 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:12,428 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:12,529 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:12,592 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:12,630 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:12,737 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:12,617 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:12,708 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:12,738 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:12,851 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:12,890 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:13,016 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:13,045 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:13,132 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:13,133 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:13,290 [INFO   ] Fitting done, took 0.15691184997558594[0m
+[0;37m2025-12-16 21:51:13,302 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:13,399 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:13,400 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:13,495 [INFO   ] Fitting done, took 0.09552550315856934[0m
+[0;37m2025-12-16 21:51:13,508 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:13,601 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:13,601 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:13,724 [INFO   ] Fitting done, took 0.12230825424194336[0m
+[0;37m2025-12-16 21:51:13,736 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:13,832 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:13,833 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:14,010 [INFO   ] Fitting done, took 0.1774582862854004[0m
+[0;37m2025-12-16 21:51:14,022 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:14,118 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:14,119 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:14,273 [INFO   ] Fitting done, took 0.15444421768188477[0m
+[0;37m2025-12-16 21:51:14,286 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:15,890 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:15,982 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:16,035 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:16,069 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:16,177 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:16,210 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:16,304 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:16,336 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:16,426 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:16,456 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:16,545 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:16,575 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:16,673 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:16,674 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:16,789 [INFO   ] Fitting done, took 0.1142127513885498[0m
+[0;37m2025-12-16 21:51:16,801 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:16,956 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:16,956 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:17,025 [INFO   ] Fitting done, took 0.06825089454650879[0m
+[0;37m2025-12-16 21:51:17,037 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:17,133 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:17,134 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:17,282 [INFO   ] Fitting done, took 0.1483478546142578[0m
+[0;37m2025-12-16 21:51:17,295 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:17,391 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:17,391 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:17,615 [INFO   ] Fitting done, took 0.22388243675231934[0m
+[0;37m2025-12-16 21:51:17,628 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:17,727 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:17,727 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:17,905 [INFO   ] Fitting done, took 0.17783761024475098[0m
+[0;37m2025-12-16 21:51:17,917 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:19,526 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:19,611 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:19,669 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:19,703 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:19,809 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:19,839 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:19,928 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:19,961 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:20,052 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:20,083 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:20,199 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:20,228 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:20,321 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:20,321 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:20,482 [INFO   ] Fitting done, took 0.1601555347442627[0m
+[0;37m2025-12-16 21:51:20,494 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:20,594 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:20,595 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:20,705 [INFO   ] Fitting done, took 0.1105036735534668[0m
+[0;37m2025-12-16 21:51:20,718 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:20,882 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:20,883 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:21,495 [INFO   ] Fitting done, took 0.612030029296875[0m
+[0;37m2025-12-16 21:51:21,507 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:21,607 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:21,607 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:21,832 [INFO   ] Fitting done, took 0.22441816329956055[0m
+[0;37m2025-12-16 21:51:21,844 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:21,942 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:21,943 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:22,026 [INFO   ] Fitting done, took 0.08300280570983887[0m
+[0;37m2025-12-16 21:51:22,040 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:23,641 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:23,740 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:23,803 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:23,837 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:23,944 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:23,975 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:24,065 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:24,097 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:24,189 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:24,223 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:24,313 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:24,343 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:24,436 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:24,437 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:24,521 [INFO   ] Fitting done, took 0.08414173126220703[0m
+[0;37m2025-12-16 21:51:24,534 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:24,637 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:24,637 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:24,815 [INFO   ] Fitting done, took 0.1779468059539795[0m
+[0;37m2025-12-16 21:51:24,828 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:24,932 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:24,933 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:25,067 [INFO   ] Fitting done, took 0.1341109275817871[0m
+[0;37m2025-12-16 21:51:25,080 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:25,207 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:25,208 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:25,412 [INFO   ] Fitting done, took 0.20425915718078613[0m
+[0;37m2025-12-16 21:51:25,425 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:25,521 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:25,521 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:25,593 [INFO   ] Fitting done, took 0.07145953178405762[0m
+[0;37m2025-12-16 21:51:25,605 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:27,205 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:27,294 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:27,349 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:27,381 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:27,488 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:27,520 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:27,618 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:27,649 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:27,751 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:27,782 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:27,874 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:27,905 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:28,001 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:28,002 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:28,195 [INFO   ] Fitting done, took 0.19310808181762695[0m
+[0;37m2025-12-16 21:51:28,207 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:28,312 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:28,313 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:28,477 [INFO   ] Fitting done, took 0.16259431838989258[0m
+[0;37m2025-12-16 21:51:28,497 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:28,617 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:28,617 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:28,752 [INFO   ] Fitting done, took 0.1346738338470459[0m
+[0;37m2025-12-16 21:51:28,764 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:28,859 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:28,860 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:28,956 [INFO   ] Fitting done, took 0.09589409828186035[0m
+[0;37m2025-12-16 21:51:28,968 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:29,072 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:29,073 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:29,190 [INFO   ] Fitting done, took 0.1177213191986084[0m
+[0;37m2025-12-16 21:51:29,203 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:30,823 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:30,915 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:30,977 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:31,016 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:31,128 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:31,161 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:31,256 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:31,287 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:31,379 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:31,411 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:31,520 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:31,555 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:31,653 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:31,654 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:31,751 [INFO   ] Fitting done, took 0.0974586009979248[0m
+[0;37m2025-12-16 21:51:31,764 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:31,868 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:31,869 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:32,020 [INFO   ] Fitting done, took 0.15176796913146973[0m
+[0;37m2025-12-16 21:51:32,033 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:32,135 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:32,136 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:32,282 [INFO   ] Fitting done, took 0.14644861221313477[0m
+[0;37m2025-12-16 21:51:32,295 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:32,405 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:32,405 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:32,491 [INFO   ] Fitting done, took 0.08557915687561035[0m
+[0;37m2025-12-16 21:51:32,503 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:32,606 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:32,607 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:32,719 [INFO   ] Fitting done, took 0.1123056411743164[0m
+[0;37m2025-12-16 21:51:32,732 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:34,329 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:34,418 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:34,485 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:34,525 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:34,626 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:34,658 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:34,750 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:34,781 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:34,870 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:34,904 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:34,999 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:35,031 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:35,121 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:35,122 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:35,280 [INFO   ] Fitting done, took 0.15800857543945312[0m
+[0;37m2025-12-16 21:51:35,292 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:35,414 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:35,414 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:35,510 [INFO   ] Fitting done, took 0.09591126441955566[0m
+[0;37m2025-12-16 21:51:35,523 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:35,622 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:35,623 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:35,729 [INFO   ] Fitting done, took 0.1065835952758789[0m
+[0;37m2025-12-16 21:51:35,742 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:35,842 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:35,842 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:36,034 [INFO   ] Fitting done, took 0.1916496753692627[0m
+[0;37m2025-12-16 21:51:36,047 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:36,149 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:36,150 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:36,229 [INFO   ] Fitting done, took 0.07917308807373047[0m
+[0;37m2025-12-16 21:51:36,242 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:37,843 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:37,943 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:38,007 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:38,049 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:38,153 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:38,186 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:38,278 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:38,309 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:38,406 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:38,438 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:38,528 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:38,560 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:38,654 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:38,655 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:38,806 [INFO   ] Fitting done, took 0.15143823623657227[0m
+[0;37m2025-12-16 21:51:38,819 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:38,922 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:38,922 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:39,073 [INFO   ] Fitting done, took 0.15085577964782715[0m
+[0;37m2025-12-16 21:51:39,085 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:39,184 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:39,184 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:39,262 [INFO   ] Fitting done, took 0.07821083068847656[0m
+[0;37m2025-12-16 21:51:39,275 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:39,373 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:39,374 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:39,619 [INFO   ] Fitting done, took 0.24556899070739746[0m
+[0;37m2025-12-16 21:51:39,632 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:39,738 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:39,738 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:39,860 [INFO   ] Fitting done, took 0.12150859832763672[0m
+[0;37m2025-12-16 21:51:39,873 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:41,489 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:41,592 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:41,655 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:41,690 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:41,802 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:41,834 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:41,930 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:41,962 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:42,060 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:42,091 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:42,182 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:42,213 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:42,305 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:42,306 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:42,480 [INFO   ] Fitting done, took 0.17443513870239258[0m
+[0;37m2025-12-16 21:51:42,492 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:42,593 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:42,593 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:42,522 [INFO   ] Fitting done, took -0.07094359397888184[0m
+[0;37m2025-12-16 21:51:42,535 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:42,638 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:42,639 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:42,844 [INFO   ] Fitting done, took 0.20515227317810059[0m
+[0;37m2025-12-16 21:51:42,857 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:42,957 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:42,958 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:43,145 [INFO   ] Fitting done, took 0.18733668327331543[0m
+[0;37m2025-12-16 21:51:43,158 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:43,282 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:43,283 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:43,886 [INFO   ] Fitting done, took 0.6033291816711426[0m
+[0;37m2025-12-16 21:51:43,898 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:45,499 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:45,588 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:45,642 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:45,680 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:45,791 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:45,822 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:45,947 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:45,979 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:46,070 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:46,100 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:46,193 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:46,223 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:46,313 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:46,314 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:46,404 [INFO   ] Fitting done, took 0.09038472175598145[0m
+[0;37m2025-12-16 21:51:46,416 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:46,520 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:46,521 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:46,660 [INFO   ] Fitting done, took 0.13974452018737793[0m
+[0;37m2025-12-16 21:51:46,673 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:46,768 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:46,769 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:46,933 [INFO   ] Fitting done, took 0.16422557830810547[0m
+[0;37m2025-12-16 21:51:46,946 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:47,041 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:47,042 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:47,172 [INFO   ] Fitting done, took 0.1300954818725586[0m
+[0;37m2025-12-16 21:51:47,184 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:47,278 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:47,279 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:47,425 [INFO   ] Fitting done, took 0.1460273265838623[0m
+[0;37m2025-12-16 21:51:47,437 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:49,035 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:49,125 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:49,188 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:49,222 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:49,328 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:49,361 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:49,452 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:49,482 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:49,575 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:49,604 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:49,699 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:49,731 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:49,827 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:49,828 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:50,008 [INFO   ] Fitting done, took 0.1799771785736084[0m
+[0;37m2025-12-16 21:51:50,021 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:50,116 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:50,117 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:50,186 [INFO   ] Fitting done, took 0.06920385360717773[0m
+[0;37m2025-12-16 21:51:50,199 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:50,293 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:50,293 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:50,519 [INFO   ] Fitting done, took 0.22577762603759766[0m
+[0;37m2025-12-16 21:51:50,533 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:50,640 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:50,640 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:50,785 [INFO   ] Fitting done, took 0.14478063583374023[0m
+[0;37m2025-12-16 21:51:50,797 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:50,910 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:50,910 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:50,969 [INFO   ] Fitting done, took 0.05851387977600098[0m
+[0;37m2025-12-16 21:51:50,981 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:52,587 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:52,676 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:52,732 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:52,768 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:52,894 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:52,936 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:53,040 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:53,071 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:53,169 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:53,203 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:53,322 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:53,353 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:53,452 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:53,452 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:53,579 [INFO   ] Fitting done, took 0.12697386741638184[0m
+[0;37m2025-12-16 21:51:53,592 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:53,697 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:53,697 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:53,771 [INFO   ] Fitting done, took 0.07343482971191406[0m
+[0;37m2025-12-16 21:51:53,783 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:53,912 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:53,912 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:54,006 [INFO   ] Fitting done, took 0.0935523509979248[0m
+[0;37m2025-12-16 21:51:54,018 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:54,180 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:54,180 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:54,315 [INFO   ] Fitting done, took 0.13420939445495605[0m
+[0;37m2025-12-16 21:51:54,327 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:54,427 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:54,428 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:54,587 [INFO   ] Fitting done, took 0.15891790390014648[0m
+[0;37m2025-12-16 21:51:54,599 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:56,202 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:56,306 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:51:56,369 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:56,406 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:56,508 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:56,542 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:56,635 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:56,665 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:56,757 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:56,789 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:56,881 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:56,914 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:57,018 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:57,019 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:51:57,155 [INFO   ] Fitting done, took 0.1359853744506836[0m
+[0;37m2025-12-16 21:51:57,168 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:57,280 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:57,281 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:57,467 [INFO   ] Fitting done, took 0.186570405960083[0m
+[0;37m2025-12-16 21:51:57,480 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:57,581 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:57,581 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:57,732 [INFO   ] Fitting done, took 0.15071582794189453[0m
+[0;37m2025-12-16 21:51:57,745 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:57,843 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:57,844 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:58,002 [INFO   ] Fitting done, took 0.1577918529510498[0m
+[0;37m2025-12-16 21:51:58,015 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:58,113 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:51:58,114 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:51:58,227 [INFO   ] Fitting done, took 0.11263561248779297[0m
+[0;37m2025-12-16 21:51:58,239 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:51:59,851 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:51:59,953 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:52:00,016 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:00,050 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:00,165 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:00,196 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:00,296 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:00,328 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:00,421 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:00,455 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:00,546 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:00,576 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:00,670 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:00,670 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:52:01,576 [INFO   ] Fitting done, took 0.906076192855835[0m
+[0;37m2025-12-16 21:52:01,590 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:01,685 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:01,686 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:01,858 [INFO   ] Fitting done, took 0.1717691421508789[0m
+[0;37m2025-12-16 21:52:01,870 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:01,972 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:01,973 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:02,044 [INFO   ] Fitting done, took 0.07165098190307617[0m
+[0;37m2025-12-16 21:52:02,057 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:02,159 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:02,159 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:02,333 [INFO   ] Fitting done, took 0.17430329322814941[0m
+[0;37m2025-12-16 21:52:02,346 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:02,452 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:02,452 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:02,547 [INFO   ] Fitting done, took 0.09506058692932129[0m
+[0;37m2025-12-16 21:52:02,560 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:04,166 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:52:04,262 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:52:04,318 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:04,352 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:04,470 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:04,505 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:04,604 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:04,635 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:04,731 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:04,762 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:04,854 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:04,884 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:04,980 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:04,980 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:52:05,856 [INFO   ] Fitting done, took 0.8756082057952881[0m
+[0;37m2025-12-16 21:52:05,868 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:05,973 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:05,974 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:06,096 [INFO   ] Fitting done, took 0.12217926979064941[0m
+[0;37m2025-12-16 21:52:06,109 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:06,224 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:06,224 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:06,407 [INFO   ] Fitting done, took 0.1831493377685547[0m
+[0;37m2025-12-16 21:52:06,421 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:06,538 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:06,538 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:06,733 [INFO   ] Fitting done, took 0.19493889808654785[0m
+[0;37m2025-12-16 21:52:06,747 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:06,862 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:06,862 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:06,961 [INFO   ] Fitting done, took 0.09862899780273438[0m
+[0;37m2025-12-16 21:52:06,974 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:08,593 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:52:08,692 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:52:08,748 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:08,783 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:08,891 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:08,924 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:09,020 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:09,051 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:09,147 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:09,179 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:09,274 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:09,306 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:09,403 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:09,403 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:52:09,583 [INFO   ] Fitting done, took 0.1795179843902588[0m
+[0;37m2025-12-16 21:52:09,595 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:09,699 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:09,699 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:09,842 [INFO   ] Fitting done, took 0.14239239692687988[0m
+[0;37m2025-12-16 21:52:09,854 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:09,961 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:09,962 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:10,111 [INFO   ] Fitting done, took 0.14936494827270508[0m
+[0;37m2025-12-16 21:52:10,123 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:10,236 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:10,236 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:10,553 [INFO   ] Fitting done, took 0.3163022994995117[0m
+[0;37m2025-12-16 21:52:10,565 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:10,684 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:10,685 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:10,841 [INFO   ] Fitting done, took 0.15563154220581055[0m
+[0;37m2025-12-16 21:52:10,853 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:12,303 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:52:12,405 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:52:12,472 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:12,510 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:12,614 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:12,648 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:12,742 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:12,773 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:12,866 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:12,898 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:12,989 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:13,021 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:13,113 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:13,113 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:52:13,218 [INFO   ] Fitting done, took 0.10450434684753418[0m
+[0;37m2025-12-16 21:52:13,231 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:13,327 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:13,328 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:13,400 [INFO   ] Fitting done, took 0.07271623611450195[0m
+[0;37m2025-12-16 21:52:13,413 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:13,511 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:13,511 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:13,634 [INFO   ] Fitting done, took 0.12271571159362793[0m
+[0;37m2025-12-16 21:52:13,646 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:13,744 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:13,744 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:13,810 [INFO   ] Fitting done, took 0.06623172760009766[0m
+[0;37m2025-12-16 21:52:13,822 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:13,916 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:13,916 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:14,068 [INFO   ] Fitting done, took 0.15176081657409668[0m
+[0;37m2025-12-16 21:52:14,082 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:15,677 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:52:15,770 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:52:15,827 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:15,862 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:15,970 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:16,002 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:16,091 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:16,123 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:16,214 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:16,246 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:16,333 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:16,364 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:16,455 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:16,455 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:52:16,574 [INFO   ] Fitting done, took 0.11858677864074707[0m
+[0;37m2025-12-16 21:52:16,587 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:16,690 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:16,691 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:16,791 [INFO   ] Fitting done, took 0.1006767749786377[0m
+[0;37m2025-12-16 21:52:16,804 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:16,905 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:16,905 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:17,002 [INFO   ] Fitting done, took 0.09623932838439941[0m
+[0;37m2025-12-16 21:52:17,015 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:17,112 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:17,113 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:17,214 [INFO   ] Fitting done, took 0.10097527503967285[0m
+[0;37m2025-12-16 21:52:17,226 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:17,329 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:17,330 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:17,435 [INFO   ] Fitting done, took 0.10491156578063965[0m
+[0;37m2025-12-16 21:52:17,447 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:19,052 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:52:19,140 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:52:19,193 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:19,228 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:19,334 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:19,365 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:19,456 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:19,488 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:19,587 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:19,616 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:19,706 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:19,737 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:19,837 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:19,838 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:52:20,278 [INFO   ] Fitting done, took 0.4406149387359619[0m
+[0;37m2025-12-16 21:52:20,291 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:20,391 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:20,392 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:20,582 [INFO   ] Fitting done, took 0.18985462188720703[0m
+[0;37m2025-12-16 21:52:20,594 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:20,690 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:20,691 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:20,814 [INFO   ] Fitting done, took 0.12309813499450684[0m
+[0;37m2025-12-16 21:52:20,826 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:20,927 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:20,928 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:21,077 [INFO   ] Fitting done, took 0.1489880084991455[0m
+[0;37m2025-12-16 21:52:21,089 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:21,186 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:21,186 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:21,400 [INFO   ] Fitting done, took 0.21366620063781738[0m
+[0;37m2025-12-16 21:52:21,412 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:23,052 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:52:23,156 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:52:23,212 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:23,246 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:23,353 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:23,386 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:23,478 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:23,508 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:23,601 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:23,633 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:23,729 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:23,760 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:23,851 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:23,851 [INFO   ] Starting fitting (no warm start)...[0m
+[0;37m2025-12-16 21:52:24,055 [INFO   ] Fitting done, took 0.2039046287536621[0m
+[0;37m2025-12-16 21:52:24,068 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:24,166 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:24,167 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:24,350 [INFO   ] Fitting done, took 0.18378090858459473[0m
+[0;37m2025-12-16 21:52:24,363 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:24,465 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:24,465 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:24,572 [INFO   ] Fitting done, took 0.10680103302001953[0m
+[0;37m2025-12-16 21:52:24,585 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:24,687 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:24,688 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:24,809 [INFO   ] Fitting done, took 0.12126469612121582[0m
+[0;37m2025-12-16 21:52:24,822 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:52:24,918 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:52:24,918 [INFO   ] Starting fitting (warm start)...[0m
+[0;37m2025-12-16 21:52:24,990 [INFO   ] Fitting done, took 0.07142424583435059[0m
+[0;37m2025-12-16 21:52:25,002 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:04,267 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:04,395 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:04,924 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:05,058 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:05,135 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:05,174 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:05,296 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:05,332 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:05,440 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:05,475 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:05,577 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:05,611 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:05,699 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:05,728 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:07,325 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:07,433 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:07,500 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:07,538 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:07,648 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:07,681 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:07,777 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:07,809 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:07,920 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:07,952 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:08,041 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:08,072 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:09,661 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:09,754 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:09,814 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:09,846 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:09,953 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:09,988 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:10,079 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:10,108 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:10,195 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:10,223 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:10,321 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:10,376 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:12,001 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:12,095 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:12,150 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:12,029 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:12,127 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:12,158 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:12,250 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:12,280 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:12,374 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:12,404 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:12,492 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:12,521 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:14,122 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:14,219 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:14,277 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:14,311 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:14,418 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:14,449 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:14,542 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:14,573 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:14,668 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:14,700 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:14,794 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:14,824 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:16,416 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:16,508 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:16,564 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:16,598 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:16,695 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:16,728 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:16,819 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:16,847 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:16,931 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:16,960 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:17,046 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:17,075 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:18,661 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:18,756 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:18,819 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:18,854 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:18,960 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:18,991 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:19,077 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:19,107 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:19,197 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:19,228 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:19,314 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:19,344 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:20,931 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:21,028 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:21,084 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:21,118 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:21,214 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:21,245 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:21,330 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:21,358 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:21,472 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:21,501 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:21,591 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:21,621 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:23,222 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:23,306 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:23,361 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:23,394 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:23,489 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:23,526 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:23,617 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:23,646 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:23,735 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:23,763 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:23,848 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:23,877 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:25,466 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:25,554 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:25,611 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:25,645 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:25,748 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:25,778 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:25,865 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:25,896 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:25,991 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:26,022 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:26,110 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:26,139 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:27,729 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:27,829 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:27,891 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:27,926 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:28,036 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:28,068 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:28,157 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:28,185 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:28,272 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:28,300 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:28,386 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:28,416 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:30,000 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:30,093 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:30,163 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:30,202 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:30,314 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:30,347 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:30,469 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:30,502 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:30,592 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:30,622 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:30,706 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:30,734 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:32,335 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:32,424 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:32,481 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:32,516 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:32,623 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:32,655 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:32,745 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:32,777 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:32,865 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:32,918 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:33,005 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:33,034 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:34,622 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:34,728 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:34,785 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:34,817 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:34,919 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:34,952 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:35,042 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:35,071 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:35,163 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:35,193 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:35,289 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:35,321 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:36,913 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:37,033 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:37,102 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:37,139 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:37,245 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:37,279 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:37,379 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:37,410 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:37,513 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:37,546 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:37,655 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:37,697 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:39,307 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:39,411 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:39,468 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:39,504 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:39,618 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:39,652 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:39,746 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:39,774 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:39,860 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:39,890 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:39,972 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:40,003 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:41,600 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:41,695 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:41,754 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:41,794 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:41,904 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:41,937 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:41,878 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:41,914 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:42,005 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:42,034 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:42,131 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:42,166 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:43,753 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:43,847 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:43,912 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:43,948 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:44,055 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:44,088 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:44,181 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:44,213 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:44,303 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:44,333 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:44,427 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:44,459 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:46,051 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:46,175 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:46,253 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:46,288 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:46,381 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:46,410 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:46,504 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:46,538 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:46,636 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:46,667 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:46,763 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:46,796 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:48,397 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:48,486 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:48,542 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:48,579 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:48,690 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:48,725 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:48,821 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:48,851 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:48,934 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:48,963 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:49,050 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:49,080 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:50,676 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:50,763 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:50,819 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:50,855 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:50,954 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:50,984 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:51,067 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:51,095 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:51,186 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:51,216 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:51,312 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:51,344 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:52,937 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:53,083 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:53,139 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:53,171 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:53,273 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:53,305 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:53,397 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:53,427 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:53,515 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:53,546 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:53,630 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:53,660 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:55,247 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:55,339 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:55,401 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:55,441 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:55,544 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:55,579 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:55,672 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:55,703 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:55,817 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:55,855 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:55,952 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:55,979 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:57,567 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:57,668 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:53:57,725 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:57,757 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:57,859 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:57,900 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:57,983 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:58,017 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:58,114 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:58,145 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:58,239 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:53:58,268 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:53:59,853 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:53:59,948 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:00,020 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:00,059 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:00,167 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:00,200 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:00,294 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:00,329 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:00,424 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:00,454 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:00,550 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:00,580 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:02,172 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:02,270 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:02,325 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:02,354 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:02,455 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:02,484 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:02,571 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:02,604 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:02,697 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:02,728 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:02,818 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:02,851 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:04,452 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:04,543 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:04,596 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:04,632 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:04,737 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:04,771 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:04,857 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:04,886 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:04,972 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:05,000 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:05,086 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:05,114 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:06,706 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:06,816 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:06,875 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:06,907 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:07,005 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:07,035 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:07,127 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:07,158 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:07,252 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:07,283 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:07,368 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:07,398 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:08,994 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:09,086 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:09,139 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:09,174 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:09,313 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:09,343 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:09,429 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:09,459 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:09,547 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:09,579 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:09,663 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:09,695 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:11,308 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:11,398 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:11,455 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:11,486 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:11,601 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:11,654 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:11,758 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:11,787 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:11,726 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:11,757 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:11,845 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:11,874 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:13,462 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:13,549 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:13,601 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:13,637 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:13,732 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:13,764 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:13,850 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:13,878 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:13,961 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:13,990 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:14,073 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:14,100 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:15,690 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:15,773 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:15,828 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:15,863 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:15,969 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:16,001 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:16,095 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:16,125 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:16,216 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:16,246 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:16,339 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:16,368 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:31,190 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:31,336 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:31,919 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:32,044 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:32,114 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:32,151 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:32,263 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:32,297 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:32,388 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:32,419 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:32,512 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:32,541 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:32,631 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:32,657 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:34,252 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:34,346 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:34,408 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:34,443 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:34,555 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:34,588 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:34,680 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:34,710 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:34,799 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:34,829 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:34,919 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:34,949 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:36,542 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:36,644 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:36,703 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:36,736 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:36,838 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:36,870 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:36,960 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:36,991 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:37,084 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:37,117 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:37,211 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:37,244 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:38,855 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:38,950 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:39,008 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:39,041 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:39,148 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:39,182 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:39,271 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:39,302 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:39,393 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:39,423 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:39,510 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:39,539 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:41,131 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:41,232 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:41,302 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:41,349 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:41,463 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:41,495 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:41,590 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:41,621 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:41,562 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:41,595 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:41,688 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:41,719 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:43,306 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:43,432 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:43,489 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:43,519 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:43,621 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:43,655 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:43,757 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:43,786 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:43,869 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:43,897 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:43,980 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:44,009 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:45,598 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:45,706 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:45,779 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:45,815 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:45,917 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:45,949 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:46,038 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:46,070 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:46,158 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:46,188 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:46,279 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:46,309 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:47,901 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:47,988 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:48,044 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:48,078 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:48,182 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:48,211 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:48,326 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:48,361 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:48,454 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:48,486 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:48,579 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:48,610 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:50,205 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:50,297 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:50,356 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:50,388 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:50,487 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:50,519 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:50,607 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:50,637 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:50,730 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:50,759 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:50,852 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:50,883 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:52,472 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:52,572 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:52,624 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:52,656 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:52,791 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:52,826 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:52,928 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:52,962 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:53,053 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:53,085 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:53,170 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:53,201 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:54,795 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:54,885 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:54,951 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:54,991 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:55,097 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:55,128 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:55,212 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:55,242 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:55,331 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:55,363 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:55,448 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:55,478 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:57,078 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:57,171 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:57,230 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:57,264 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:57,372 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:57,406 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:57,499 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:57,531 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:57,653 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:57,692 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:57,790 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:57,821 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:59,419 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:54:59,524 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:54:59,586 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:59,623 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:59,729 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:59,764 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:59,879 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:54:59,909 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:54:59,995 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:00,027 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:00,121 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:00,150 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:01,755 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:01,868 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:01,931 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:01,966 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:02,073 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:02,105 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:02,206 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:02,238 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:02,341 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:02,376 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:02,473 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:02,504 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:04,106 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:04,192 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:04,241 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:04,272 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:04,373 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:04,406 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:04,492 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:04,520 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:04,628 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:04,656 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:04,745 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:04,774 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:06,364 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:06,477 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:06,543 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:06,581 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:06,685 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:06,717 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:06,812 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:06,843 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:06,943 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:06,974 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:07,065 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:07,095 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:08,698 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:08,787 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:08,852 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:08,889 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:08,987 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:09,017 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:09,100 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:09,130 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:09,221 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:09,251 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:09,331 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:09,358 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:10,943 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:11,035 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:11,089 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:11,123 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:11,233 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:11,265 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:11,350 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:11,380 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:11,465 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:11,494 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:11,421 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:11,451 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:13,044 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:13,129 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:13,178 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:13,206 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:13,291 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:13,321 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:13,411 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:13,441 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:13,527 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:13,556 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:13,632 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:13,658 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:15,242 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:15,345 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:15,427 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:15,464 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:15,566 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:15,595 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:15,675 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:15,703 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:15,780 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:15,807 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:15,889 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:15,915 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:17,497 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:17,633 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:17,762 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:17,802 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:17,910 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:17,940 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:18,030 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:18,063 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:18,159 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:18,190 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:18,281 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:18,314 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:19,907 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:20,012 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:20,068 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:20,104 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:20,212 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:20,243 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:20,332 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:20,363 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:20,452 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:20,483 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:20,581 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:20,611 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:22,207 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:22,351 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:22,423 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:22,467 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:22,602 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:22,639 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:22,757 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:22,793 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:22,907 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:22,944 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:23,061 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:23,096 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:24,715 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:24,825 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:24,889 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:24,925 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:25,033 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:25,064 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:25,153 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:25,184 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:25,277 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:25,307 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:25,395 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:25,424 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:27,012 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:27,106 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:27,159 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:27,195 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:27,292 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:27,322 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:27,405 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:27,434 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:27,516 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:27,544 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:27,628 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:27,656 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:29,239 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:29,342 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:29,396 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:29,425 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:29,522 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:29,553 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:29,637 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:29,665 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:29,746 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:29,775 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:29,855 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:29,885 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:31,477 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:31,561 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:31,616 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:31,648 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:31,743 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:31,775 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:31,860 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:31,891 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:32,022 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:32,050 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:32,131 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:32,158 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:33,752 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:33,844 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:33,894 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:33,925 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:34,017 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:34,051 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:34,145 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:34,177 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:34,258 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:34,287 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:34,371 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:34,399 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:36,002 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:36,086 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:36,141 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:36,206 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:36,316 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:36,346 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:36,429 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:36,457 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:36,544 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:36,574 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:36,655 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:36,684 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:38,273 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:38,362 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:38,414 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:38,443 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:38,541 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:38,570 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:38,661 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:38,690 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:38,789 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:38,818 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:38,912 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:38,949 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:40,537 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:40,628 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:40,684 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:40,722 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:40,828 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:40,861 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:40,945 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:40,977 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:41,062 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:41,091 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:41,176 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:41,204 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:42,679 [INFO   ] Found DB at ./databases/default.db, appending![0m
+[0;37m2025-12-16 21:55:42,769 [INFO   ] Received msg [setup][0m
+[0;37m2025-12-16 21:55:42,818 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:42,848 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:42,951 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:42,982 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:43,063 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:43,090 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:43,177 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:43,207 [INFO   ] Received msg [tell][0m
+[0;37m2025-12-16 21:55:43,296 [INFO   ] Received msg [ask][0m
+[0;37m2025-12-16 21:55:43,324 [INFO   ] Received msg [tell][0m

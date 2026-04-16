@@ -26,7 +26,7 @@ class RealtimeVisualizer:
     
     def __init__(
         self,
-        db_path: str = "databases/default.db",
+        db_path: str = "aepsych/server/databases/default.db",
         poll_interval: float = 1.0,
         model_bounds: Tuple[float, float] = (-0.7, 0.7),
         figsize: Tuple[int, int] = (10, 8)

@@ -461,7 +461,7 @@ class SimulationResults:
         print("=" * 60)
         
         print(f"\nTrue M: {self.m_true}")
-        print(f"Estimated M: {self.m_estimated}")
+        print(f"Estimated M:\n{self.m_estimated}")
         print(f"Error: {np.linalg.norm(self.m_true - self.m_estimated):.4f}")
         
         print(f"\nFull matrix error (Frobenius): {self.regression_error:.4f}")
@@ -531,7 +531,7 @@ def run_simulation(config: SimulationConfig) -> SimulationResults:
         matching_results.append(result)
         pygame.time.wait(1500)
         status = "✓" if result.converged else "✗"
-        print(f"  {status} Trials: {result.n_trials}, Converged: {result.converged}")
+        print(f"  {status} Trials: {result.n_trials}, Converged: {result.converged},Final Baseline:\n{result.baseline_final}, \nMatched Output: {result.matched_output}")
     
     # Collect matched pairs for regression
     X = np.array([r.reference_xyz for r in matching_results])  # [N, 3]
@@ -659,10 +659,10 @@ def main():
         m_true_diagonal=(args.m00, args.m11, args.m22),
         observer_noise_std=args.noise,
         max_trials_per_reference=args.max_trials,
-        use_full_matrix=True
+        use_full_matrix=False
     )
     
-    # Run simulation
+    # Run simulationq
     results = run_simulation(config)
     
     # Print summary
